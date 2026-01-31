@@ -20,7 +20,7 @@
 - Include a frontend component to scale to multiple users and have a developer forum to help suggest changes and improvements.  
 
 ### Target Users
-People who want to learn Japanese. People who are interested in programming.  s
+People who want to learn Japanese. People who are interested in programming.  
 
 ## Tech Stack
 
@@ -117,51 +117,46 @@ japanese-lang-project/
 - [ ] User profile management
 - [ ] Progress tracking
 
-#### 2. Vocabulary Learning
-- [ ] Flashcard system
-- [ ] Spaced repetition algorithm
-- [ ] Custom vocabulary lists
-- [ ] Audio pronunciation
+#### 2. Content Input Learning
+(user & server components)  
+- [ ] Import variety of media content, save it as csv's with data:(start_time, end_time, text)
+- [ ] Pickout the sentences from the CSV and find the start and end time for the start and end
+- [ ] Assign classification tags to all sentences for a piece of media
+- [ ] Pickout all unique words from the CSV and list them along with their tags
 
-#### 3. Grammar Practice
-- [ ] Grammar lessons by JLPT level
-- [ ] Interactive exercises
-- [ ] Example sentences
+(user only components)
+- [ ] User can create new lists/decks for vocab or sentences
+- [ ] User can look at the vocab and sentence lists for all their inputted media  
+      from that select sentences or words and add them to any list of their choosing
+- [ ] User can output their decks to Anki
 
-#### 4. Reading Practice
-- [ ] Japanese text reader
-- [ ] Furigana display toggle
-- [ ] Dictionary lookup (hover/click)
-- [ ] Text difficulty analysis
 
-#### 5. Writing Practice
-- [ ] Kanji writing practice
-- [ ] Stroke order guidance
-- [ ] Handwriting recognition
+#### 3. Vocabulary Learning (specifics)
+- [ ] Use a dictionary to help with making the vocabulary cards for each piece of media
+- [ ] Have the format be: Front: Kanji   Back: Hiragana, English Def, 
+   Example sentences from media (inclusive of all conjugated forms) (limit 3 sentences)
 
-#### 6. Listening Practice
-- [ ] Audio lessons
-- [ ] Listening comprehension exercises
-- [ ] Speech speed control
+#### 4. Grammar Practice (specifics)
+- [ ] Have a grammar dictionary that has all the grammar points and sentence patterns sorted by JLPT
+- [ ] Each media sentence has tags for grammar, pattern, and level  
+      So for the dictionary, user should be able to see all their saved sentences per JLPT grammar,
+      and sentence patterns
+- [ ] Sentence patterns may be difficult to implement because its not just one grammar but often multiple
+      Maybe do some data mining for good datasets
 
-#### 7. Progress Tracking
-- [ ] Learning statistics
-- [ ] Daily streak counter
-- [ ] Achievement system
-- [ ] Performance analytics
+#### 5. Progress Tracking
+- [ ] Allow user to set time of starting to learn Japanese along with estimated hours (honor system)  
+      This is more for if I build a collaborative user platform they can see their credibility
+      when interacting.
+- [ ] Allow user to see the total number of sentences they have saved
+- [ ] Allow user to see the total number of words they have saved
+- [ ] Allow user to view percentage distribution based off JLPT level
 
 ### Additional Features
-- [ ] Mobile responsive design
-- [ ] Offline mode
 - [ ] Dark mode support
-- [ ] Export/import study data
 
 ## Database Design
-
-### Entity Relationship Diagram
-```
-[Add ERD here]
-```
+*See ERD.md*
 
 ### Core Tables/Collections
 
