@@ -1,7 +1,7 @@
-const { app, BrowserWindow, ipcMain } = require('electron')
-const path = require('node:path')
+import { app, BrowserWindow, ipcMain } from 'electron'
+import path from 'node:path'
 
-const createWindow = () => {
+const createWindow = (): void => {
     const win = new BrowserWindow({
         width: 800,
         height: 600,
@@ -10,7 +10,7 @@ const createWindow = () => {
             sandbox: false
         }
     })
-    win.loadFile('index.html')
+    win.loadFile(path.join(__dirname, '../index.html'))
 }
 
 app.whenReady().then(() => {
