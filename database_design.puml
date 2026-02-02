@@ -1,0 +1,82 @@
+@startuml
+
+class "user" as u {
+    * user_id: int
+    * user_type: int
+    * email: String
+    * password: String
+    --
+    f_name: String
+    l_name: String
+    jlpt_level: int
+    tot_saved_sent: int
+    tot_saved_word: int
+}
+
+class "j_content" as jc {
+    * content_id: int
+    --
+    title: String
+    duration: float
+    author: String
+    upload_date: String
+    link: String
+}
+
+class "j_content_segments" as jcs {
+    * content_id: int <<FK>>
+    * segment_id: int
+    --
+    sequence_order: int
+    start_time: float
+    end_time: float
+    text: String
+}
+
+class "j_content_user" as jcu {
+    * content_id: int <<fk>>
+    * user_id: int <<fk>>
+}
+
+jcs::content_id --> jc::content_id
+
+jcu::content_id --> jc::content_id
+jcu::user_id --> u::user_id
+
+@enduml
+
+/'
+Feature + data to store:
+
+Feature: Track users to associate data w/ user
+User:
+- First, Middle, Last Name
+- Email
+- Password (hashed)
+
+Feature: Japanese content directory
+1. Create a directory that stores a piece of Japanese content
+   Per each user.
+2. Have each Japanese content display in a list. Have it display:
+   - Name of content/video
+   - Name of creator (if available)
+   - Link to content/video
+   - Duration
+3. Be able to click into each content and view the audio & subtitles
+   - Also be able to click a sentence and have it play from
+     the audio track (might be stretch)
+4. (Later problem) Data storage efficiency
+   - Should I make a centralized storage for all media, what if they update?
+   - Should I store data on my server or somehow leverage user's machines?
+
+   For now, I think make a centralized storage and have it assign content
+   to users via another data table.
+
+   And then I need a way for users to uniquely search for content
+   or when they try to download a link, it will query the database
+   first for that link.
+   --> Need to know what uniquely identifies a video 
+
+
+
+'/
