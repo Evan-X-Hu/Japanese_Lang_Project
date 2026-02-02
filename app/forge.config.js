@@ -7,10 +7,13 @@ module.exports = {
   },
   rebuildConfig: {},
   makers: [
-    {
-      name: '@electron-forge/maker-squirrel',
-      config: {},
-    },
+    // {
+    //   name: '@electron-forge/maker-squirrel',
+    //   config: {
+    //     certificateFile: './cert.pfx',
+    //     certificatePassword: process.env.CERTIFICATE_PASSWORD
+    //   },
+    // },
     {
       name: '@electron-forge/maker-zip',
       platforms: ['darwin', 'linux'],
@@ -19,15 +22,16 @@ module.exports = {
     //   name: '@electron-forge/maker-deb',
     //   config: {},
     // },
-    {
-      name: '@electron-forge/maker-rpm',
-      config: {
-        options: {
-          homepage: 'https://github.com/Evan-X-Hu/Japanese_Lang_Project',
-          categories: ['Utility'],
-        },
-      },
-    },
+    //RPM maker disabled - has bugs on Fedora 42+
+    // {
+    //   name: '@electron-forge/maker-rpm',
+    //   config: {
+    //     options: {
+    //       homepage: 'https://github.com/Evan-X-Hu/Japanese_Lang_Project',
+    //       categories: ['Utility'],
+    //     },
+    //   },
+    // },
   ],
   plugins: [
     {
