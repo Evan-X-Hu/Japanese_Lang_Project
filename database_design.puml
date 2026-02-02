@@ -1,6 +1,47 @@
 @startuml
 
-object data
+class "user" as u {
+    * user_id: int
+    * user_type: int
+    * email: String
+    * password: String
+    --
+    f_name: String
+    l_name: String
+    jlpt_level: int
+    tot_saved_sent: int
+    tot_saved_word: int
+}
+
+class "j_content" as jc {
+    * content_id: int
+    --
+    title: String
+    duration: float
+    author: String
+    upload_date: String
+    link: String
+}
+
+class "j_content_segments" as jcs {
+    * content_id: int <<FK>>
+    * segment_id: int
+    --
+    sequence_order: int
+    start_time: float
+    end_time: float
+    text: String
+}
+
+class "j_content_user" as jcu {
+    * content_id: int <<fk>>
+    * user_id: int <<fk>>
+}
+
+jcs::content_id --> jc::content_id
+
+jcu::content_id --> jc::content_id
+jcu::user_id --> u::user_id
 
 @enduml
 

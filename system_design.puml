@@ -1,0 +1,39 @@
+@startuml
+!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.4.0
+
+skinparam boxPadding 10
+skinparam participantPadding 20
+
+box "Desktop App (Electron)" #LightBlue
+    participant "React UI" as UI
+    participant "Local FastAPI\n(Python Scripts)" as LocalAPI
+    participant "SQLite DB" as LocalDB
+end box
+
+box "Cloud Server" #LightGreen
+    participant "FastAPI" as CloudAPI
+    participant "PostgreSQL DB" as CloudDB
+end box
+
+== Local Workflow ==
+UI -> LocalAPI: Feature Functionality
+LocalAPI -> LocalAPI: Python Scripts
+LocalAPI -> LocalDB: Store data
+LocalDB -> LocalAPI: Use Data
+LocalDB --> UI: Display data
+
+== Cloud Workflow (REST) ==
+UI -> CloudAPI: RESTful API call
+CloudAPI -> CloudAPI: Backend Function
+CloudAPI -> CloudDB: Store data
+CloudDB -> CloudAPI: Use data
+CloudAPI --> UI: Retrieve data
+
+== Cloud Workflow (WebSocket)==
+UI -> CloudAPI: WebSocket
+CloudAPI -> CloudAPI: Backend Function
+CloudAPI -> CloudDB: Store data
+CloudDB --> CloudAPI: Use data
+CloudAPI --> UI: Broadcast data
+
+@enduml
