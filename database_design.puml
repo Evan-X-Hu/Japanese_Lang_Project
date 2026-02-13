@@ -1,7 +1,10 @@
 @startuml
+skinparam linetype ortho
+
+' ====== Core Entities ======
 
 class "user" as u {
-    * user_id: int
+    * user_id: int <<PK>>
     * user_type: int
     * email: String
     * password: String
@@ -9,74 +12,126 @@ class "user" as u {
     f_name: String
     l_name: String
     jlpt_level: int
-    tot_saved_sent: int
-    tot_saved_word: int
+    tot_saved_sent: int (computed)
+    tot_saved_word: int (computed)
 }
 
 class "j_content" as jc {
-    * content_id: int
+    * content_id: int <<PK>>
     --
     title: String
     duration: float
     author: String
     upload_date: String
-    link: String
+    link: String <unique>
+    audio: File
 }
+
+' ====== User-Content Bridge ======
+
+class "j_content_user" as jcu {
+    * content_id: int <<FK>>
+    * user_id: int <<FK>>
+}
+
+jcu -left-> u : user_id
+jcu -right-> jc : content_id
+
+' ====== Content Segments ======
 
 class "j_content_segments" as jcs {
     * content_id: int <<FK>>
-    * segment_id: int
+    * segment_id: int <<PK>>
     --
     sequence_order: int
     start_time: float
     end_time: float
     text: String
+    jlpt_level: int (computed)
 }
 
-class "j_content_user" as jcu {
-    * content_id: int <<fk>>
-    * user_id: int <<fk>>
+jcs -up-> jc : content_id
+
+' ====== User-Segment Bridge ======
+
+class "j_segment_user" as jsu {
+    * segment_id: int <<FK>>
+    * user_id: int <<FK>>
 }
 
-jcs::content_id --> jc::content_id
+jsu -left-> u : user_id
+jsu -right-> jcs : segment_id
 
-jcu::content_id --> jc::content_id
-jcu::user_id --> u::user_id
+' ====== Grammar ======
+
+class "grammar" as g {
+    * grammar_id: int <<PK>>
+    --
+    jlpt_level: int
+    examples: String[]
+    notes: String
+}
+
+class "j_content_grammar" as jcg {
+    * grammar_id: int <<FK>>
+    * segment_id: int <<FK>>
+}
+
+jcg -up-> jcs : segment_id
+jcg -right-> g : gr_id
+
+' ====== Saved Words ======
+
+class "saved_word" as sw {
+    * word_id: int <<PK>>
+    * user_id: int <<FK>>
+    * segment_id: int <<FK>>
+    --
+    word: String
+    definition: String
+    conjugations: String
+    notes: String
+}
+
+sw -up-> u : user_id
+sw -left-> jcs : sg_id
+
+' ====== Decks ======
+
+class "deck" as deck {
+    * deck_id: int <<PK>>
+    * user_id: int <<FK>>
+    --
+    name: String
+    notes: String
+}
+
+deck -up-> u : user_id
+
+' ====== Deck Join Tables ======
+
+class "deck_word" as dw {
+    * deck_id: int <<FK>>
+    * word_id: int <<FK>>
+}
+
+dw -up-> deck : deck_id
+dw -right-> sw : word_id
+
+class "deck_grammar" as dg {
+    * deck_id: int <<FK>>
+    * grammar_id: int <<FK>>
+}
+
+dg -up-> deck : deck_id
+dg -right-> g : grammar_id
+
+class "deck_segment" as ds {
+    * deck_id: int <<FK>>
+    * segment_id: int <<FK>>
+}
+
+ds -up-> deck : deck_id
+ds -right-> jcs : segment_id
 
 @enduml
-
-/'
-Feature + data to store:
-
-Feature: Track users to associate data w/ user
-User:
-- First, Middle, Last Name
-- Email
-- Password (hashed)
-
-Feature: Japanese content directory
-1. Create a directory that stores a piece of Japanese content
-   Per each user.
-2. Have each Japanese content display in a list. Have it display:
-   - Name of content/video
-   - Name of creator (if available)
-   - Link to content/video
-   - Duration
-3. Be able to click into each content and view the audio & subtitles
-   - Also be able to click a sentence and have it play from
-     the audio track (might be stretch)
-4. (Later problem) Data storage efficiency
-   - Should I make a centralized storage for all media, what if they update?
-   - Should I store data on my server or somehow leverage user's machines?
-
-   For now, I think make a centralized storage and have it assign content
-   to users via another data table.
-
-   And then I need a way for users to uniquely search for content
-   or when they try to download a link, it will query the database
-   first for that link.
-   --> Need to know what uniquely identifies a video 
-
-
-
-'/
