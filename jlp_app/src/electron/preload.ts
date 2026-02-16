@@ -24,3 +24,12 @@ contextBridge.exposeInMainWorld('electron', {
         openExternal: (url: string) => ipcRenderer.invoke('shell:openExternal', url)
     }
 })
+
+// Expose content CRUD API
+contextBridge.exposeInMainWorld('content', {
+    getAll: () => ipcRenderer.invoke('content:getAll'),
+    getById: (contentId: number) => ipcRenderer.invoke('content:getById', contentId),
+    create: (data: Record<string, unknown>) => ipcRenderer.invoke('content:create', data),
+    update: (contentId: number, data: Record<string, unknown>) => ipcRenderer.invoke('content:update', contentId, data),
+    delete: (contentId: number) => ipcRenderer.invoke('content:delete', contentId),
+})

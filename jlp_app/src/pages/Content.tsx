@@ -17,12 +17,12 @@ function extractTitle(url: string): string {
   }
 }
 
-function getMediaType(url: string): "mp3" | "mp4" | null {
-  const lower = url.toLowerCase().trim()
-  if (lower.endsWith(".mp3")) return "mp3"
-  if (lower.endsWith(".mp4")) return "mp4"
-  return null
-}
+// function getMediaType(url: string): "mp3" | "mp4" | null {
+//   const lower = url.toLowerCase().trim()
+//   if (lower.endsWith(".mp3")) return "mp3"
+//   if (lower.endsWith(".mp4")) return "mp4"
+//   return null
+// }
 
 const filterButtons: { label: string; value: FilterType }[] = [
   { label: "All", value: "all" },
@@ -31,7 +31,7 @@ const filterButtons: { label: string; value: FilterType }[] = [
 ]
 
 export function Content() {
-  const [url, setUrl] = useState("")
+  const [url, setUrl] = useState("") // TODO: Make sure this is validated
   const [contentItems, setContentItems] = useState<ContentItem[]>([])
   const [selectedId, setSelectedId] = useState<string | null>(null)
   const [searchQuery, setSearchQuery] = useState("")
@@ -47,11 +47,11 @@ export function Content() {
       return
     }
 
-    const mediaType = getMediaType(trimmed)
-    if (!mediaType) {
-      setError("URL must end in .mp3 or .mp4")
-      return
-    }
+    // const mediaType = getMediaType(trimmed)
+    // if (!mediaType) {
+    //   setError("URL must end in .mp3 or .mp4")
+    //   return
+    // }
 
     try {
       new URL(trimmed)
@@ -60,16 +60,16 @@ export function Content() {
       return
     }
 
-    const newItem: ContentItem = {
-      id: Date.now().toString(36) + Math.random().toString(36).slice(2),
-      title: extractTitle(trimmed),
-      url: trimmed,
-      type: mediaType,
-      addedAt: new Date(),
-    }
+    // const newItem: ContentItem = {
+    //   id: Date.now().toString(36) + Math.random().toString(36).slice(2),
+    //   title: extractTitle(trimmed),
+    //   url: trimmed,
+    //   type: mediaType,
+    //   addedAt: new Date(),
+    // }
 
-    setContentItems((prev) => [newItem, ...prev])
-    setSelectedId(newItem.id)
+    // setContentItems((prev) => [newItem, ...prev])
+    // setSelectedId(newItem.id)
     setUrl("")
   }
 
