@@ -1,4 +1,5 @@
 import path from 'path';
+import fs from 'fs';
 import { app } from 'electron';
 import Database from 'better-sqlite3';
 import { drizzle, BetterSQLite3Database } from 'drizzle-orm/better-sqlite3';
@@ -31,8 +32,13 @@ export function initializeDatabase(): BetterSQLite3Database {
     return db;
   }
 
+  // Path to: <user>/.config/jlp_app/jlp_app.db (stores database)
   const dbPath = path.join(app.getPath('userData'), 'jlp_app.db');
 
+  // Path to: <user>/.config/jlp_app/media (stores media files)
+  const mediaRoot = path.join(app.getPath('userData'), 'media');
+  fs.mkdirSync(mediaRoot, { recursive: true });
+  
   sqlite = new Database(dbPath);
 
   // WAL mode for better read performance

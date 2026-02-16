@@ -7,7 +7,9 @@ interface ElectronAPI {
   };
 }
 
-interface Window {
-  electron?: ElectronAPI;
-  content?: ContentAPI;
+declare global {
+  interface Window {
+    electron?: ElectronAPI;
+    content?: ContentAPI;
+  }
 }

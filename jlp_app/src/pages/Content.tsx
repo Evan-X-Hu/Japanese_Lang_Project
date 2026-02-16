@@ -7,15 +7,15 @@ import styles from './Content.module.css'
 
 type FilterType = "all" | "mp3" | "mp4"
 
-function extractTitle(url: string): string {
-  try {
-    const pathname = new URL(url).pathname
-    const filename = pathname.split("/").pop() || "Untitled"
-    return decodeURIComponent(filename.replace(/\.(mp3|mp4)$/i, ""))
-  } catch {
-    return "Untitled"
-  }
-}
+// function extractTitle(url: string): string {
+//   try {
+//     const pathname = new URL(url).pathname
+//     const filename = pathname.split("/").pop() || "Untitled"
+//     return decodeURIComponent(filename.replace(/\.(mp3|mp4)$/i, ""))
+//   } catch {
+//     return "Untitled"
+//   }
+// }
 
 // function getMediaType(url: string): "mp3" | "mp4" | null {
 //   const lower = url.toLowerCase().trim()
