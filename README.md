@@ -175,3 +175,8 @@ japanese-lang-project/
 ## Contact
 
 [Add contact information or links]
+
+
+
+### NOTE:  
+For adding components and styling in CSS, create a "name".module.css file and in the component do import styles from './component.module.css'

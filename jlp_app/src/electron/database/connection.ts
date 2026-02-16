@@ -37,6 +37,7 @@ export function initializeDatabase(): BetterSQLite3Database {
 
   // WAL mode for better read performance
   sqlite.pragma('journal_mode = WAL');
+  sqlite.pragma("foreign_keys = ON");
 
   db = drizzle(sqlite);
 

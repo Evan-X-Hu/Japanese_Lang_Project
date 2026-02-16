@@ -1,0 +1,734 @@
+{
+  "version": "6",
+  "dialect": "sqlite",
+  "id": "b6d1eb1a-e19c-46a6-be73-7a04d7bf37b3",
+  "prevId": "00000000-0000-0000-0000-000000000000",
+  "tables": {
+    "deck": {
+      "name": "deck",
+      "columns": {
+        "deck_id": {
+          "name": "deck_id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": true
+        },
+        "user_id": {
+          "name": "user_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "deck_user_id_user_user_id_fk": {
+          "name": "deck_user_id_user_user_id_fk",
+          "tableFrom": "deck",
+          "tableTo": "user",
+          "columnsFrom": [
+            "user_id"
+          ],
+          "columnsTo": [
+            "user_id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "deck_grammar": {
+      "name": "deck_grammar",
+      "columns": {
+        "deck_id": {
+          "name": "deck_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "grammar_id": {
+          "name": "grammar_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "deck_grammar_deck_id_deck_deck_id_fk": {
+          "name": "deck_grammar_deck_id_deck_deck_id_fk",
+          "tableFrom": "deck_grammar",
+          "tableTo": "deck",
+          "columnsFrom": [
+            "deck_id"
+          ],
+          "columnsTo": [
+            "deck_id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        },
+        "deck_grammar_grammar_id_saved_grammar_grammar_id_fk": {
+          "name": "deck_grammar_grammar_id_saved_grammar_grammar_id_fk",
+          "tableFrom": "deck_grammar",
+          "tableTo": "saved_grammar",
+          "columnsFrom": [
+            "grammar_id"
+          ],
+          "columnsTo": [
+            "grammar_id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {
+        "deck_grammar_deck_id_grammar_id_pk": {
+          "columns": [
+            "deck_id",
+            "grammar_id"
+          ],
+          "name": "deck_grammar_deck_id_grammar_id_pk"
+        }
+      },
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "deck_segment": {
+      "name": "deck_segment",
+      "columns": {
+        "deck_id": {
+          "name": "deck_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "segment_id": {
+          "name": "segment_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "deck_segment_deck_id_deck_deck_id_fk": {
+          "name": "deck_segment_deck_id_deck_deck_id_fk",
+          "tableFrom": "deck_segment",
+          "tableTo": "deck",
+          "columnsFrom": [
+            "deck_id"
+          ],
+          "columnsTo": [
+            "deck_id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        },
+        "deck_segment_segment_id_j_segment_segment_id_fk": {
+          "name": "deck_segment_segment_id_j_segment_segment_id_fk",
+          "tableFrom": "deck_segment",
+          "tableTo": "j_segment",
+          "columnsFrom": [
+            "segment_id"
+          ],
+          "columnsTo": [
+            "segment_id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {
+        "deck_segment_deck_id_segment_id_pk": {
+          "columns": [
+            "deck_id",
+            "segment_id"
+          ],
+          "name": "deck_segment_deck_id_segment_id_pk"
+        }
+      },
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "deck_word": {
+      "name": "deck_word",
+      "columns": {
+        "deck_id": {
+          "name": "deck_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "word_id": {
+          "name": "word_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "deck_word_deck_id_deck_deck_id_fk": {
+          "name": "deck_word_deck_id_deck_deck_id_fk",
+          "tableFrom": "deck_word",
+          "tableTo": "deck",
+          "columnsFrom": [
+            "deck_id"
+          ],
+          "columnsTo": [
+            "deck_id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        },
+        "deck_word_word_id_saved_word_word_id_fk": {
+          "name": "deck_word_word_id_saved_word_word_id_fk",
+          "tableFrom": "deck_word",
+          "tableTo": "saved_word",
+          "columnsFrom": [
+            "word_id"
+          ],
+          "columnsTo": [
+            "word_id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {
+        "deck_word_deck_id_word_id_pk": {
+          "columns": [
+            "deck_id",
+            "word_id"
+          ],
+          "name": "deck_word_deck_id_word_id_pk"
+        }
+      },
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "j_content": {
+      "name": "j_content",
+      "columns": {
+        "content_id": {
+          "name": "content_id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": true
+        },
+        "title": {
+          "name": "title",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "duration": {
+          "name": "duration",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "author": {
+          "name": "author",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "upload_date": {
+          "name": "upload_date",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "link": {
+          "name": "link",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "audio": {
+          "name": "audio",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "j_content_link_unique": {
+          "name": "j_content_link_unique",
+          "columns": [
+            "link"
+          ],
+          "isUnique": true
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "j_content_user": {
+      "name": "j_content_user",
+      "columns": {
+        "content_id": {
+          "name": "content_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "user_id": {
+          "name": "user_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "j_content_user_content_id_j_content_content_id_fk": {
+          "name": "j_content_user_content_id_j_content_content_id_fk",
+          "tableFrom": "j_content_user",
+          "tableTo": "j_content",
+          "columnsFrom": [
+            "content_id"
+          ],
+          "columnsTo": [
+            "content_id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        },
+        "j_content_user_user_id_user_user_id_fk": {
+          "name": "j_content_user_user_id_user_user_id_fk",
+          "tableFrom": "j_content_user",
+          "tableTo": "user",
+          "columnsFrom": [
+            "user_id"
+          ],
+          "columnsTo": [
+            "user_id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {
+        "j_content_user_content_id_user_id_pk": {
+          "columns": [
+            "content_id",
+            "user_id"
+          ],
+          "name": "j_content_user_content_id_user_id_pk"
+        }
+      },
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "j_segment": {
+      "name": "j_segment",
+      "columns": {
+        "segment_id": {
+          "name": "segment_id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": true
+        },
+        "content_id": {
+          "name": "content_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "seq_index": {
+          "name": "seq_index",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "start_time": {
+          "name": "start_time",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "end_time": {
+          "name": "end_time",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "text": {
+          "name": "text",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "jlpt_level": {
+          "name": "jlpt_level",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "j_segment_content_id_j_content_content_id_fk": {
+          "name": "j_segment_content_id_j_content_content_id_fk",
+          "tableFrom": "j_segment",
+          "tableTo": "j_content",
+          "columnsFrom": [
+            "content_id"
+          ],
+          "columnsTo": [
+            "content_id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "j_segment_grammar": {
+      "name": "j_segment_grammar",
+      "columns": {
+        "grammar_id": {
+          "name": "grammar_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "segment_id": {
+          "name": "segment_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "j_segment_grammar_grammar_id_saved_grammar_grammar_id_fk": {
+          "name": "j_segment_grammar_grammar_id_saved_grammar_grammar_id_fk",
+          "tableFrom": "j_segment_grammar",
+          "tableTo": "saved_grammar",
+          "columnsFrom": [
+            "grammar_id"
+          ],
+          "columnsTo": [
+            "grammar_id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        },
+        "j_segment_grammar_segment_id_j_segment_segment_id_fk": {
+          "name": "j_segment_grammar_segment_id_j_segment_segment_id_fk",
+          "tableFrom": "j_segment_grammar",
+          "tableTo": "j_segment",
+          "columnsFrom": [
+            "segment_id"
+          ],
+          "columnsTo": [
+            "segment_id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {
+        "j_segment_grammar_grammar_id_segment_id_pk": {
+          "columns": [
+            "grammar_id",
+            "segment_id"
+          ],
+          "name": "j_segment_grammar_grammar_id_segment_id_pk"
+        }
+      },
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "j_segment_word": {
+      "name": "j_segment_word",
+      "columns": {
+        "segment_id": {
+          "name": "segment_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "word_id": {
+          "name": "word_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "j_segment_word_segment_id_j_segment_segment_id_fk": {
+          "name": "j_segment_word_segment_id_j_segment_segment_id_fk",
+          "tableFrom": "j_segment_word",
+          "tableTo": "j_segment",
+          "columnsFrom": [
+            "segment_id"
+          ],
+          "columnsTo": [
+            "segment_id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        },
+        "j_segment_word_word_id_saved_word_word_id_fk": {
+          "name": "j_segment_word_word_id_saved_word_word_id_fk",
+          "tableFrom": "j_segment_word",
+          "tableTo": "saved_word",
+          "columnsFrom": [
+            "word_id"
+          ],
+          "columnsTo": [
+            "word_id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {
+        "j_segment_word_segment_id_word_id_pk": {
+          "columns": [
+            "segment_id",
+            "word_id"
+          ],
+          "name": "j_segment_word_segment_id_word_id_pk"
+        }
+      },
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "saved_grammar": {
+      "name": "saved_grammar",
+      "columns": {
+        "grammar_id": {
+          "name": "grammar_id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": true
+        },
+        "user_id": {
+          "name": "user_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "jlpt_level": {
+          "name": "jlpt_level",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "examples": {
+          "name": "examples",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "notes": {
+          "name": "notes",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "saved_grammar_user_id_user_user_id_fk": {
+          "name": "saved_grammar_user_id_user_user_id_fk",
+          "tableFrom": "saved_grammar",
+          "tableTo": "user",
+          "columnsFrom": [
+            "user_id"
+          ],
+          "columnsTo": [
+            "user_id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "saved_word": {
+      "name": "saved_word",
+      "columns": {
+        "word_id": {
+          "name": "word_id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": true
+        },
+        "user_id": {
+          "name": "user_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "word": {
+          "name": "word",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "definition": {
+          "name": "definition",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "conjugations": {
+          "name": "conjugations",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "notes": {
+          "name": "notes",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "saved_word_user_id_user_user_id_fk": {
+          "name": "saved_word_user_id_user_user_id_fk",
+          "tableFrom": "saved_word",
+          "tableTo": "user",
+          "columnsFrom": [
+            "user_id"
+          ],
+          "columnsTo": [
+            "user_id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "user": {
+      "name": "user",
+      "columns": {
+        "user_id": {
+          "name": "user_id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": true
+        },
+        "email": {
+          "name": "email",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "password": {
+          "name": "password",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "f_name": {
+          "name": "f_name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "l_name": {
+          "name": "l_name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "jlpt_level": {
+          "name": "jlpt_level",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "user_type": {
+          "name": "user_type",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    }
+  },
+  "views": {},
+  "enums": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {},
+    "columns": {}
+  },
+  "internal": {
+    "indexes": {}
+  }
+}
