@@ -95,3 +95,9 @@ out/
 *.db
 *.db-wal
 *.db-shm
+
+# Python build artifacts (keep download.py and requirements.txt)
+python/build/
+python/dist/
+python/*.spec
+__pycache__/

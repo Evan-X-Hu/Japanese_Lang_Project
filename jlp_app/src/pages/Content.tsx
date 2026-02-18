@@ -1,92 +1,66 @@
 import { useState, useMemo } from "react"
-import { Download, Search } from "lucide-react"
+import { Download, Search, Loader } from "lucide-react"
 import { ContentList } from "../components/content_list"
 import { ContentDetail } from "../components/content_detail"
-import type { ContentItem } from "../components/content_list"
+import { useContent } from "../hooks/useContent"
 import styles from './Content.module.css'
 
-type FilterType = "all" | "mp3" | "mp4"
-
-// function extractTitle(url: string): string {
-//   try {
-//     const pathname = new URL(url).pathname
-//     const filename = pathname.split("/").pop() || "Untitled"
-//     return decodeURIComponent(filename.replace(/\.(mp3|mp4)$/i, ""))
-//   } catch {
-//     return "Untitled"
-//   }
-// }
-
-// function getMediaType(url: string): "mp3" | "mp4" | null {
-//   const lower = url.toLowerCase().trim()
-//   if (lower.endsWith(".mp3")) return "mp3"
-//   if (lower.endsWith(".mp4")) return "mp4"
-//   return null
-// }
-
-const filterButtons: { label: string; value: FilterType }[] = [
-  { label: "All", value: "all" },
-  { label: "MP3", value: "mp3" },
-  { label: "MP4", value: "mp4" },
-]
-
 export function Content() {
-  const [url, setUrl] = useState("") // TODO: Make sure this is validated
-  const [contentItems, setContentItems] = useState<ContentItem[]>([])
-  const [selectedId, setSelectedId] = useState<string | null>(null)
+  const [url, setUrl] = useState("")
+  const [selectedId, setSelectedId] = useState<number | null>(null)
   const [searchQuery, setSearchQuery] = useState("")
-  const [filterType, setFilterType] = useState<FilterType>("all")
-  const [error, setError] = useState<string | null>(null)
+  const [importing, setImporting] = useState(false)
+  const [localError, setLocalError] = useState<string | null>(null)
 
-  function handleImport() {
-    setError(null)
+  const { items, error: hookError, importUrl } = useContent()
+
+  const error = localError ?? hookError
+
+  async function handleImport() {
+    setLocalError(null)
     const trimmed = url.trim()
 
     if (!trimmed) {
-      setError("Please enter a URL.")
+      setLocalError("Please enter a URL.")
       return
     }
-
-    // const mediaType = getMediaType(trimmed)
-    // if (!mediaType) {
-    //   setError("URL must end in .mp3 or .mp4")
-    //   return
-    // }
 
     try {
       new URL(trimmed)
     } catch {
-      setError("Please enter a valid URL.")
+      setLocalError("Please enter a valid URL.")
       return
     }
 
-    // const newItem: ContentItem = {
-    //   id: Date.now().toString(36) + Math.random().toString(36).slice(2),
-    //   title: extractTitle(trimmed),
-    //   url: trimmed,
-    //   type: mediaType,
-    //   addedAt: new Date(),
-    // }
-
-    // setContentItems((prev) => [newItem, ...prev])
-    // setSelectedId(newItem.id)
-    setUrl("")
+    setImporting(true)
+    try {
+      const result = await importUrl(trimmed)
+      if (result) {
+        setSelectedId(result.contentId)
+      }
+      setUrl("")
+    } catch {
+      setLocalError("Import failed. Check the URL and try again.")
+    } finally {
+      setImporting(false)
+    }
   }
 
   const filteredItems = useMemo(() => {
-    return contentItems.filter((item) => {
-      const matchesType = filterType === "all" || item.type === filterType
-      const matchesSearch =
-        searchQuery === "" ||
-        item.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        item.url.toLowerCase().includes(searchQuery.toLowerCase())
-      return matchesType && matchesSearch
+    if (searchQuery === "") return items
+    return items.filter((item) => {
+      const q = searchQuery.toLowerCase()
+      return (
+        (item.title?.toLowerCase().includes(q) ?? false) ||
+        (item.author?.toLowerCase().includes(q) ?? false) ||
+        (item.link?.toLowerCase().includes(q) ?? false)
+      )
     })
-  }, [contentItems, filterType, searchQuery])
+  }, [items, searchQuery])
 
   const selectedItem = useMemo(() => {
-    return contentItems.find((item) => item.id === selectedId) ?? null
-  }, [contentItems, selectedId])
+    return items.find((item) => item.contentId === selectedId) ?? null
+  }, [items, selectedId])
 
   return (
     <div className={styles.page}>
@@ -98,15 +72,20 @@ export function Content() {
         <div className={styles.importRow}>
           <input
             value={url}
-            onChange={(e) => { setUrl(e.target.value); setError(null) }}
-            onKeyDown={(e) => { if (e.key === "Enter") handleImport() }}
-            placeholder="https://example.com/lesson.mp3"
+            onChange={(e) => { setUrl(e.target.value); setLocalError(null) }}
+            onKeyDown={(e) => { if (e.key === "Enter" && !importing) handleImport() }}
+            placeholder="https://www.youtube.com/watch?v=..."
             className={styles.importInput}
             aria-label="Content URL"
+            disabled={importing}
           />
-          <button onClick={handleImport} className={styles.importButton}>
-            <Download className={styles.buttonIcon} />
-            <span>Import</span>
+          <button onClick={handleImport} className={styles.importButton} disabled={importing}>
+            {importing ? (
+              <Loader className={styles.buttonIcon} />
+            ) : (
+              <Download className={styles.buttonIcon} />
+            )}
+            <span>{importing ? "Importing..." : "Import"}</span>
           </button>
         </div>
         {error && <p className={styles.error} role="alert">{error}</p>}
@@ -122,18 +101,6 @@ export function Content() {
             className={styles.searchInput}
             aria-label="Search content"
           />
-        </div>
-        <div className={styles.filterGroup} role="group" aria-label="Filter by type">
-          {filterButtons.map((fb) => (
-            <button
-              key={fb.value}
-              onClick={() => setFilterType(fb.value)}
-              aria-pressed={filterType === fb.value}
-              className={`${styles.filterButton} ${filterType === fb.value ? styles.filterButtonActive : ''}`}
-            >
-              {fb.label}
-            </button>
-          ))}
         </div>
       </section>
 

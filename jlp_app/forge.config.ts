@@ -2,8 +2,8 @@ import type { ForgeConfig } from '@electron-forge/shared-types';
 // import { MakerSquirrel } from '@electron-forge/maker-squirrel';
 import { MakerZIP } from '@electron-forge/maker-zip';
 import { PublisherGithub } from '@electron-forge/publisher-github';
-// import { MakerDeb } from '@electron-forge/maker-deb';
-// import { MakerRpm } from '@electron-forge/maker-rpm';
+import { MakerDeb } from '@electron-forge/maker-deb';
+// import { MakerRpm } from '@electron-forge/maker-rpm'; // broken on Fedora 42+ rpmbuild
 import { AutoUnpackNativesPlugin } from '@electron-forge/plugin-auto-unpack-natives';
 import { WebpackPlugin } from '@electron-forge/plugin-webpack';
 import { FusesPlugin } from '@electron-forge/plugin-fuses';
@@ -29,14 +29,15 @@ const config: ForgeConfig = {
     asar: true,
     extraResource: [
       './drizzle',
+      './python/dist/download',  // PyInstaller binary
     ],
   },
   rebuildConfig: {},
   makers: [
     //new MakerSquirrel({}),
     new MakerZIP({}, ['darwin', 'linux']),
-    //new MakerRpm({}),
-    //new MakerDeb({}),
+    // new MakerRpm({}), // broken on Fedora 42+ rpmbuild
+    new MakerDeb({}),
   ],
   plugins: [
     new AutoUnpackNativesPlugin({}),
