@@ -27,6 +27,9 @@ const config: ForgeConfig = {
   ],
   packagerConfig: {
     asar: true,
+    extraResource: [
+      './drizzle',
+    ],
   },
   rebuildConfig: {},
   makers: [
@@ -40,6 +43,7 @@ const config: ForgeConfig = {
     new WebpackPlugin({
       mainConfig,
       port: 3456,
+      loggerPort: 9100,
       renderer: {
         config: rendererConfig,
         entryPoints: [

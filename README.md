@@ -36,7 +36,9 @@ People who want to learn Japanese. People who are interested in programming.
 - **Authentication**: [e.g., JWT, OAuth, Passport]
 
 ### Database
-- **Primary Database**: [e.g., PostgreSQL, MongoDB, MySQL]
+- **Cloud Database**: [e.g., PostgreSQL]
+- **User Facing Database**: [e.g., better-sqlite3]  
+drizzle-orm & drizzle-kit: ```drizzle-kit generate``` to produce migration files
 - **Caching**: [e.g., Redis]
 - **ORM/ODM**: [e.g., Prisma, TypeORM, Mongoose]
 
@@ -173,3 +175,8 @@ japanese-lang-project/
 ## Contact
 
 [Add contact information or links]
+
+
+
+### NOTE:  
+For adding components and styling in CSS, create a "name".module.css file and in the component do import styles from './component.module.css'

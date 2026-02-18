@@ -1,3 +1,5 @@
+import type { ContentAPI } from './index';
+
 // Electron API exposed via preload script
 interface ElectronAPI {
   shell: {
@@ -5,6 +7,9 @@ interface ElectronAPI {
   };
 }
 
-interface Window {
-  electron?: ElectronAPI;
+declare global {
+  interface Window {
+    electron?: ElectronAPI;
+    content?: ContentAPI;
+  }
 }

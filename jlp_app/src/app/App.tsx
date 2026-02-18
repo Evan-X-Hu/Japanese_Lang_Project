@@ -1,5 +1,10 @@
+import { HashRouter, Routes, Route } from "react-router-dom"
+import { Navbar } from "../components/navbar"
 import { Footer } from "../components/footer"
-import { WelcomeSection } from "../components/welcome_section"
+import { Home } from "../pages/Home"
+import { Decks } from "../pages/Decks"
+import { Content } from "../pages/Content"
+import { Settings } from "../pages/Settings"
 
 interface VersionsAPI {
   node: () => string;
@@ -15,21 +20,22 @@ declare global {
 }
 
 function App() {
-  const handlePing = async () => {
-    const response = await window.versions.ping();
-    console.log(response);
-  };
-
   return (
-    <div className="flex min-h-screen flex-col">
-      <main className="flex flex-1 py-16 sm:py-24">
-        <WelcomeSection />
-      </main>
-      <Footer
-        githubUrl="https://github.com/your-username/your-repo"
-        discordUrl="https://discord.gg/your-invite"
-      />
-    </div>
+    <HashRouter>
+      <div className="flex min-h-screen flex-col">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/decks" element={<Decks />} />
+          <Route path="/content" element={<Content />} />
+          <Route path="/settings" element={<Settings />} />
+        </Routes>
+        <Footer
+          githubUrl="https://github.com/your-username/your-repo"
+          discordUrl="https://discord.gg/your-invite"
+        />
+      </div>
+    </HashRouter>
   );
 }
 
