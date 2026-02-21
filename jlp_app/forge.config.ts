@@ -26,7 +26,9 @@ const config: ForgeConfig = {
       })
   ],
   packagerConfig: {
-    asar: true,
+    asar: {
+      unpack: '**/*.node',
+    },
     extraResource: [
       './drizzle',
       './python/dist/download',  // PyInstaller binary

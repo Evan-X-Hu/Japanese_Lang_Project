@@ -25,10 +25,10 @@ People who want to learn Japanese. People who are interested in programming.
 ## Tech Stack
 
 ### Frontend
-- **Framework**: 
-- **Language**: [e.g., TypeScript, JavaScript]
-- **UI Library**: [e.g., Material-UI, Tailwind CSS, shadcn/ui]
-- **State Management**: [e.g., Redux, Zustand, Context API]
+- **Framework**: [e.g., React, Electron]
+- **Language**: [e.g., TypeScript]
+- **UI Library**: [e.g., lucide-react]
+- **State Management**: [e.g., Zustand]
 
 ### Backend
 - **Framework**: [e.g., Express, FastAPI, Django, Spring Boot]
@@ -38,19 +38,20 @@ People who want to learn Japanese. People who are interested in programming.
 ### Database
 - **Cloud Database**: [e.g., PostgreSQL]
 - **User Facing Database**: [e.g., better-sqlite3]  
-drizzle-orm & drizzle-kit: ```drizzle-kit generate``` to produce migration files
+- **Migrations**: [e.g., drizzle-orm & drizzle-kit]  
+```drizzle-kit generate``` to produce migration files
 - **Caching**: [e.g., Redis]
 - **ORM/ODM**: [e.g., Prisma, TypeORM, Mongoose]
 
 ### DevOps & Tools
 - **Version Control**: Git
-- **CI/CD**: [e.g., GitHub Actions, GitLab CI]
-- **Containerization**: [e.g., Docker]
-- **Hosting**: [e.g., Vercel, AWS, Heroku]
+- **CI/CD**:
+- **Containerization**:
+- **Hosting**:
 
 ### Additional Services
-- **Japanese Text Processing**: [e.g., Kuromoji, MeCab]
-- **APIs**: [e.g., Jisho API, JLPT API]
+- **Japanese Text Processing**: Tohoku BERT base Japanese V3 (character level): https://huggingface.co/tohoku-nlp/bert-base-japanese-char-v3
+- **APIs**: 
 
 ## Project Architecture
 
@@ -178,5 +179,5 @@ japanese-lang-project/
 
 
 
-### NOTE:  
+### NOTES:  
 For adding components and styling in CSS, create a "name".module.css file and in the component do import styles from './component.module.css'
