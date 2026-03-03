@@ -17,10 +17,21 @@ export interface ContentInput {
   audio?: string | null;
 }
 
+export interface SegmentRecord {
+  segmentId: number;
+  contentId: number | null;
+  seqIndex: number | null;
+  startTime: number | null;
+  endTime: number | null;
+  text: string | null;
+  jlptLevel: number | null;
+}
+
 export interface ContentAPI {
   getAll: () => Promise<ContentRecord[]>;
   getById: (contentId: number) => Promise<ContentRecord | undefined>;
   create: (data: ContentInput) => Promise<ContentRecord>;
   update: (contentId: number, data: Partial<ContentInput>) => Promise<ContentRecord | undefined>;
   delete: (contentId: number) => Promise<ContentRecord | undefined>;
+  import: (url: string) => Promise<ContentRecord>;
 }

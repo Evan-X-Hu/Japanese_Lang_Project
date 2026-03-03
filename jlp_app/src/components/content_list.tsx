@@ -1,18 +1,11 @@
-import { Music, Video } from "lucide-react"
+import { Music } from "lucide-react"
+import type { ContentRecord } from "../types/index"
 import styles from './content_list.module.css'
 
-export interface ContentItem {
-  id: string
-  title: string
-  url: string
-  type: "mp3" | "mp4"
-  addedAt: Date
-}
-
 interface ContentListProps {
-  items: ContentItem[]
-  selectedId: string | null
-  onSelect: (id: string) => void
+  items: ContentRecord[]
+  selectedId: number | null
+  onSelect: (id: number) => void
 }
 
 export function ContentList({ items, selectedId, onSelect }: ContentListProps) {
@@ -30,28 +23,23 @@ export function ContentList({ items, selectedId, onSelect }: ContentListProps) {
     <div className={styles.listContainer}>
       <ul className={styles.list} role="listbox" aria-label="Content items">
         {items.map((item) => (
-          <li key={item.id}>
+          <li key={item.contentId}>
             <button
               type="button"
               role="option"
-              aria-selected={selectedId === item.id}
-              onClick={() => onSelect(item.id)}
-              className={`${styles.itemButton} ${selectedId === item.id ? styles.itemButtonSelected : ''}`}
+              aria-selected={selectedId === item.contentId}
+              onClick={() => onSelect(item.contentId)}
+              className={`${styles.itemButton} ${selectedId === item.contentId ? styles.itemButtonSelected : ''}`}
             >
               <div className={styles.iconBox}>
-                {item.type === "mp3" ? (
-                  <Music className={styles.icon} />
-                ) : (
-                  <Video className={styles.icon} />
-                )}
+                <Music className={styles.icon} />
               </div>
               <div className={styles.itemInfo}>
-                <span className={styles.itemTitle}>{item.title}</span>
+                <span className={styles.itemTitle}>{item.title ?? 'Untitled'}</span>
                 <span className={styles.itemDate}>
-                  {item.addedAt.toLocaleDateString()}
+                  {item.author ?? ''}
                 </span>
               </div>
-              <span className={styles.typeBadge}>{item.type}</span>
             </button>
           </li>
         ))}

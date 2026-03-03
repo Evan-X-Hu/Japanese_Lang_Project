@@ -32,4 +32,5 @@ contextBridge.exposeInMainWorld('content', {
     create: (data: Record<string, unknown>) => ipcRenderer.invoke('content:create', data),
     update: (contentId: number, data: Record<string, unknown>) => ipcRenderer.invoke('content:update', contentId, data),
     delete: (contentId: number) => ipcRenderer.invoke('content:delete', contentId),
+    import: (url: string) => ipcRenderer.invoke('content:import', url),
 })

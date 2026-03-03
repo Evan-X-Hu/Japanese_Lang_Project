@@ -13,7 +13,11 @@
     "lint": "eslint --ext .ts,.tsx .",
     "rebuild": "electron-rebuild -f -w better-sqlite3",
     "db:generate": "drizzle-kit generate",
-    "db:push": "drizzle-kit push"
+    "db:push": "drizzle-kit push",
+    "python:build": "cd python && ../../.venv/bin/pyinstaller --onefile --clean download.py",
+    "prebuild": "npm run rebuild && npm run python:build",
+    "prepackage": "npm run python:build",
+    "premake": "npm run python:build"
   },
   "keywords": [],
   "author": {

@@ -65,9 +65,21 @@ export function useContent() {
     }
   }, [refresh]);
 
+  const importUrl = useCallback(async (url: string) => {
+    try {
+      setError(null);
+      const result = await window.content?.import(url);
+      await refresh();
+      return result;
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to import content');
+      return undefined;
+    }
+  }, [refresh]);
+
   useEffect(() => {
     refresh();
   }, [refresh]);
 
-  return { items, loading, error, refresh, getById, create, update, remove };
+  return { items, loading, error, refresh, getById, create, update, remove, importUrl };
 }
