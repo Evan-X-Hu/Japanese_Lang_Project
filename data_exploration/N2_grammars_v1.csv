@@ -1,0 +1,192 @@
+,grammar_id,grammar_point,meaning
+3023,1,あげく,to end up; in the end; finally; after all~ Verb (た form)
+3031,2,あるいは,or; either; maybe; perhaps; possibly~ あるいは other option
+3039,3,ばかり,"about, approximately~ Noun (indicates time or distance) ばかり"
+3047,4,ばかりだ,continue to (go in negative direction)
+3055,5,ばかりか,not only.. but also; as well as~ Verb (casual)
+3063,6,ばかりに,simply because; on account of~ negative Verb (casual)
+3071,7,ちなみに,by the way; in this connection; incidentally; ちなみに phrase
+3078,8,ちっとも〜ない,(not) at all; (not) in the least~ ちっとも Verb (ない form)
+3086,9,だけあって,being the case; precisely because; as Verb (casual)
+3094,10,だけましだ,it’s better than; one should feel grateful for~ Verb (casual)
+3102,11,だけに,being the case; precisely because; as one Verb (casual)
+3110,12,だけのことはある,no wonder; as expected of; not ... for Verb (casual)
+3118,13,だけは,to do all that one can Verb Same verb
+3126,14,だって,"because; but; after all; even; too Noun + だって even, too"
+3130,15,でしかない,merely; nothing but; no more than; there is Noun でしかない
+3138,16,どころではない,not the time for; not the place for; far from; Verb (casual)
+3146,17,どころか,"far from; anything but; let alone; not to Verb (casual, non-past)"
+3153,18,どうやら,possibly; apparently; seems like; somehow; どうやら phrase
+3161,19,どうせ,anyhow; in any case; at any rate; after all; no どうせ phrase
+3169,20,得ない,unable to; cannot; it is not possible to~ Verb ます (stem form) 得ない
+3177,21,再び,again; once more
+3184,22,ふうに,this way; that way; in such a way; how
+3194,23,がきっかけで をきっかけに,with… as a start; as a result of; taking Verb (た form) + の/こと
+3201,24,げ,looks like; seems like; appears to~ な-adjective な
+3210,25,逆に,conversely; on the contrary~ 逆に phrase
+3218,26,はんめん,"while, although; on the other hand~ Verb (casual, non-past)"
+3226,27,果たして,as was expected; sure enough; really; 果たして phrase
+3235,28,いちおう,more or less; pretty much; roughly; ⼀応 phrase
+3242,29,以外,with the exception of; excepting~ Noun 以外 + の、は、に）
+3250,30,以上に,more than; not less than; beyond~ Verb (casual)
+3258,31,以上は,because; since; seeing that~ Verb (casual)
+3267,32,いきなり,abruptly; suddenly; all of a sudden; without いきなり action
+3275,33,いっきに,in one go; without stopping; all at once; ⼀気に phrase
+3283,34,いっぽうで,"on one hand, on the other hand; although~ Verb (casual)"
+3290,35,いわゆる,what is called; as it is called; the so-called; so いわゆる Noun
+3298,36,いよいよ,at last; finally; beyond doubt いよいよ phrase
+3305,37,上,for the sake of; from the standpoint of; as a Noun 上
+3312,38,かのように,as if; just like~ Noun
+3321,39,かと思ったら,just when; no sooner than~
+3329,40,か〜ないかのうちに,just as; right after; as soon as~ Verb + か
+3336,41,かえって,on the contrary; rather; all the more; Phrase 1 かえって phrase 2
+3345,42,限り,"as long as; while… is the case; as far as; Verb (casual, non-past)"
+3353,43,甲斐がある,"it’s worth one’s efforts to do something Verb (casual, past)"
+3360,44,かねない,(someone) might do something; something Verb ます (stem form) かねない
+3367,45,かねる,unable to do something; can’t do something
+3376,46,からいうと,in terms of; from the point of view of~
+3383,47,からこそ,precisely because~ Verb (casual)
+3390,48,からみると,from the point of view of; by the look of;
+3397,49,からには,now that; since; so long as; because~ Verb (dictionary form)
+3405,50,からして,judging from; based on; since; from; even~ Noun からして
+3413,51,からすると からすれば,judging from; considering; by the look of~
+3420,52,からといって,just because; even if; even though~ Verb (casual)
+3428,53,っこない,no chance of; …is definitely not possible Verb ます (stem form)
+3436,54,ことだ,should do~ used for suggestions or giving Verb (dictionary form)
+3444,55,ことだから,because; since~ Usage style #1
+3451,56,ことか,how…!; what…! Verb (casual)
+3459,57,ことなく,without doing something even once Verb (dictionary form) ことなく
+3467,58,ことに,emphasize speaker's feelings; to my Verb (た form)
+3474,59,ことにはならない,"just because… doesn’t mean~ Verb (casual, past) + とい"
+3482,60,くせして,although~; despite the fact that~; even Verb (dictionary form)
+3490,61,まだしも,rather; better ~ Noun + なら
+3497,62,まい,will not; will probably not; intend not to; U-verb (dictionary form)
+3504,63,ままに,"as, to do as~ Verb (dictionary form) +（が）"
+3512,64,全く〜ない,not at all~ まったく Verb (ない form)
+3521,65,もかまわず,without caring; without worrying about~ Verb (casual) + (の)
+3529,66,も当然だ,it’s only natural; no wonder; might as well~ Verb (casual) + の
+3538,67,もの もん,because; indicates reason/ excuse/ Verb (casual) +（んだ）
+3544,68,ものだ,describe feeling; express memories; state fact Verb (dictionary form)
+3552,69,ものだから,so; therefore; the reason for something Verb (casual)
+3560,70,ものではない,"shouldn’t do something; it’s impossible to~ Verb (casual, past) ものではない"
+3569,71,ものがある,there is such a thing; to be the case that ; feels Verb (dictionary form)
+3577,72,ものか もんか,as if (something untrue were actually true); Verb (dictionary form)
+3584,73,ものなら,"if I/we could; if [A] is possible, then [B]; if"
+3591,74,ものの,but; although; even though~ Verb (casual)
+3598,75,もっとも,but then; although; though~ もっとも phrase
+3605,76,もう少しで,"almost; nearly, close to~ Verb (ます stem) +"
+3612,77,ないではいられない,can’t help but feel; can’t help but do~ Verb (ない form) ではいられない
+3620,78,ないことには〜ない,unless you~ Verb (ない form)
+3628,79,なくはない,it’s not that; I may (double negative) Verb ない
+3635,80,なくて済む,get by without doing~
+3642,81,何も〜ない,nothing; (not) ~ at all; there’s no need to~ なにも Verb/Noun/Adj (ない form)
+3650,82,なお,still; yet; furthermore; in addition~ なお phrase
+3658,83,ねばならない,have to do; must; should~ Verb ない ねばならない
+3666,84,にあたって,at the time; on the occasion of~ Verb (dictionary form)
+3674,85,にほかならない,nothing but; none other than~ Noun にほかならない
+3681,86,に限らず,not just; not only.. but also~ Noun に限らず
+3688,87,に限る,"is best; nothing is better than~ Verb (casual, non-past)"
+3695,88,に限って,only; in particular~ Noun に限って
+3702,89,に関わらず,in spite of; regardless of~ Verb (dictionary form)
+3709,90,に関わる,to relate to; to have to do with; relating to~
+3716,91,に決まっている,certainly; I’m sure/certain that; it must be Verb (casual)
+3723,92,に越したことはない,"it’s best that, there’s nothing better than~ Verb (casual, non-past)"
+3731,93,に応えて,in response to~
+3739,94,に加えて,in addition~ Noun に加えて
+3746,95,に基づいて,based on; on the basis of~
+3753,96,に向かって,to face; to go towards; to head to~
+3760,97,に応じて,depending on; in accordance with~
+3768,98,に際して,on the occasion of; at the time of~ Verb (dictionary form)
+3775,99,にさきだち,before; prior to~
+3782,100,にせよ にしろ,even if; regardless; whether... or Verb (casual)
+3787,101,にしろ〜にしろ,whether… or~ Verb Verb
+3795,102,にしたら にすれば,from one’s perspective; from the point of
+3802,103,にしても〜にしても,regardless of whether~ Verb Verb
+3810,104,に沿って,along with; in accordance with
+3818,105,に相違ない,without a doubt; certain; sure Verb (casual)
+3824,106,に過ぎない,no more than; just; merely; only~ Verb (casual)
+3832,107,に伴って,as; due to; with; along with; following;
+3841,108,につけ,every time; whenever; as; whether; in (either Verb (dictionary form)
+3848,109,につき,due to; because of; per; each Noun + につき
+3855,110,にわたって,throughout; over a period of~ Noun にわたって
+3863,111,にも関わらず,despite; in spite of; nevertheless; although~ Verb (casual)
+3871,112,にて,"in, at, with, by (formal particle) Noun にて"
+3878,113,のももっともだ,no wonder; …is only natural Verb (casual) + のも
+3886,114,の下で,under; with~
+3895,115,の上では,according to; from the viewpoint of~
+3903,116,のみならず,not only; besides; as well as~ Verb (dictionary form)
+3910,117,ぬ,negative verb conjugation; traditional Verb ない ぬ
+3918,118,抜く,to do something from beginning to end; Verb ます (stem form) 抜く
+3926,119,を契機に,as a good opportunity/chance to; as a result
+3934,120,をめぐって,concerning; in regard to~
+3941,121,をもとに,based on; derived from; building on;
+3948,122,を除いて,except; with the exception of; excluding~ を除いて(は)
+3955,123,を問わず,regardless of; irrespective of; no matter Noun を問わず
+3962,124,お〜願う,please do; could you please…; I ask of you お + Verb ます (stem form)
+3970,125,おまけに,to make matters worse; besides; what's Phrase おまけに
+3978,126,恐らく,perhaps; likely; probably; I dare say~ おそらく phrase
+3985,127,恐れがある,it is feared that; to be in danger of; to be Verb (casual)
+3993,128,及び,and; as well as~ Noun および Noun
+4001,129,ろくに〜ない,not well; not enough; improperly; ろくに Verb (ない form)
+4010,130,幸いなことに,fortunately; luckily; thankfully~
+4018,131,せいか,perhaps because~ Verb (casual)
+4028,132,せっかく,"especially; (thank you for) troubling to, going せっかく clause (+ conjunction)"
+4036,133,せめて,at least; at most~ せめて phrase
+4044,134,次第,"as soon as, dependent upon Verb ます (stem form) 次第"
+4052,135,次第で,depending on; so~
+4060,136,次第に,gradually (progress into a state); in 次第に phrase
+4068,137,しかも,moreover; furthermore; and yet; what’s しかも phrase
+4075,138,その上,besides; in addition; furthermore~ その上 phrase
+4083,139,それなのに,and yet; despite this; but even so~ それなのに phrase
+4091,141,それにしても,nevertheless; at any rate; even so; be that as それにしても phrase
+4099,142,そういえば,come to think of it…; now that you mention そういえば phrase
+4106,143,そうすると,having done that; if that is done; if it is done そうすると phrase
+4113,144,末に,finally; after; following; at the end/ Verb (た form)
+4121,145,少しも〜ない,not one bit; not even a little~ Verb (ない form)
+4129,146,少なくとも,at least~ 少なくとも phrase
+4137,147,直ちに,at once; immediately; directly; in person; 直ちに phrase
+4145,148,たまえ,do~; order somebody to do something Verb ます (stem form) たまえ
+4153,149,てばかりはいられない,can’t keep doing~
+4159,150,てでも,even if I have to; by all means~ Verb (て form) でも
+4165,151,て以来,since; henceforth~ Verb (てform)
+4171,152,ていては,if one keeps doing~ Verb (て form) いては
+4179,153,てこそ,now that; since (something happened) Verb (て form) こそ
+4188,154,てまで,even; will go far so as to~ Verb（て form) まで
+4196,155,てならない,can't help but; dying to; extremely~ Verb (て form)
+4204,156,てたまらない,can't help but; dying to; extremely~ Verb (たくて form)
+4211,157,て当然だ,natural; as a matter of course Verb (て form)
+4219,158,ては では,whenever; if; when~; repetitive action Verb (て form)
+4229,159,てはいられない,can’t afford to; unable to~ Verb (て form)
+4239,160,てはならない,must not; cannot; should not~ Verb (て form) はならない
+4247,161,ては〜ては,repetitive situations/actions V 2て V 2て
+4254,162,と同時に,"at the same time as; while; simultaneously~ Verb (casual, non-past)"
+4263,163,といった,like; such as~ Noun といった
+4271,164,というふうに,in such a way that~
+4279,165,ということは,that is to say; so that means; in other words~ Clause 1 ということは clause 2
+4287,166,というものだ,something like; something called~ Verb (casual form)
+4295,167,というものではない,there is no guarantee that…; not necessarily~ Verb (casual form)
+4303,168,と考えられる,one can think that; it is conceivable that; Phrase と考えられる
+4311,169,とか（で）,I heard that~ Verb (casual form)
+4318,170,とっくに,long ago; already; a long time ago とっくに Verb
+4326,171,ところだった,was just about to do something; something Verb (dictionary form) ところだった
+4333,172,ところに,at the time; just as I was~ Verb (た / ている / ていた)
+4340,173,ところをみると,judging from; seeing that~ Verb (casual) ところを⾒ると
+4348,174,とも,"even if; no matter who, what, when, where, Verb ないく"
+4355,175,としても,assuming; even if~ Verb (casual form)
+4362,176,つつ,while; even though; despite~ Verb ます (stem form) つつ (も)
+4369,177,つつある,to be doing; to be in the process of doing~ Verb ます (stem form) つつある
+4376,178,上は,now that; since; as long as~ Verb (dictionary form)
+4384,179,はもとより,also; let alone; from the beginning Noun + は もとより ~も
+4391,180,はともかく,anyhow; anyway; regardless; in any case; Noun はともかく（として）
+4399,181,わずかに,slightly; only; barely; narrowly~ わずかに Phrase
+4407,182,やがて,before long; soon; almost; eventually~ やがて phrase
+4415,183,やら〜やら,such things as A and B; A and B and so on~ Verb (dictionary)
+4422,184,よほど よっぽど,very; greatly; much; to a large extent
+4430,185,より,"from~ (a time, place, or person) time, place or person より"
+4437,186,よりほかない,to have no choice but~
+4445,187,ようでは,if~ (bad result) Verb (casual form) ようでは bad result
+4453,188,ようではないか,let’s do (something); why don’t we~
+4460,189,ようか〜まいか,whether or not; considering options V (volational) + か V + まいか
+4466,190,要するに,in short; in a word; to sum up; to put it 要するに phrase
+4474,191,ざるを得ない,cannot help (doing); have no choice but to~ Verb (ない root)
+4482,192,ずに済む,get by without doing~ Verb ない ずに済む

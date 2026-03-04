@@ -1,0 +1,128 @@
+,grammar_id,grammar_point,meaning
+634,1,間,while; during; between Verb (dictionary form)
+644,2,間に,"while/during~ something happened Verb (casual, non-past)"
+654,3,あまり〜ない,"not very, not much い-adjective + いくない"
+663,4,後で,after ~; later Verb (た form)
+671,5,ば,conditional form; If [A] then [B] special formatting rules (see below)
+678,6,場合は,in the event of; in the case that Verb (casual)
+687,7,ばかり,only; nothing but Noun
+694,8,だけで,just by; just by doing Verb (casual)
+702,9,出す,to suddenly begin; to suddenly appear
+710,10,でございます,to be (honorific) です -> でございます
+719,11,でも,... or something Noun でも
+727,12,ではないか,right?; isn't it?
+736,13,が必要,need; necessary
+744,14,がする,to smell; hear; taste
+754,15,がり,personality; tend to~; sensitivity towards~ い-adjective い
+761,16,がる・がっている,"to show signs of; to appear; to feel, to think"
+767,17,ございます,"to be, to exist (the polite form of いる/ある) あります changes to ございます"
+774,18,始める,to start; to begin to ~
+784,19,はずだ,it must be; it should be (expectation) Verb (dictionary form)
+794,20,はずがない,cannot be (impossible) Verb (dictionary form)
+804,21,必要がある,need to; it is necessary to
+813,22,意向形,volitional form ; let's do ~. see conjugation rules below...
+820,23,いらっしゃる,to be; to come; to go (polite version) いる (changes to)
+828,24,いたします,to do (polite form of する) する (changes to) いたす
+836,25,じゃないか,right? isn't it? let's~; confirmation phrase じゃないか
+845,26,かどうか,whether or not Verb (casual form)
+854,27,かしら,I wonder phrase かしら
+863,28,かい,turns a sentence into a yes/no question Sentence かい
+870,29,かもしれない,might; perhaps; indicates possibility Verb (casual form)
+879,30,かな,I wonder; should I? Verb (dictionary form)
+887,31,から作る,made from; made with
+895,32,きっと,surely; undoubtedly; almost certainly; most event
+903,33,こと,"Verb nominalizer Verb (casual, non-past) こと"
+911,34,ことがある,there are times when
+921,35,ことができる,can; able to
+931,36,ことになる,It has been decided that..; it turns out that.. Verb (dictionary form)
+938,37,ことにする,to decide on
+944,38,くする,to make something ~
+951,39,急に,suddenly Can be used mid-sentence and also to start a
+957,40,までに,by; by the time; indicates time limit Verb (dictionary form)
+964,41,まま,as it is; current state; without changing Noun + の
+972,42,または,both; or; otherwise; choice between [A] or Noun 1 + または + Noun 2
+977,43,みたいだ,"like, similar to, resembling Verb (casual)"
+986,44,みたいな,"like, similar to Noun"
+995,45,みたいに,"like, similar to Verb (casual)"
+1004,46,も,as many as; as much as; up to; nearly number
+1013,47,な,don’t ~ order somebody to not do Verb (dictionary form) な
+1022,48,など,"such as, things like Noun など"
+1030,49,ながら,while; during; as; simultaneously Verb ます (stem form) ながら + [B]
+1039,50,なかなか〜ない,not easy to; struggling to; not able to~ なかなか Verb (negative form)
+1045,51,なければいけない,must do something; have to do something
+1054,52,なければならない,must do something; have to do something
+1059,53,なら,if; in the case that ~ Noun
+1069,54,なさい,do this (soft/firm command)
+1077,55,なさる,to do (honorific) する (changes to) なさる
+1086,56,に気がつく,to notice; to realize Verb (casual) + こと に気がつく
+1093,57,にみえる,to look; to seem; to appear Verb (て form)
+1101,58,にする,to make something ~
+1110,59,にくい,difficult to do Verb ます (stem form) にくい
+1118,60,の中で,"in, among Noun の中で"
+1126,61,のに,"although, in spite of, even though Verb (casual form)"
+1144,63,のは〜だ,[A] is [B]; the reason for [A] is [B] Verb (casual)
+1150,64,お〜ください,please do (honorific) お Verb (ます stem) ください
+1158,65,お〜になる,to do (honorific)
+1167,66,おきに,"repeated at intervals, every Noun (measurable) おきに"
+1176,67,終わる,to finish; to end
+1186,68,られる,potential form; ability or inability to do Ru-verb る -> られる
+1194,69,らしい,it seems like; I heard; apparently~ Verb (casual form)
+1202,70,さ,-ness ; nominalizer for adjective い-adjective + い
+1210,71,さっき,some time ago; just now さっき Sentence
+1214,72,させられる,causative-passive; to be made to do Verb (causative form させる) られる
+1223,73,させる,causative form; to make/let somebody do Ru-verb る -> させる
+1227,74,させてください,please let me do Verb
+1236,75,さすが,as one would expect; as is to be expected; の + Noun
+1242,76,し,and; and what’s more; emphasis Verb (casual)
+1250,77,そんなに,so much; so; like that Verb
+1258,78,それでも,but still; and yet; even so Phrase 1 それでも Phrase 2
+1265,79,そうだ,I heard that; it is said that Verb (casual form)
+1281,81,そうに・そうな,seems like; looks like Verb ます (stem form)
+1289,82,たばかり,just finished; something just occurred Verb (た form) ばかり
+1297,83,たところ,"just finished doing, was just doing Verb (た form) ところ"
+1304,85,たがる,wants to do~ (third person)
+1312,86,たら,"if, after, when Verb (た form)"
+1320,87,たらどう,why don't you Verb (た form) らどう
+1329,88,たらいいですか,what should I do?; speaker seeking Verb (た form) らいいですか
+1336,89,て で,"conjunctive particle; so; because of [A], [B]... Verb (て form)"
+1345,90,てあげる,to do for; to do a favor
+1354,91,てほしい,I want you to; need you to~ Verb (て form)
+1364,92,ていく,to start; to continue; to go on
+1374,93,ていた,was doing something (past continuous)
+1382,94,ていただけませんか,could you please Verb (て form) いただけませんか
+1389,95,てくれる,to do a favor; do something for someone
+1399,96,てくる,to do… and come back; to become; to
+1409,97,てみる,try doing
+1418,98,てもらう,to get somebody to do something
+1428,99,ておく,to do something in advance
+1436,100,てしまう ちゃう,"to do something by accident, to finish"
+1445,101,てすみません,I’m sorry for Verb (て form) すみません
+1454,102,てやる,to do for; to do a favor (casual)
+1463,103,てよかった,I’m glad that.. Verb (て form) よかった
+1472,104,ているところ,in the process of doing Verb (て form) いるところ
+1478,105,ても,even; even if; even though Verb (て form)
+1489,106,と,"whenever [A] happens, [B] also happens Verb (dictionary / ない form)"
+1495,107,といってもいい,you could say; one might say; I'd say
+1503,108,という,called; named; that
+1513,109,ということ,convert phrase into noun Verb (casual)
+1522,110,といわれている,"it is said that... Verb (casual, past)"
+1530,111,と聞いた,I heard...
+1538,112,と思う,to think…; I think…; you think… Verb
+1547,113,とか〜とか,among other things; such as; like Verb (dictionary form) Verb (dictionary form)
+1552,114,ところ,"just about to; on the verge of doing Verb (casual, non-past) ところ"
+1558,115,続ける,continue to; keen on
+1568,116,って,named; called Noun って
+1574,117,うけみけい,passive form; passive voice Ru-verb る -> られる
+1582,118,は〜が は,[A] but [B]; however; comparison Noun-1 + は 〜が Noun-2 + は…
+1587,119,やすい,easy to; likely to; prone to; have a tendency Verb ます (stem form) やすい
+1594,120,やっと,at last; finally; barely; narrowly Used as an adverb in a sentence.
+1602,121,より,than; rather than; more than [A]より[B]
+1612,122,予定だ,"plan to, intend to Verb (dictionary form)"
+1619,123,ようだ,appears; seems; looks as if Verb (casual)
+1629,124,ように ような,like; as; similar to Verb (casual)
+1636,125,ようになる,to reach the point that; to come to be that; to Verb (dictionary form)
+1643,126,ようにする,to try to; to make sure that
+1651,127,ようと思う,thinking of doing; planning to
+1661,128,ぜひ,by all means; certainly; definitely Can be used either in beginning or mid-
+1669,129,全然〜ない,(not) at all
+1678,130,づらい,difficult to do Verb ます (stem form) づらい

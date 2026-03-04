@@ -1,0 +1,78 @@
+,grammar_id,grammar_point,meaning
+0,1,ちゃいけない・じゃいけない,must not do (spoken Japanese)
+10,2,だ・です,"to be (am, is, are, were, used to) present だ (casual)"
+14,3,だけ,only; just; as much as Verb (dictionary form)
+23,4,だろう,I think; it seems; probably; right? Verb (dictionary form)
+30,5,で,in; at; on; by; with; via Noun で
+39,6,でも,but; however See details below..
+45,7,でしょう,I think; it seems; probably; right? Verb (dictionary form)
+52,8,どんな,what kind of; what sort of どんな Noun
+60,9,どうして,why; for what reason; how can be used mid-sentence or to start new
+68,10,どうやって,how; in what way; by what means can be used at beginning or mid-sentence
+76,11,が,subject marker; however; but Usage 1: subject marker
+85,12,があります,there is; is (non-living things) がある / があります
+92,13,がほしい,to want something
+102,14,がいます,there is; to be; is (living things) がいる / がいます
+109,15,ほうがいい,had better; it'd be better to; should~
+117,17,いちばん,the most; the best [A]+ が/は + いちばん
+125,18,いっしょに,together often preceded with と
+132,19,いつも,always; usually; habitually Can be used mid-sentence and also to start a
+140,20,じゃない・ではない,to not be (am not; is not; are not) casual
+147,21,か,question particle end of sentence か
+155,22,か〜か,or Verb
+161,23,から,because; since; from meaning 1: because; since
+166,24,かた,the way of doing something; how to do
+172,25,けど,but; however; although Use between 2 contradicting ideas
+180,26,けれども,but; however; although Use between 2 contradicting ideas
+188,27,まだ,still; not yet Verb (ている)
+195,28,まだ〜ていません,have not yet Verb (てない) *spoken
+203,29,まで,until ~; as far as ~; to (an extent); even ~ Noun まで
+212,30,前に,before ~; in front of ~ Verb (dictionary form)
+221,31,ませんか,would you; do you want to; shall we~ Verb (polite negative) + か
+229,32,ましょう,let's ~; shall we ~ Verb ます (stem form) ましょう
+238,33,ましょうか,shall I ~; used to offer help to the listener Verb ます (stem form) ましょうか
+245,34,も,too; also; as well Noun + も
+254,35,もう,already; anymore; again; other See examples below
+264,37,なあ,sentence ending particle; confirmation; end of sentence + な(あ)
+273,38,ないで,without doing~ ; To do [B] without doing [A] Verb (ない form) + で 2nd action
+281,39,ないでください,please don't do Verb (ない form) + で ください
+288,40,なくてもいい,don't have to Verb (ない form) ない くてもいい
+298,41,なくちゃ,must do; need to; gotta do
+308,42,なくてはいけない,must do; need to do
+317,43,なくてはならない,must do; need to do
+327,44,なる,to become Noun
+337,45,んです,to explain something; show emphasis Verb (casual)
+345,46,ね,isn't it? right? eh? end of sentence particle
+355,47,に,destination particle; in; at; on; to Noun に
+364,48,にいく,go to do
+374,49,にする,to decide on
+383,50,に へ,to (indicates direction / destination)
+391,51,の,possessive particle Noun の + [B]
+400,52,のです,to explain something; show emphasis Verb (casual)
+408,53,のがへた,to be bad at doing something
+415,54,のがじょうず,to be good at
+423,55,のが好き,to like doing something
+431,56,ので,because of; given that; since Verb
+439,57,を,object marker particle Noun を Verb
+447,58,をください,please give me~ Noun をください
+455,59,しかし,but; however しかし + phrase
+461,60,すぎる,too much
+471,61,たことがある,to have done something before
+480,62,たい,want to do something
+488,63,たり〜たり,do such things as A and B Verb-た + り 〜 Verb-た + り + する
+497,64,てある,is/has been done (resulting state)
+505,65,ている,ongoing action or current state
+513,66,てから,after doing~ Verb (て form) から
+521,67,てください,please do Verb (てform) ください
+530,68,てはいけない,must not; may not; cannot
+540,69,てもいいです,is OK to..; is alright to..; may I..? Verb (て form)
+549,70,と,and; with; as; connecting particle phrase と
+559,71,とき,when; at this time Verb (casual form)
+569,72,とても,very; awfully; exceedingly とても + Adjective / Verb
+577,73,つもり,plan to ~; intend to ~
+585,74,は,topic marker See below
+593,75,は〜より・・・です,[A] is more ~ than [B] Noun-1 + は + Noun-2 + より + Adj +です
+600,76,はどうですか,how about; how is Noun はどうですか
+608,77,や,and; or; connecting particle Noun + や + Noun
+616,78,よ,you know; emphasis (ending particle) end of sentence + よ
+625,79,より〜ほうが,[A] is more than [B] Verb-1 より Verb-2 ほうが ~
