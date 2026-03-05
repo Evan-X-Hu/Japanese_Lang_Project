@@ -1,0 +1,31 @@
+,grammar_idx,grammar_point,meaning
+0,0,だ・です,"to be (am, is, are, were, used to) present だ (casual)"
+1,1,だけ,only; just; as much as Verb (dictionary form)
+2,2,で,in; at; on; by; with; via Noun で
+3,3,でも,but; however See details below..
+4,4,が,subject marker; however; but Usage 1: subject marker
+5,5,か,question particle end of sentence か
+6,6,か〜か,or Verb
+7,7,から,because; since; from meaning 1: because; since
+8,8,かた,the way of doing something; how to do
+9,9,けど,but; however; although Use between 2 contradicting ideas
+10,10,まだ,still; not yet Verb (ている)
+11,11,まで,until ~; as far as ~; to (an extent); even ~ Noun まで
+12,12,も,too; also; as well Noun + も
+13,13,もう,already; anymore; again; other See examples below
+14,14,なあ,sentence ending particle; confirmation; end of sentence + な(あ)
+15,15,なる,to become Noun
+16,16,ね,isn't it? right? eh? end of sentence particle
+17,17,に,destination particle; in; at; on; to Noun に
+18,18,にいく,go to do
+19,19,にする,to decide on
+20,20,に へ,to (indicates direction / destination)
+21,21,の,possessive particle Noun の + [B]
+22,22,ので,because of; given that; since Verb
+23,23,を,object marker particle Noun を Verb
+24,24,たい,want to do something
+25,25,と,and; with; as; connecting particle phrase と
+26,26,とき,when; at this time Verb (casual form)
+27,27,は,topic marker See below
+28,28,や,and; or; connecting particle Noun + や + Noun
+29,29,よ,you know; emphasis (ending particle) end of sentence + よ

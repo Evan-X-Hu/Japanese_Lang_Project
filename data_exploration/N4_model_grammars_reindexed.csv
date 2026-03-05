@@ -1,0 +1,35 @@
+,grammar_idx,grammar_point,meaning
+0,0,間,while; during; between Verb (dictionary form)
+1,1,ば,conditional form; If [A] then [B] special formatting rules (see below)
+2,2,出す,to suddenly begin; to suddenly appear
+3,3,でも,... or something Noun でも
+4,4,がする,to smell; hear; taste
+5,5,がり,personality; tend to~; sensitivity towards~ い-adjective い
+6,6,始める,to start; to begin to ~
+7,7,意向形,volitional form ; let's do ~. see conjugation rules below...
+8,8,かい,turns a sentence into a yes/no question Sentence かい
+9,9,かな,I wonder; should I? Verb (dictionary form)
+10,10,こと,"Verb nominalizer Verb (casual, non-past) こと"
+11,11,くする,to make something ~
+12,12,まま,as it is; current state; without changing Noun + の
+13,13,も,as many as; as much as; up to; nearly number
+14,14,な,don’t ~ order somebody to not do Verb (dictionary form) な
+15,15,など,"such as, things like Noun など"
+16,16,なら,if; in the case that ~ Noun
+17,17,にする,to make something ~
+18,18,のに,"although, in spite of, even though Verb (casual form)"
+19,19,終わる,to finish; to end
+20,20,られる,potential form; ability or inability to do Ru-verb る -> られる
+21,21,さ,-ness ; nominalizer for adjective い-adjective + い
+22,22,し,and; and what’s more; emphasis Verb (casual)
+23,23,そうだ,I heard that; it is said that Verb (casual form)
+24,24,たら,"if, after, when Verb (た form)"
+25,25,て で,"conjunctive particle; so; because of [A], [B]... Verb (て form)"
+26,26,ても,even; even if; even though Verb (て form)
+27,27,と,"whenever [A] happens, [B] also happens Verb (dictionary / ない form)"
+28,28,ところ,"just about to; on the verge of doing Verb (casual, non-past) ところ"
+29,29,って,named; called Noun って
+30,30,うけみけい,passive form; passive voice Ru-verb る -> られる
+31,31,は〜が は,[A] but [B]; however; comparison Noun-1 + は 〜が Noun-2 + は…
+32,32,より,than; rather than; more than [A]より[B]
+33,33,ようだ,appears; seems; looks as if Verb (casual)
