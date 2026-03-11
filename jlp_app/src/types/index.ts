@@ -6,6 +6,8 @@ export interface ContentRecord {
   uploadDate: Date | null;
   link: string | null;
   audio: string | null;
+  video: string | null;
+  vtt: string | null;
 }
 
 export interface ContentInput {
@@ -15,6 +17,8 @@ export interface ContentInput {
   uploadDate?: Date | null;
   link?: string | null;
   audio?: string | null;
+  video?: string | null;
+  vtt?: string | null;
 }
 
 export interface SegmentRecord {
@@ -28,10 +32,38 @@ export interface SegmentRecord {
 }
 
 export interface ContentAPI {
-  getAll: () => Promise<ContentRecord[]>;
+  getAll: (userId: number) => Promise<ContentRecord[]>;
   getById: (contentId: number) => Promise<ContentRecord | undefined>;
   create: (data: ContentInput) => Promise<ContentRecord>;
   update: (contentId: number, data: Partial<ContentInput>) => Promise<ContentRecord | undefined>;
   delete: (contentId: number) => Promise<ContentRecord | undefined>;
-  import: (url: string) => Promise<ContentRecord>;
+  import: (url: string, userId: number) => Promise<ContentRecord>;
+}
+
+export interface UserRecord {
+  userId: number;
+  email: string | null;
+  password: string | null;
+  fName: string | null;
+  lName: string | null;
+  jlptLevel: number | null;
+  userType: number | null;
+}
+
+export interface UserInput {
+  email?: string | null;
+  password?: string | null;
+  fName?: string | null;
+  lName?: string | null;
+  jlptLevel?: number | null;
+  userType?: number | null;
+}
+
+export interface UserAPI {
+  getAll: () => Promise<UserRecord[]>;
+  create: (data: UserInput) => Promise<UserRecord>;
+  delete: (userId: number) => Promise<void>;
+  signIn: (email: string, password: string) => Promise<UserRecord | null>;
+  getCurrent: () => Promise<UserRecord | null>;
+  setCurrent: (userId: number) => Promise<UserRecord | null>;
 }

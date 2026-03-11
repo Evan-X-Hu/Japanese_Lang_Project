@@ -1,4 +1,4 @@
-import type { ContentAPI } from './index';
+import type { ContentAPI, UserAPI } from './index';
 
 // Electron API exposed via preload script
 interface ElectronAPI {
@@ -7,9 +7,15 @@ interface ElectronAPI {
   };
 }
 
+interface MediaServerAPI {
+  getPort: () => Promise<number>;
+}
+
 declare global {
   interface Window {
     electron?: ElectronAPI;
     content?: ContentAPI;
+    user?: UserAPI;
+    media?: MediaServerAPI;
   }
 }

@@ -2,18 +2,23 @@ import path from 'path';
 import { ipcMain, app } from 'electron';
 import { InsertJContent } from '../database/schema/index';
 import {
-  getAllContent,
+  getContentByUserId,
   getContentById,
   createContent,
   updateContent,
   deleteContent,
+  linkContentToUser,
 } from '../database/queries/jContent';
 import { createSegments } from '../database/queries/jSegment';
+import { linkGrammarToSegments } from '../database/queries/jSegmentGrammar';
 import { downloadContent } from '../services/downloader';
+import { detect } from '../services/grammarParser';
+
+const MIN_SEGMENT_LENGTH = 8;
 
 export function registerContentHandlers(): void {
-  ipcMain.handle('content:getAll', () => {
-    return getAllContent();
+  ipcMain.handle('content:getAll', (_event, userId: number) => {
+    return getContentByUserId(userId);
   });
 
   ipcMain.handle('content:getById', (_event, contentId: number) => {
@@ -32,7 +37,8 @@ export function registerContentHandlers(): void {
     return deleteContent(contentId);
   });
 
-  ipcMain.handle('content:import', async (_event, url: string) => {
+  ipcMain.handle('content:import', async (_event, url: string, userId: number) => {
+    if (!userId || userId < 1) throw new Error('You must be signed in to import content.');
     const outputDir = path.join(app.getPath('userData'), 'media');
     console.log('[import] Starting import for:', url);
     console.log('[import] Output dir:', outputDir);
@@ -58,11 +64,16 @@ export function registerContentHandlers(): void {
       uploadDate: uploadDate,
       link: result.link,
       audio: result.audio_path ?? null,
+      video: result.video_path ?? null,
+      vtt: result.vtt_path ?? null,
     });
 
-    // Bulk insert segment records
+    // Link content to user
+    linkContentToUser(content.contentId, userId);
+
+    // Bulk insert segment records, filtering out short segments before grammar detection
     if (result.segments.length > 0) {
-      createSegments(
+      const segments = createSegments(
         result.segments.map((seg) => ({
           contentId: content.contentId,
           seqIndex: seg.seq_index,
@@ -71,6 +82,26 @@ export function registerContentHandlers(): void {
           text: seg.text,
         }))
       );
+
+      // Run grammar detection on segments that meet the minimum length threshold
+      console.log(`[import] userId=${userId}, total segments=${segments.length}`);
+      const pairs: Array<{ segmentId: number; grammarId: number }> = [];
+      let skipped = 0;
+      for (const seg of segments) {
+        if (!seg.text || seg.text.length < MIN_SEGMENT_LENGTH) { skipped++; continue; }
+        const grammarIds = detect(seg.text);
+        for (const grammarId of grammarIds) {
+          pairs.push({ segmentId: seg.segmentId, grammarId });
+        }
+      }
+      console.log(`[import] Skipped ${skipped} short segments, found ${pairs.length} grammar pairs`);
+
+      if (pairs.length > 0) {
+        linkGrammarToSegments(userId, pairs);
+        console.log(`[import] linkGrammarToSegments complete`);
+      } else {
+        console.log(`[import] No grammar pairs to insert`);
+      }
     }
 
     return content;

@@ -1,10 +1,27 @@
 import { eq } from 'drizzle-orm';
 import { getDatabase } from '../connection';
-import { jContent, JContent, InsertJContent } from '../schema/index';
+import { jContent, jContentUser, JContent, InsertJContent } from '../schema/index';
 
 export function getAllContent(): JContent[] {
   const db = getDatabase();
   return db.select().from(jContent).all();
+}
+
+export function getContentByUserId(userId: number): JContent[] {
+  const db = getDatabase();
+  return db
+    .select({ contentId: jContent.contentId, title: jContent.title, duration: jContent.duration,
+              author: jContent.author, uploadDate: jContent.uploadDate, link: jContent.link,
+              audio: jContent.audio, video: jContent.video, vtt: jContent.vtt })
+    .from(jContent)
+    .innerJoin(jContentUser, eq(jContent.contentId, jContentUser.contentId))
+    .where(eq(jContentUser.userId, userId))
+    .all();
+}
+
+export function linkContentToUser(contentId: number, userId: number): void {
+  const db = getDatabase();
+  db.insert(jContentUser).values({ contentId, userId }).run();
 }
 
 export function getContentById(contentId: number): JContent | undefined {

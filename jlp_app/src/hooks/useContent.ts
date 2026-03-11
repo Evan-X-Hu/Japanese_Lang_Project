@@ -1,23 +1,30 @@
 import { useState, useEffect, useCallback } from 'react';
 import type { ContentRecord, ContentInput } from '../types/index';
+import { useUserStore } from '../store/userStore';
 
 export function useContent() {
+  const currentUser = useUserStore((s) => s.currentUser);
   const [items, setItems] = useState<ContentRecord[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   const refresh = useCallback(async () => {
+    if (!currentUser) {
+      setItems([]);
+      setLoading(false);
+      return;
+    }
     try {
       setLoading(true);
       setError(null);
-      const data = await window.content?.getAll();
+      const data = await window.content?.getAll(currentUser.userId);
       setItems(data ?? []);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to load content');
     } finally {
       setLoading(false);
     }
-  }, []);
+  }, [currentUser]);
 
   const getById = useCallback(async (contentId: number) => {
     try {
@@ -66,16 +73,20 @@ export function useContent() {
   }, [refresh]);
 
   const importUrl = useCallback(async (url: string) => {
+    if (!currentUser) {
+      setError('You must be signed in to import content.');
+      return undefined;
+    }
     try {
       setError(null);
-      const result = await window.content?.import(url);
+      const result = await window.content?.import(url, currentUser.userId);
       await refresh();
       return result;
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to import content');
       return undefined;
     }
-  }, [refresh]);
+  }, [refresh, currentUser]);
 
   useEffect(() => {
     refresh();

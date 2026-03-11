@@ -27,10 +27,25 @@ contextBridge.exposeInMainWorld('electron', {
 
 // Expose content CRUD API
 contextBridge.exposeInMainWorld('content', {
-    getAll: () => ipcRenderer.invoke('content:getAll'),
+    getAll: (userId: number) => ipcRenderer.invoke('content:getAll', userId),
     getById: (contentId: number) => ipcRenderer.invoke('content:getById', contentId),
     create: (data: Record<string, unknown>) => ipcRenderer.invoke('content:create', data),
     update: (contentId: number, data: Record<string, unknown>) => ipcRenderer.invoke('content:update', contentId, data),
     delete: (contentId: number) => ipcRenderer.invoke('content:delete', contentId),
-    import: (url: string) => ipcRenderer.invoke('content:import', url),
+    import: (url: string, userId: number) => ipcRenderer.invoke('content:import', url, userId),
+})
+
+// Expose media server port
+contextBridge.exposeInMainWorld('media', {
+    getPort: () => ipcRenderer.invoke('media:getPort'),
+})
+
+// Expose user API
+contextBridge.exposeInMainWorld('user', {
+    getAll: () => ipcRenderer.invoke('user:getAll'),
+    create: (data: Record<string, unknown>) => ipcRenderer.invoke('user:create', data),
+    delete: (userId: number) => ipcRenderer.invoke('user:delete', userId),
+    signIn: (email: string, password: string) => ipcRenderer.invoke('user:signIn', email, password),
+    getCurrent: () => ipcRenderer.invoke('user:getCurrent'),
+    setCurrent: (userId: number) => ipcRenderer.invoke('user:setCurrent', userId),
 })

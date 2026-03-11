@@ -1,8 +1,8 @@
 {
   "version": "6",
   "dialect": "sqlite",
-  "id": "ebd193e4-9654-46d9-bb22-6a46762c4663",
-  "prevId": "00000000-0000-0000-0000-000000000000",
+  "id": "c2ed31dd-e45b-482b-aebb-92a9c4c55679",
+  "prevId": "42410fcf-e876-4f9d-b7fa-16436a7cd9ce",
   "tables": {
     "deck": {
       "name": "deck",
@@ -270,17 +270,16 @@
           "primaryKey": false,
           "notNull": false,
           "autoincrement": false
+        },
+        "video": {
+          "name": "video",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
         }
       },
-      "indexes": {
-        "j_content_link_unique": {
-          "name": "j_content_link_unique",
-          "columns": [
-            "link"
-          ],
-          "isUnique": true
-        }
-      },
+      "indexes": {},
       "foreignKeys": {},
       "compositePrimaryKeys": {},
       "uniqueConstraints": {},

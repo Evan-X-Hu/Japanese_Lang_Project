@@ -10,6 +10,8 @@ export interface DownloadResult {
   upload_date: string | null;
   link: string;
   audio_path: string | null;
+  video_path: string | null;
+  vtt_path: string | null;
   segments: {
     seq_index: number;
     start_time: number;

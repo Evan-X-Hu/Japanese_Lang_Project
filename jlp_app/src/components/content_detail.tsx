@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import type { ContentRecord } from "../types/index"
 import { Music, Link as LinkIcon, User } from "lucide-react"
 import styles from './content_detail.module.css'
@@ -6,7 +7,22 @@ interface ContentDetailProps {
   item: ContentRecord | null
 }
 
+function useMediaPort(): number | null {
+  const [port, setPort] = useState<number | null>(null)
+  useEffect(() => {
+    window.media?.getPort().then((p) => setPort(p > 0 ? p : null))
+  }, [])
+  return port
+}
+
+function mediaUrl(filePath: string | null | undefined, port: number | null): string | undefined {
+  if (!filePath || !port) return undefined
+  return `http://127.0.0.1:${port}?f=${encodeURIComponent(filePath)}`
+}
+
 export function ContentDetail({ item }: ContentDetailProps) {
+  const port = useMediaPort()
+
   if (!item) {
     return (
       <div className={styles.emptyState}>
@@ -14,6 +30,11 @@ export function ContentDetail({ item }: ContentDetailProps) {
       </div>
     )
   }
+
+  const videoSrc = mediaUrl(item.video, port)
+  const audioSrc = mediaUrl(item.audio, port)
+  const vttSrc = mediaUrl(item.vtt, port)
+
 
   return (
     <div className={styles.container}>
@@ -63,14 +84,40 @@ export function ContentDetail({ item }: ContentDetailProps) {
         )}
       </dl>
 
-      {item.audio && (
+      {(item.video || item.audio) && (
         <>
           <hr className={styles.separator} />
           <div className={styles.playbackSection}>
-            <h3 className={styles.playbackLabel}>Playback</h3>
-            <audio controls className={styles.audio} src={`file://${item.audio}`}>
-              Your browser does not support the audio element.
-            </audio>
+            {item.video && (
+              <>
+                <h3 className={styles.playbackLabel}>Video</h3>
+                <video
+                  key={videoSrc}
+                  controls
+                  crossOrigin="anonymous"
+                  className={styles.video}
+                  src={videoSrc}
+                  onError={(e) => console.error('[video] error:', (e.target as HTMLVideoElement).error)}
+                >
+                  {vttSrc && <track kind="subtitles" src={vttSrc} srcLang="ja" label="Japanese" default />}
+                  Your browser does not support the video element.
+                </video>
+              </>
+            )}
+            {item.audio && (
+              <>
+                <h3 className={styles.playbackLabel}>Audio</h3>
+                <audio
+                  key={audioSrc}
+                  controls
+                  className={styles.audio}
+                  src={audioSrc}
+                  onError={(e) => console.error('[audio] error:', (e.target as HTMLAudioElement).error)}
+                >
+                  Your browser does not support the audio element.
+                </audio>
+              </>
+            )}
           </div>
         </>
       )}

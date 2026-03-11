@@ -30,8 +30,10 @@ export const jContent = sqliteTable("j_content", {
   duration: real("duration"),
   author: text("author"),
   uploadDate: integer("upload_date", { mode: "timestamp" }),
-  link: text("link").unique(),
-  audio: text("audio"), // file path or blob reference stored as text
+  link: text("link"),
+  audio: text("audio"),
+  video: text("video"),
+  vtt: text("vtt"),
 });
 
 // ============================================================
@@ -65,13 +67,15 @@ export const savedWord = sqliteTable("saved_word", {
   notes: text("notes"),
 });
 
-export const savedGrammar = sqliteTable("saved_grammar", {
-  grammarId: integer("grammar_id").primaryKey({ autoIncrement: true }),
+export const masterGrammar = sqliteTable("master_grammar", {
+  masterGrammarId: integer("master_grammar_id").primaryKey({ autoIncrement: true }),
+  grammarId: integer("grammar_id"),  // parser reference index (not a key)
   userId: integer("user_id")
     .references(() => user.userId, { onDelete: "cascade" }),
-  jlptLevel: integer("jlpt_level"),
-  examples: text("examples"),
-  notes: text("notes"),
+  jlptLevel: text("jlpt_level"),
+  grammarPoint: text("grammar_point"),
+  meaning: text("meaning"),
+  level: integer("level"),
 });
 
 // ============================================================
@@ -96,15 +100,15 @@ export const jContentUser = sqliteTable(
 export const jSegmentGrammar = sqliteTable(
   "j_segment_grammar",
   {
-    grammarId: integer("grammar_id")
+    masterGrammarId: integer("master_grammar_id")
       .notNull()
-      .references(() => savedGrammar.grammarId, { onDelete: "cascade" }),
+      .references(() => masterGrammar.masterGrammarId, { onDelete: "cascade" }),
     segmentId: integer("segment_id")
       .notNull()
       .references(() => jSegment.segmentId, { onDelete: "cascade" }),
   },
   (table) => [
-    primaryKey({ columns: [table.grammarId, table.segmentId] }),
+    primaryKey({ columns: [table.masterGrammarId, table.segmentId] }),
   ]
 );
 
@@ -159,12 +163,12 @@ export const deckGrammar = sqliteTable(
     deckId: integer("deck_id")
       .notNull()
       .references(() => deck.deckId, { onDelete: "cascade" }),
-    grammarId: integer("grammar_id")
+    masterGrammarId: integer("master_grammar_id")
       .notNull()
-      .references(() => savedGrammar.grammarId, { onDelete: "cascade" }),
+      .references(() => masterGrammar.masterGrammarId, { onDelete: "cascade" }),
   },
   (table) => [
-    primaryKey({ columns: [table.deckId, table.grammarId] }),
+    primaryKey({ columns: [table.deckId, table.masterGrammarId] }),
   ]
 );
 
@@ -187,5 +191,5 @@ export type InsertDeck = typeof deck.$inferInsert;
 export type SavedWord = typeof savedWord.$inferSelect;
 export type InsertSavedWord = typeof savedWord.$inferInsert;
 
-export type SavedGrammar = typeof savedGrammar.$inferSelect;
-export type InsertSavedGrammar = typeof savedGrammar.$inferInsert;
+export type MasterGrammar = typeof masterGrammar.$inferSelect;
+export type InsertMasterGrammar = typeof masterGrammar.$inferInsert;

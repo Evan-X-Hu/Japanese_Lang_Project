@@ -1,0 +1,3440 @@
+[
+  {
+    "grammar_id": 0,
+    "JLPT_level": "N5",
+    "grammar_point": "ちゃいけない・じゃいけない",
+    "meaning": "must not do (spoken Japanese)"
+  },
+  {
+    "grammar_id": 1,
+    "JLPT_level": "N5",
+    "grammar_point": "だ・です",
+    "meaning": "to be (am, is, are, were, used to) present だ (casual)"
+  },
+  {
+    "grammar_id": 2,
+    "JLPT_level": "N5",
+    "grammar_point": "だけ",
+    "meaning": "only; just; as much as Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 3,
+    "JLPT_level": "N5",
+    "grammar_point": "だろう",
+    "meaning": "I think; it seems; probably; right? Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 4,
+    "JLPT_level": "N5",
+    "grammar_point": "で",
+    "meaning": "in; at; on; by; with; via Noun で"
+  },
+  {
+    "grammar_id": 5,
+    "JLPT_level": "N5",
+    "grammar_point": "でも",
+    "meaning": "but; however See details below.."
+  },
+  {
+    "grammar_id": 6,
+    "JLPT_level": "N5",
+    "grammar_point": "でしょう",
+    "meaning": "I think; it seems; probably; right? Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 7,
+    "JLPT_level": "N5",
+    "grammar_point": "どんな",
+    "meaning": "what kind of; what sort of どんな Noun"
+  },
+  {
+    "grammar_id": 8,
+    "JLPT_level": "N5",
+    "grammar_point": "どうして",
+    "meaning": "why; for what reason; how can be used mid-sentence or to start new"
+  },
+  {
+    "grammar_id": 9,
+    "JLPT_level": "N5",
+    "grammar_point": "どうやって",
+    "meaning": "how; in what way; by what means can be used at beginning or mid-sentence"
+  },
+  {
+    "grammar_id": 10,
+    "JLPT_level": "N5",
+    "grammar_point": "が",
+    "meaning": "subject marker; however; but Usage 1: subject marker"
+  },
+  {
+    "grammar_id": 11,
+    "JLPT_level": "N5",
+    "grammar_point": "があります",
+    "meaning": "there is; is (non-living things) がある / があります"
+  },
+  {
+    "grammar_id": 12,
+    "JLPT_level": "N5",
+    "grammar_point": "がほしい",
+    "meaning": "to want something"
+  },
+  {
+    "grammar_id": 13,
+    "JLPT_level": "N5",
+    "grammar_point": "がいます",
+    "meaning": "there is; to be; is (living things) がいる / がいます"
+  },
+  {
+    "grammar_id": 14,
+    "JLPT_level": "N5",
+    "grammar_point": "ほうがいい",
+    "meaning": "had better; it'd be better to; should~"
+  },
+  {
+    "grammar_id": 15,
+    "JLPT_level": "N5",
+    "grammar_point": "いちばん",
+    "meaning": "the most; the best [A]+ が/は + いちばん"
+  },
+  {
+    "grammar_id": 16,
+    "JLPT_level": "N5",
+    "grammar_point": "いっしょに",
+    "meaning": "together often preceded with と"
+  },
+  {
+    "grammar_id": 17,
+    "JLPT_level": "N5",
+    "grammar_point": "いつも",
+    "meaning": "always; usually; habitually Can be used mid-sentence and also to start a"
+  },
+  {
+    "grammar_id": 18,
+    "JLPT_level": "N5",
+    "grammar_point": "じゃない・ではない",
+    "meaning": "to not be (am not; is not; are not) casual"
+  },
+  {
+    "grammar_id": 19,
+    "JLPT_level": "N5",
+    "grammar_point": "か",
+    "meaning": "question particle end of sentence か"
+  },
+  {
+    "grammar_id": 20,
+    "JLPT_level": "N5",
+    "grammar_point": "か〜か",
+    "meaning": "or Verb"
+  },
+  {
+    "grammar_id": 21,
+    "JLPT_level": "N5",
+    "grammar_point": "から",
+    "meaning": "because; since; from meaning 1: because; since"
+  },
+  {
+    "grammar_id": 22,
+    "JLPT_level": "N5",
+    "grammar_point": "かた",
+    "meaning": "the way of doing something; how to do"
+  },
+  {
+    "grammar_id": 23,
+    "JLPT_level": "N5",
+    "grammar_point": "けど",
+    "meaning": "but; however; although Use between 2 contradicting ideas"
+  },
+  {
+    "grammar_id": 24,
+    "JLPT_level": "N5",
+    "grammar_point": "けれども",
+    "meaning": "but; however; although Use between 2 contradicting ideas"
+  },
+  {
+    "grammar_id": 25,
+    "JLPT_level": "N5",
+    "grammar_point": "まだ",
+    "meaning": "still; not yet Verb (ている)"
+  },
+  {
+    "grammar_id": 26,
+    "JLPT_level": "N5",
+    "grammar_point": "まだ〜ていません",
+    "meaning": "have not yet Verb (てない) *spoken"
+  },
+  {
+    "grammar_id": 27,
+    "JLPT_level": "N5",
+    "grammar_point": "まで",
+    "meaning": "until ~; as far as ~; to (an extent); even ~ Noun まで"
+  },
+  {
+    "grammar_id": 28,
+    "JLPT_level": "N5",
+    "grammar_point": "前に",
+    "meaning": "before ~; in front of ~ Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 29,
+    "JLPT_level": "N5",
+    "grammar_point": "ませんか",
+    "meaning": "would you; do you want to; shall we~ Verb (polite negative) + か"
+  },
+  {
+    "grammar_id": 30,
+    "JLPT_level": "N5",
+    "grammar_point": "ましょう",
+    "meaning": "let's ~; shall we ~ Verb ます (stem form) ましょう"
+  },
+  {
+    "grammar_id": 31,
+    "JLPT_level": "N5",
+    "grammar_point": "ましょうか",
+    "meaning": "shall I ~; used to offer help to the listener Verb ます (stem form) ましょうか"
+  },
+  {
+    "grammar_id": 32,
+    "JLPT_level": "N5",
+    "grammar_point": "も",
+    "meaning": "too; also; as well Noun + も"
+  },
+  {
+    "grammar_id": 33,
+    "JLPT_level": "N5",
+    "grammar_point": "もう",
+    "meaning": "already; anymore; again; other See examples below"
+  },
+  {
+    "grammar_id": 34,
+    "JLPT_level": "N5",
+    "grammar_point": "なあ",
+    "meaning": "sentence ending particle; confirmation; end of sentence + な(あ)"
+  },
+  {
+    "grammar_id": 35,
+    "JLPT_level": "N5",
+    "grammar_point": "ないで",
+    "meaning": "without doing~ ; To do [B] without doing [A] Verb (ない form) + で 2nd action"
+  },
+  {
+    "grammar_id": 36,
+    "JLPT_level": "N5",
+    "grammar_point": "ないでください",
+    "meaning": "please don't do Verb (ない form) + で ください"
+  },
+  {
+    "grammar_id": 37,
+    "JLPT_level": "N5",
+    "grammar_point": "なくてもいい",
+    "meaning": "don't have to Verb (ない form) ない くてもいい"
+  },
+  {
+    "grammar_id": 38,
+    "JLPT_level": "N5",
+    "grammar_point": "なくちゃ",
+    "meaning": "must do; need to; gotta do"
+  },
+  {
+    "grammar_id": 39,
+    "JLPT_level": "N5",
+    "grammar_point": "なくてはいけない",
+    "meaning": "must do; need to do"
+  },
+  {
+    "grammar_id": 40,
+    "JLPT_level": "N5",
+    "grammar_point": "なくてはならない",
+    "meaning": "must do; need to do"
+  },
+  {
+    "grammar_id": 41,
+    "JLPT_level": "N5",
+    "grammar_point": "なる",
+    "meaning": "to become Noun"
+  },
+  {
+    "grammar_id": 42,
+    "JLPT_level": "N5",
+    "grammar_point": "んです",
+    "meaning": "to explain something; show emphasis Verb (casual)"
+  },
+  {
+    "grammar_id": 43,
+    "JLPT_level": "N5",
+    "grammar_point": "ね",
+    "meaning": "isn't it? right? eh? end of sentence particle"
+  },
+  {
+    "grammar_id": 44,
+    "JLPT_level": "N5",
+    "grammar_point": "に",
+    "meaning": "destination particle; in; at; on; to Noun に"
+  },
+  {
+    "grammar_id": 45,
+    "JLPT_level": "N5",
+    "grammar_point": "にいく",
+    "meaning": "go to do"
+  },
+  {
+    "grammar_id": 46,
+    "JLPT_level": "N5",
+    "grammar_point": "にする",
+    "meaning": "to decide on"
+  },
+  {
+    "grammar_id": 47,
+    "JLPT_level": "N5",
+    "grammar_point": "に へ",
+    "meaning": "to (indicates direction / destination)"
+  },
+  {
+    "grammar_id": 48,
+    "JLPT_level": "N5",
+    "grammar_point": "の",
+    "meaning": "possessive particle Noun の + [B]"
+  },
+  {
+    "grammar_id": 49,
+    "JLPT_level": "N5",
+    "grammar_point": "のです",
+    "meaning": "to explain something; show emphasis Verb (casual)"
+  },
+  {
+    "grammar_id": 50,
+    "JLPT_level": "N5",
+    "grammar_point": "のがへた",
+    "meaning": "to be bad at doing something"
+  },
+  {
+    "grammar_id": 51,
+    "JLPT_level": "N5",
+    "grammar_point": "のがじょうず",
+    "meaning": "to be good at"
+  },
+  {
+    "grammar_id": 52,
+    "JLPT_level": "N5",
+    "grammar_point": "のが好き",
+    "meaning": "to like doing something"
+  },
+  {
+    "grammar_id": 53,
+    "JLPT_level": "N5",
+    "grammar_point": "ので",
+    "meaning": "because of; given that; since Verb"
+  },
+  {
+    "grammar_id": 54,
+    "JLPT_level": "N5",
+    "grammar_point": "を",
+    "meaning": "object marker particle Noun を Verb"
+  },
+  {
+    "grammar_id": 55,
+    "JLPT_level": "N5",
+    "grammar_point": "をください",
+    "meaning": "please give me~ Noun をください"
+  },
+  {
+    "grammar_id": 56,
+    "JLPT_level": "N5",
+    "grammar_point": "しかし",
+    "meaning": "but; however しかし + phrase"
+  },
+  {
+    "grammar_id": 57,
+    "JLPT_level": "N5",
+    "grammar_point": "すぎる",
+    "meaning": "too much"
+  },
+  {
+    "grammar_id": 58,
+    "JLPT_level": "N5",
+    "grammar_point": "たことがある",
+    "meaning": "to have done something before"
+  },
+  {
+    "grammar_id": 59,
+    "JLPT_level": "N5",
+    "grammar_point": "たい",
+    "meaning": "want to do something"
+  },
+  {
+    "grammar_id": 60,
+    "JLPT_level": "N5",
+    "grammar_point": "たり〜たり",
+    "meaning": "do such things as A and B Verb-た + り 〜 Verb-た + り + する"
+  },
+  {
+    "grammar_id": 61,
+    "JLPT_level": "N5",
+    "grammar_point": "てある",
+    "meaning": "is/has been done (resulting state)"
+  },
+  {
+    "grammar_id": 62,
+    "JLPT_level": "N5",
+    "grammar_point": "ている",
+    "meaning": "ongoing action or current state"
+  },
+  {
+    "grammar_id": 63,
+    "JLPT_level": "N5",
+    "grammar_point": "てから",
+    "meaning": "after doing~ Verb (て form) から"
+  },
+  {
+    "grammar_id": 64,
+    "JLPT_level": "N5",
+    "grammar_point": "てください",
+    "meaning": "please do Verb (てform) ください"
+  },
+  {
+    "grammar_id": 65,
+    "JLPT_level": "N5",
+    "grammar_point": "てはいけない",
+    "meaning": "must not; may not; cannot"
+  },
+  {
+    "grammar_id": 66,
+    "JLPT_level": "N5",
+    "grammar_point": "てもいいです",
+    "meaning": "is OK to..; is alright to..; may I..? Verb (て form)"
+  },
+  {
+    "grammar_id": 67,
+    "JLPT_level": "N5",
+    "grammar_point": "と",
+    "meaning": "and; with; as; connecting particle phrase と"
+  },
+  {
+    "grammar_id": 68,
+    "JLPT_level": "N5",
+    "grammar_point": "とき",
+    "meaning": "when; at this time Verb (casual form)"
+  },
+  {
+    "grammar_id": 69,
+    "JLPT_level": "N5",
+    "grammar_point": "とても",
+    "meaning": "very; awfully; exceedingly とても + Adjective / Verb"
+  },
+  {
+    "grammar_id": 70,
+    "JLPT_level": "N5",
+    "grammar_point": "つもり",
+    "meaning": "plan to ~; intend to ~"
+  },
+  {
+    "grammar_id": 71,
+    "JLPT_level": "N5",
+    "grammar_point": "は",
+    "meaning": "topic marker See below"
+  },
+  {
+    "grammar_id": 72,
+    "JLPT_level": "N5",
+    "grammar_point": "は〜より・・・です",
+    "meaning": "[A] is more ~ than [B] Noun-1 + は + Noun-2 + より + Adj +です"
+  },
+  {
+    "grammar_id": 73,
+    "JLPT_level": "N5",
+    "grammar_point": "はどうですか",
+    "meaning": "how about; how is Noun はどうですか"
+  },
+  {
+    "grammar_id": 74,
+    "JLPT_level": "N5",
+    "grammar_point": "や",
+    "meaning": "and; or; connecting particle Noun + や + Noun"
+  },
+  {
+    "grammar_id": 75,
+    "JLPT_level": "N5",
+    "grammar_point": "よ",
+    "meaning": "you know; emphasis (ending particle) end of sentence + よ"
+  },
+  {
+    "grammar_id": 76,
+    "JLPT_level": "N5",
+    "grammar_point": "より〜ほうが",
+    "meaning": "[A] is more than [B] Verb-1 より Verb-2 ほうが ~"
+  },
+  {
+    "grammar_id": 77,
+    "JLPT_level": "N4",
+    "grammar_point": "間",
+    "meaning": "while; during; between Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 78,
+    "JLPT_level": "N4",
+    "grammar_point": "間に",
+    "meaning": "while/during~ something happened Verb (casual, non-past)"
+  },
+  {
+    "grammar_id": 79,
+    "JLPT_level": "N4",
+    "grammar_point": "あまり〜ない",
+    "meaning": "not very, not much い-adjective + いくない"
+  },
+  {
+    "grammar_id": 80,
+    "JLPT_level": "N4",
+    "grammar_point": "後で",
+    "meaning": "after ~; later Verb (た form)"
+  },
+  {
+    "grammar_id": 81,
+    "JLPT_level": "N4",
+    "grammar_point": "ば",
+    "meaning": "conditional form; If [A] then [B] special formatting rules (see below)"
+  },
+  {
+    "grammar_id": 82,
+    "JLPT_level": "N4",
+    "grammar_point": "場合は",
+    "meaning": "in the event of; in the case that Verb (casual)"
+  },
+  {
+    "grammar_id": 83,
+    "JLPT_level": "N4",
+    "grammar_point": "ばかり",
+    "meaning": "only; nothing but Noun"
+  },
+  {
+    "grammar_id": 84,
+    "JLPT_level": "N4",
+    "grammar_point": "だけで",
+    "meaning": "just by; just by doing Verb (casual)"
+  },
+  {
+    "grammar_id": 85,
+    "JLPT_level": "N4",
+    "grammar_point": "出す",
+    "meaning": "to suddenly begin; to suddenly appear"
+  },
+  {
+    "grammar_id": 86,
+    "JLPT_level": "N4",
+    "grammar_point": "でございます",
+    "meaning": "to be (honorific) です -> でございます"
+  },
+  {
+    "grammar_id": 87,
+    "JLPT_level": "N4",
+    "grammar_point": "でも",
+    "meaning": "... or something Noun でも"
+  },
+  {
+    "grammar_id": 88,
+    "JLPT_level": "N4",
+    "grammar_point": "ではないか",
+    "meaning": "right?; isn't it?"
+  },
+  {
+    "grammar_id": 89,
+    "JLPT_level": "N4",
+    "grammar_point": "が必要",
+    "meaning": "need; necessary"
+  },
+  {
+    "grammar_id": 90,
+    "JLPT_level": "N4",
+    "grammar_point": "がする",
+    "meaning": "to smell; hear; taste"
+  },
+  {
+    "grammar_id": 91,
+    "JLPT_level": "N4",
+    "grammar_point": "がり",
+    "meaning": "personality; tend to~; sensitivity towards~ い-adjective い"
+  },
+  {
+    "grammar_id": 92,
+    "JLPT_level": "N4",
+    "grammar_point": "がる・がっている",
+    "meaning": "to show signs of; to appear; to feel, to think"
+  },
+  {
+    "grammar_id": 93,
+    "JLPT_level": "N4",
+    "grammar_point": "ございます",
+    "meaning": "to be, to exist (the polite form of いる/ある) あります changes to ございます"
+  },
+  {
+    "grammar_id": 94,
+    "JLPT_level": "N4",
+    "grammar_point": "始める",
+    "meaning": "to start; to begin to ~"
+  },
+  {
+    "grammar_id": 95,
+    "JLPT_level": "N4",
+    "grammar_point": "はずだ",
+    "meaning": "it must be; it should be (expectation) Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 96,
+    "JLPT_level": "N4",
+    "grammar_point": "はずがない",
+    "meaning": "cannot be (impossible) Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 97,
+    "JLPT_level": "N4",
+    "grammar_point": "必要がある",
+    "meaning": "need to; it is necessary to"
+  },
+  {
+    "grammar_id": 98,
+    "JLPT_level": "N4",
+    "grammar_point": "意向形",
+    "meaning": "volitional form ; let's do ~. see conjugation rules below..."
+  },
+  {
+    "grammar_id": 99,
+    "JLPT_level": "N4",
+    "grammar_point": "いらっしゃる",
+    "meaning": "to be; to come; to go (polite version) いる (changes to)"
+  },
+  {
+    "grammar_id": 100,
+    "JLPT_level": "N4",
+    "grammar_point": "いたします",
+    "meaning": "to do (polite form of する) する (changes to) いたす"
+  },
+  {
+    "grammar_id": 101,
+    "JLPT_level": "N4",
+    "grammar_point": "じゃないか",
+    "meaning": "right? isn't it? let's~; confirmation phrase じゃないか"
+  },
+  {
+    "grammar_id": 102,
+    "JLPT_level": "N4",
+    "grammar_point": "かどうか",
+    "meaning": "whether or not Verb (casual form)"
+  },
+  {
+    "grammar_id": 103,
+    "JLPT_level": "N4",
+    "grammar_point": "かしら",
+    "meaning": "I wonder phrase かしら"
+  },
+  {
+    "grammar_id": 104,
+    "JLPT_level": "N4",
+    "grammar_point": "かい",
+    "meaning": "turns a sentence into a yes/no question Sentence かい"
+  },
+  {
+    "grammar_id": 105,
+    "JLPT_level": "N4",
+    "grammar_point": "かもしれない",
+    "meaning": "might; perhaps; indicates possibility Verb (casual form)"
+  },
+  {
+    "grammar_id": 106,
+    "JLPT_level": "N4",
+    "grammar_point": "かな",
+    "meaning": "I wonder; should I? Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 107,
+    "JLPT_level": "N4",
+    "grammar_point": "から作る",
+    "meaning": "made from; made with"
+  },
+  {
+    "grammar_id": 108,
+    "JLPT_level": "N4",
+    "grammar_point": "きっと",
+    "meaning": "surely; undoubtedly; almost certainly; most event"
+  },
+  {
+    "grammar_id": 109,
+    "JLPT_level": "N4",
+    "grammar_point": "こと",
+    "meaning": "Verb nominalizer Verb (casual, non-past) こと"
+  },
+  {
+    "grammar_id": 110,
+    "JLPT_level": "N4",
+    "grammar_point": "ことがある",
+    "meaning": "there are times when"
+  },
+  {
+    "grammar_id": 111,
+    "JLPT_level": "N4",
+    "grammar_point": "ことができる",
+    "meaning": "can; able to"
+  },
+  {
+    "grammar_id": 112,
+    "JLPT_level": "N4",
+    "grammar_point": "ことになる",
+    "meaning": "It has been decided that..; it turns out that.. Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 113,
+    "JLPT_level": "N4",
+    "grammar_point": "ことにする",
+    "meaning": "to decide on"
+  },
+  {
+    "grammar_id": 114,
+    "JLPT_level": "N4",
+    "grammar_point": "くする",
+    "meaning": "to make something ~"
+  },
+  {
+    "grammar_id": 115,
+    "JLPT_level": "N4",
+    "grammar_point": "急に",
+    "meaning": "suddenly Can be used mid-sentence and also to start a"
+  },
+  {
+    "grammar_id": 116,
+    "JLPT_level": "N4",
+    "grammar_point": "までに",
+    "meaning": "by; by the time; indicates time limit Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 117,
+    "JLPT_level": "N4",
+    "grammar_point": "まま",
+    "meaning": "as it is; current state; without changing Noun + の"
+  },
+  {
+    "grammar_id": 118,
+    "JLPT_level": "N4",
+    "grammar_point": "または",
+    "meaning": "both; or; otherwise; choice between [A] or Noun 1 + または + Noun 2"
+  },
+  {
+    "grammar_id": 119,
+    "JLPT_level": "N4",
+    "grammar_point": "みたいだ",
+    "meaning": "like, similar to, resembling Verb (casual)"
+  },
+  {
+    "grammar_id": 120,
+    "JLPT_level": "N4",
+    "grammar_point": "みたいな",
+    "meaning": "like, similar to Noun"
+  },
+  {
+    "grammar_id": 121,
+    "JLPT_level": "N4",
+    "grammar_point": "みたいに",
+    "meaning": "like, similar to Verb (casual)"
+  },
+  {
+    "grammar_id": 122,
+    "JLPT_level": "N4",
+    "grammar_point": "も",
+    "meaning": "as many as; as much as; up to; nearly number"
+  },
+  {
+    "grammar_id": 123,
+    "JLPT_level": "N4",
+    "grammar_point": "な",
+    "meaning": "don’t ~ order somebody to not do Verb (dictionary form) な"
+  },
+  {
+    "grammar_id": 124,
+    "JLPT_level": "N4",
+    "grammar_point": "など",
+    "meaning": "such as, things like Noun など"
+  },
+  {
+    "grammar_id": 125,
+    "JLPT_level": "N4",
+    "grammar_point": "ながら",
+    "meaning": "while; during; as; simultaneously Verb ます (stem form) ながら + [B]"
+  },
+  {
+    "grammar_id": 126,
+    "JLPT_level": "N4",
+    "grammar_point": "なかなか〜ない",
+    "meaning": "not easy to; struggling to; not able to~ なかなか Verb (negative form)"
+  },
+  {
+    "grammar_id": 127,
+    "JLPT_level": "N4",
+    "grammar_point": "なければいけない",
+    "meaning": "must do something; have to do something"
+  },
+  {
+    "grammar_id": 128,
+    "JLPT_level": "N4",
+    "grammar_point": "なければならない",
+    "meaning": "must do something; have to do something"
+  },
+  {
+    "grammar_id": 129,
+    "JLPT_level": "N4",
+    "grammar_point": "なら",
+    "meaning": "if; in the case that ~ Noun"
+  },
+  {
+    "grammar_id": 130,
+    "JLPT_level": "N4",
+    "grammar_point": "なさい",
+    "meaning": "do this (soft/firm command)"
+  },
+  {
+    "grammar_id": 131,
+    "JLPT_level": "N4",
+    "grammar_point": "なさる",
+    "meaning": "to do (honorific) する (changes to) なさる"
+  },
+  {
+    "grammar_id": 132,
+    "JLPT_level": "N4",
+    "grammar_point": "に気がつく",
+    "meaning": "to notice; to realize Verb (casual) + こと に気がつく"
+  },
+  {
+    "grammar_id": 133,
+    "JLPT_level": "N4",
+    "grammar_point": "にみえる",
+    "meaning": "to look; to seem; to appear Verb (て form)"
+  },
+  {
+    "grammar_id": 134,
+    "JLPT_level": "N4",
+    "grammar_point": "にする",
+    "meaning": "to make something ~"
+  },
+  {
+    "grammar_id": 135,
+    "JLPT_level": "N4",
+    "grammar_point": "にくい",
+    "meaning": "difficult to do Verb ます (stem form) にくい"
+  },
+  {
+    "grammar_id": 136,
+    "JLPT_level": "N4",
+    "grammar_point": "の中で",
+    "meaning": "in, among Noun の中で"
+  },
+  {
+    "grammar_id": 137,
+    "JLPT_level": "N4",
+    "grammar_point": "のに",
+    "meaning": "although, in spite of, even though Verb (casual form)"
+  },
+  {
+    "grammar_id": 138,
+    "JLPT_level": "N4",
+    "grammar_point": "のは〜だ",
+    "meaning": "[A] is [B]; the reason for [A] is [B] Verb (casual)"
+  },
+  {
+    "grammar_id": 139,
+    "JLPT_level": "N4",
+    "grammar_point": "お〜ください",
+    "meaning": "please do (honorific) お Verb (ます stem) ください"
+  },
+  {
+    "grammar_id": 140,
+    "JLPT_level": "N4",
+    "grammar_point": "お〜になる",
+    "meaning": "to do (honorific)"
+  },
+  {
+    "grammar_id": 141,
+    "JLPT_level": "N4",
+    "grammar_point": "おきに",
+    "meaning": "repeated at intervals, every Noun (measurable) おきに"
+  },
+  {
+    "grammar_id": 142,
+    "JLPT_level": "N4",
+    "grammar_point": "終わる",
+    "meaning": "to finish; to end"
+  },
+  {
+    "grammar_id": 143,
+    "JLPT_level": "N4",
+    "grammar_point": "られる",
+    "meaning": "potential form; ability or inability to do Ru-verb る -> られる"
+  },
+  {
+    "grammar_id": 144,
+    "JLPT_level": "N4",
+    "grammar_point": "らしい",
+    "meaning": "it seems like; I heard; apparently~ Verb (casual form)"
+  },
+  {
+    "grammar_id": 145,
+    "JLPT_level": "N4",
+    "grammar_point": "さ",
+    "meaning": "-ness ; nominalizer for adjective い-adjective + い"
+  },
+  {
+    "grammar_id": 146,
+    "JLPT_level": "N4",
+    "grammar_point": "さっき",
+    "meaning": "some time ago; just now さっき Sentence"
+  },
+  {
+    "grammar_id": 147,
+    "JLPT_level": "N4",
+    "grammar_point": "させられる",
+    "meaning": "causative-passive; to be made to do Verb (causative form させる) られる"
+  },
+  {
+    "grammar_id": 148,
+    "JLPT_level": "N4",
+    "grammar_point": "させる",
+    "meaning": "causative form; to make/let somebody do Ru-verb る -> させる"
+  },
+  {
+    "grammar_id": 149,
+    "JLPT_level": "N4",
+    "grammar_point": "させてください",
+    "meaning": "please let me do Verb"
+  },
+  {
+    "grammar_id": 150,
+    "JLPT_level": "N4",
+    "grammar_point": "さすが",
+    "meaning": "as one would expect; as is to be expected; の + Noun"
+  },
+  {
+    "grammar_id": 151,
+    "JLPT_level": "N4",
+    "grammar_point": "し",
+    "meaning": "and; and what’s more; emphasis Verb (casual)"
+  },
+  {
+    "grammar_id": 152,
+    "JLPT_level": "N4",
+    "grammar_point": "そんなに",
+    "meaning": "so much; so; like that Verb"
+  },
+  {
+    "grammar_id": 153,
+    "JLPT_level": "N4",
+    "grammar_point": "それでも",
+    "meaning": "but still; and yet; even so Phrase 1 それでも Phrase 2"
+  },
+  {
+    "grammar_id": 154,
+    "JLPT_level": "N4",
+    "grammar_point": "そうだ",
+    "meaning": "I heard that; it is said that Verb (casual form)"
+  },
+  {
+    "grammar_id": 155,
+    "JLPT_level": "N4",
+    "grammar_point": "そうに・そうな",
+    "meaning": "seems like; looks like Verb ます (stem form)"
+  },
+  {
+    "grammar_id": 156,
+    "JLPT_level": "N4",
+    "grammar_point": "たばかり",
+    "meaning": "just finished; something just occurred Verb (た form) ばかり"
+  },
+  {
+    "grammar_id": 157,
+    "JLPT_level": "N4",
+    "grammar_point": "たところ",
+    "meaning": "just finished doing, was just doing Verb (た form) ところ"
+  },
+  {
+    "grammar_id": 158,
+    "JLPT_level": "N4",
+    "grammar_point": "たがる",
+    "meaning": "wants to do~ (third person)"
+  },
+  {
+    "grammar_id": 159,
+    "JLPT_level": "N4",
+    "grammar_point": "たら",
+    "meaning": "if, after, when Verb (た form)"
+  },
+  {
+    "grammar_id": 160,
+    "JLPT_level": "N4",
+    "grammar_point": "たらどう",
+    "meaning": "why don't you Verb (た form) らどう"
+  },
+  {
+    "grammar_id": 161,
+    "JLPT_level": "N4",
+    "grammar_point": "たらいいですか",
+    "meaning": "what should I do?; speaker seeking Verb (た form) らいいですか"
+  },
+  {
+    "grammar_id": 162,
+    "JLPT_level": "N4",
+    "grammar_point": "て で",
+    "meaning": "conjunctive particle; so; because of [A], [B]... Verb (て form)"
+  },
+  {
+    "grammar_id": 163,
+    "JLPT_level": "N4",
+    "grammar_point": "てあげる",
+    "meaning": "to do for; to do a favor"
+  },
+  {
+    "grammar_id": 164,
+    "JLPT_level": "N4",
+    "grammar_point": "てほしい",
+    "meaning": "I want you to; need you to~ Verb (て form)"
+  },
+  {
+    "grammar_id": 165,
+    "JLPT_level": "N4",
+    "grammar_point": "ていく",
+    "meaning": "to start; to continue; to go on"
+  },
+  {
+    "grammar_id": 166,
+    "JLPT_level": "N4",
+    "grammar_point": "ていた",
+    "meaning": "was doing something (past continuous)"
+  },
+  {
+    "grammar_id": 167,
+    "JLPT_level": "N4",
+    "grammar_point": "ていただけませんか",
+    "meaning": "could you please Verb (て form) いただけませんか"
+  },
+  {
+    "grammar_id": 168,
+    "JLPT_level": "N4",
+    "grammar_point": "てくれる",
+    "meaning": "to do a favor; do something for someone"
+  },
+  {
+    "grammar_id": 169,
+    "JLPT_level": "N4",
+    "grammar_point": "てくる",
+    "meaning": "to do… and come back; to become; to"
+  },
+  {
+    "grammar_id": 170,
+    "JLPT_level": "N4",
+    "grammar_point": "てみる",
+    "meaning": "try doing"
+  },
+  {
+    "grammar_id": 171,
+    "JLPT_level": "N4",
+    "grammar_point": "てもらう",
+    "meaning": "to get somebody to do something"
+  },
+  {
+    "grammar_id": 172,
+    "JLPT_level": "N4",
+    "grammar_point": "ておく",
+    "meaning": "to do something in advance"
+  },
+  {
+    "grammar_id": 173,
+    "JLPT_level": "N4",
+    "grammar_point": "てしまう ちゃう",
+    "meaning": "to do something by accident, to finish"
+  },
+  {
+    "grammar_id": 174,
+    "JLPT_level": "N4",
+    "grammar_point": "てすみません",
+    "meaning": "I’m sorry for Verb (て form) すみません"
+  },
+  {
+    "grammar_id": 175,
+    "JLPT_level": "N4",
+    "grammar_point": "てやる",
+    "meaning": "to do for; to do a favor (casual)"
+  },
+  {
+    "grammar_id": 176,
+    "JLPT_level": "N4",
+    "grammar_point": "てよかった",
+    "meaning": "I’m glad that.. Verb (て form) よかった"
+  },
+  {
+    "grammar_id": 177,
+    "JLPT_level": "N4",
+    "grammar_point": "ているところ",
+    "meaning": "in the process of doing Verb (て form) いるところ"
+  },
+  {
+    "grammar_id": 178,
+    "JLPT_level": "N4",
+    "grammar_point": "ても",
+    "meaning": "even; even if; even though Verb (て form)"
+  },
+  {
+    "grammar_id": 179,
+    "JLPT_level": "N4",
+    "grammar_point": "と",
+    "meaning": "whenever [A] happens, [B] also happens Verb (dictionary / ない form)"
+  },
+  {
+    "grammar_id": 180,
+    "JLPT_level": "N4",
+    "grammar_point": "といってもいい",
+    "meaning": "you could say; one might say; I'd say"
+  },
+  {
+    "grammar_id": 181,
+    "JLPT_level": "N4",
+    "grammar_point": "という",
+    "meaning": "called; named; that"
+  },
+  {
+    "grammar_id": 182,
+    "JLPT_level": "N4",
+    "grammar_point": "ということ",
+    "meaning": "convert phrase into noun Verb (casual)"
+  },
+  {
+    "grammar_id": 183,
+    "JLPT_level": "N4",
+    "grammar_point": "といわれている",
+    "meaning": "it is said that... Verb (casual, past)"
+  },
+  {
+    "grammar_id": 184,
+    "JLPT_level": "N4",
+    "grammar_point": "と聞いた",
+    "meaning": "I heard..."
+  },
+  {
+    "grammar_id": 185,
+    "JLPT_level": "N4",
+    "grammar_point": "と思う",
+    "meaning": "to think…; I think…; you think… Verb"
+  },
+  {
+    "grammar_id": 186,
+    "JLPT_level": "N4",
+    "grammar_point": "とか〜とか",
+    "meaning": "among other things; such as; like Verb (dictionary form) Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 187,
+    "JLPT_level": "N4",
+    "grammar_point": "ところ",
+    "meaning": "just about to; on the verge of doing Verb (casual, non-past) ところ"
+  },
+  {
+    "grammar_id": 188,
+    "JLPT_level": "N4",
+    "grammar_point": "続ける",
+    "meaning": "continue to; keen on"
+  },
+  {
+    "grammar_id": 189,
+    "JLPT_level": "N4",
+    "grammar_point": "って",
+    "meaning": "named; called Noun って"
+  },
+  {
+    "grammar_id": 190,
+    "JLPT_level": "N4",
+    "grammar_point": "うけみけい",
+    "meaning": "passive form; passive voice Ru-verb る -> られる"
+  },
+  {
+    "grammar_id": 191,
+    "JLPT_level": "N4",
+    "grammar_point": "は〜が は",
+    "meaning": "[A] but [B]; however; comparison Noun-1 + は 〜が Noun-2 + は…"
+  },
+  {
+    "grammar_id": 192,
+    "JLPT_level": "N4",
+    "grammar_point": "やすい",
+    "meaning": "easy to; likely to; prone to; have a tendency Verb ます (stem form) やすい"
+  },
+  {
+    "grammar_id": 193,
+    "JLPT_level": "N4",
+    "grammar_point": "やっと",
+    "meaning": "at last; finally; barely; narrowly Used as an adverb in a sentence."
+  },
+  {
+    "grammar_id": 194,
+    "JLPT_level": "N4",
+    "grammar_point": "より",
+    "meaning": "than; rather than; more than [A]より[B]"
+  },
+  {
+    "grammar_id": 195,
+    "JLPT_level": "N4",
+    "grammar_point": "予定だ",
+    "meaning": "plan to, intend to Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 196,
+    "JLPT_level": "N4",
+    "grammar_point": "ようだ",
+    "meaning": "appears; seems; looks as if Verb (casual)"
+  },
+  {
+    "grammar_id": 197,
+    "JLPT_level": "N4",
+    "grammar_point": "ように ような",
+    "meaning": "like; as; similar to Verb (casual)"
+  },
+  {
+    "grammar_id": 198,
+    "JLPT_level": "N4",
+    "grammar_point": "ようになる",
+    "meaning": "to reach the point that; to come to be that; to Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 199,
+    "JLPT_level": "N4",
+    "grammar_point": "ようにする",
+    "meaning": "to try to; to make sure that"
+  },
+  {
+    "grammar_id": 200,
+    "JLPT_level": "N4",
+    "grammar_point": "ようと思う",
+    "meaning": "thinking of doing; planning to"
+  },
+  {
+    "grammar_id": 201,
+    "JLPT_level": "N4",
+    "grammar_point": "ぜひ",
+    "meaning": "by all means; certainly; definitely Can be used either in beginning or mid-"
+  },
+  {
+    "grammar_id": 202,
+    "JLPT_level": "N4",
+    "grammar_point": "全然〜ない",
+    "meaning": "(not) at all"
+  },
+  {
+    "grammar_id": 203,
+    "JLPT_level": "N4",
+    "grammar_point": "づらい",
+    "meaning": "difficult to do Verb ます (stem form) づらい"
+  },
+  {
+    "grammar_id": 204,
+    "JLPT_level": "N3",
+    "grammar_point": "上げる",
+    "meaning": "to finish doing~"
+  },
+  {
+    "grammar_id": 205,
+    "JLPT_level": "N3",
+    "grammar_point": "あまり",
+    "meaning": "so much… that Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 206,
+    "JLPT_level": "N3",
+    "grammar_point": "あまりにも",
+    "meaning": "too much; so much… that; excessively~ Verb"
+  },
+  {
+    "grammar_id": 207,
+    "JLPT_level": "N3",
+    "grammar_point": "合う",
+    "meaning": "do something together"
+  },
+  {
+    "grammar_id": 208,
+    "JLPT_level": "N3",
+    "grammar_point": "ばいい",
+    "meaning": "should, can, it’d be good if Verb (ば conditional form) いい"
+  },
+  {
+    "grammar_id": 209,
+    "JLPT_level": "N3",
+    "grammar_point": "ばよかった",
+    "meaning": "should have; would have been better if~ Verb (ば conditional form) よかった（のに）"
+  },
+  {
+    "grammar_id": 210,
+    "JLPT_level": "N3",
+    "grammar_point": "ば〜ほど",
+    "meaning": "the more… the more Verb"
+  },
+  {
+    "grammar_id": 211,
+    "JLPT_level": "N3",
+    "grammar_point": "ば〜のに",
+    "meaning": "would have; should have; if only~ Verb (conditional form)"
+  },
+  {
+    "grammar_id": 212,
+    "JLPT_level": "N3",
+    "grammar_point": "ばかりで",
+    "meaning": "only; just (negative description) Verb (casual)"
+  },
+  {
+    "grammar_id": 213,
+    "JLPT_level": "N3",
+    "grammar_point": "ばかりでなく",
+    "meaning": "not only.. but also; as well as~ Verb (casual)"
+  },
+  {
+    "grammar_id": 214,
+    "JLPT_level": "N3",
+    "grammar_point": "べきだ",
+    "meaning": "should do~; must do~ Verb (standard form)"
+  },
+  {
+    "grammar_id": 215,
+    "JLPT_level": "N3",
+    "grammar_point": "べきではない",
+    "meaning": "should not do~; must not do~ Verb (standard form)"
+  },
+  {
+    "grammar_id": 216,
+    "JLPT_level": "N3",
+    "grammar_point": "別に〜ない",
+    "meaning": "not really, not particularly Verb (ない form)"
+  },
+  {
+    "grammar_id": 217,
+    "JLPT_level": "N3",
+    "grammar_point": "ぶりに",
+    "meaning": "for the first time in (period of time)"
+  },
+  {
+    "grammar_id": 218,
+    "JLPT_level": "N3",
+    "grammar_point": "中",
+    "meaning": "currently; during; at some point;"
+  },
+  {
+    "grammar_id": 219,
+    "JLPT_level": "N3",
+    "grammar_point": "だけ",
+    "meaning": "as much as~ Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 220,
+    "JLPT_level": "N3",
+    "grammar_point": "だけでなく",
+    "meaning": "not only… but also Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 221,
+    "JLPT_level": "N3",
+    "grammar_point": "だけど",
+    "meaning": "however; but Clause-1 だけど clause-2"
+  },
+  {
+    "grammar_id": 222,
+    "JLPT_level": "N3",
+    "grammar_point": "だらけ",
+    "meaning": "full of; covered with; a lot of (something Noun だらけ"
+  },
+  {
+    "grammar_id": 223,
+    "JLPT_level": "N3",
+    "grammar_point": "どんなに〜ても",
+    "meaning": "no matter how (much) Verb (ても form)"
+  },
+  {
+    "grammar_id": 224,
+    "JLPT_level": "N3",
+    "grammar_point": "どうしても",
+    "meaning": "no matter what; at any cost; after all どうしても phrase"
+  },
+  {
+    "grammar_id": 225,
+    "JLPT_level": "N3",
+    "grammar_point": "ふりをする",
+    "meaning": "to pretend; to act as if~ Verb (casual)"
+  },
+  {
+    "grammar_id": 226,
+    "JLPT_level": "N3",
+    "grammar_point": "ふと",
+    "meaning": "suddenly; accidentally; unexpectedly; ふと action"
+  },
+  {
+    "grammar_id": 227,
+    "JLPT_level": "N3",
+    "grammar_point": "がち",
+    "meaning": "tend to; tendency to; frequently; often; to do Noun"
+  },
+  {
+    "grammar_id": 228,
+    "JLPT_level": "N3",
+    "grammar_point": "がたい",
+    "meaning": "very difficult to; impossible to Verb ます (stem form) がたい"
+  },
+  {
+    "grammar_id": 229,
+    "JLPT_level": "N3",
+    "grammar_point": "気味",
+    "meaning": "-like; -looking; -looked; tending to Verb ます (stem form) 気味"
+  },
+  {
+    "grammar_id": 230,
+    "JLPT_level": "N3",
+    "grammar_point": "ごとに",
+    "meaning": "each; every; at intervals of Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 231,
+    "JLPT_level": "N3",
+    "grammar_point": "ほど",
+    "meaning": "degree; extent; bounds; upper limit Verb (casual, non-past)"
+  },
+  {
+    "grammar_id": 232,
+    "JLPT_level": "N3",
+    "grammar_point": "ほど〜ない",
+    "meaning": "is not as… as Verb (ない form)"
+  },
+  {
+    "grammar_id": 233,
+    "JLPT_level": "N3",
+    "grammar_point": "いちどに",
+    "meaning": "all at once ⼀度に phrase"
+  },
+  {
+    "grammar_id": 234,
+    "JLPT_level": "N3",
+    "grammar_point": "いくら〜ても",
+    "meaning": "no matter how~ Verb (ても form)"
+  },
+  {
+    "grammar_id": 235,
+    "JLPT_level": "N3",
+    "grammar_point": "いっぽうだ",
+    "meaning": "more and more; continue to Verb (dictionary form) ⼀⽅だ"
+  },
+  {
+    "grammar_id": 236,
+    "JLPT_level": "N3",
+    "grammar_point": "いったい",
+    "meaning": "emphasis; what on earth; what in the"
+  },
+  {
+    "grammar_id": 237,
+    "JLPT_level": "N3",
+    "grammar_point": "じゃない",
+    "meaning": "maybe; most likely; confirmation of Phrase じゃない"
+  },
+  {
+    "grammar_id": 238,
+    "JLPT_level": "N3",
+    "grammar_point": "か何か",
+    "meaning": "or something Noun か何か"
+  },
+  {
+    "grammar_id": 239,
+    "JLPT_level": "N3",
+    "grammar_point": "かける",
+    "meaning": "half-; not yet finished; in the middle of~"
+  },
+  {
+    "grammar_id": 240,
+    "JLPT_level": "N3",
+    "grammar_point": "から〜にかけて",
+    "meaning": "through; from [A] to [B] Noun-1 から Noun-2 にかけて"
+  },
+  {
+    "grammar_id": 241,
+    "JLPT_level": "N3",
+    "grammar_point": "代わりに",
+    "meaning": "instead of; as a substitute for ; in exchange Verb (casual)"
+  },
+  {
+    "grammar_id": 242,
+    "JLPT_level": "N3",
+    "grammar_point": "結果",
+    "meaning": "as a result of; after Verb (casual, past)"
+  },
+  {
+    "grammar_id": 243,
+    "JLPT_level": "N3",
+    "grammar_point": "結局",
+    "meaning": "after all; eventually; in the end (phrase) 結局（は） conclusion"
+  },
+  {
+    "grammar_id": 244,
+    "JLPT_level": "N3",
+    "grammar_point": "決して〜ない",
+    "meaning": "never; by no means Verb (ない form)"
+  },
+  {
+    "grammar_id": 245,
+    "JLPT_level": "N3",
+    "grammar_point": "切れない",
+    "meaning": "unable to do; too much to finish/complete Verb ます (stem form) 切れない"
+  },
+  {
+    "grammar_id": 246,
+    "JLPT_level": "N3",
+    "grammar_point": "きり",
+    "meaning": "only; just; since; after Verb (た form)"
+  },
+  {
+    "grammar_id": 247,
+    "JLPT_level": "N3",
+    "grammar_point": "切る",
+    "meaning": "to do something completely to the end"
+  },
+  {
+    "grammar_id": 248,
+    "JLPT_level": "N3",
+    "grammar_point": "っけ",
+    "meaning": "a casual suffix to confirm something you are Verb"
+  },
+  {
+    "grammar_id": 249,
+    "JLPT_level": "N3",
+    "grammar_point": "込む",
+    "meaning": "to do something for a long time or to move"
+  },
+  {
+    "grammar_id": 250,
+    "JLPT_level": "N3",
+    "grammar_point": "こそ",
+    "meaning": "for sure (emphasize preceding word); Noun こそ"
+  },
+  {
+    "grammar_id": 251,
+    "JLPT_level": "N3",
+    "grammar_point": "こと",
+    "meaning": "(must) do Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 252,
+    "JLPT_level": "N3",
+    "grammar_point": "ことから",
+    "meaning": "from the fact that~ Verb (casual)"
+  },
+  {
+    "grammar_id": 253,
+    "JLPT_level": "N3",
+    "grammar_point": "ことになっている",
+    "meaning": "to be expected to; to be scheduled to; it has Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 254,
+    "JLPT_level": "N3",
+    "grammar_point": "ことはない",
+    "meaning": "there is no need to; (something) never Verb (dictionary form) ことはない"
+  },
+  {
+    "grammar_id": 255,
+    "JLPT_level": "N3",
+    "grammar_point": "ことは〜が",
+    "meaning": "although; but Verb (casual) same verb (casual)"
+  },
+  {
+    "grammar_id": 256,
+    "JLPT_level": "N3",
+    "grammar_point": "くらい・ぐらい",
+    "meaning": "approximately; about; around; to the extent Verb (casual form)"
+  },
+  {
+    "grammar_id": 257,
+    "JLPT_level": "N3",
+    "grammar_point": "くせに",
+    "meaning": "although~; despite the fact that~; even Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 258,
+    "JLPT_level": "N3",
+    "grammar_point": "まるで",
+    "meaning": "as if; as though; just like Verb (casual form) + よう"
+  },
+  {
+    "grammar_id": 259,
+    "JLPT_level": "N3",
+    "grammar_point": "まさか",
+    "meaning": "there's no way; that's impossible; you must まさか Negative clause"
+  },
+  {
+    "grammar_id": 260,
+    "JLPT_level": "N3",
+    "grammar_point": "めったに〜ない",
+    "meaning": "hardly; rarely; seldom めったに Verb (ない form)"
+  },
+  {
+    "grammar_id": 261,
+    "JLPT_level": "N3",
+    "grammar_point": "も〜ば〜も",
+    "meaning": "and; also; as well; either/or; neither/nor Verb（ば form)"
+  },
+  {
+    "grammar_id": 262,
+    "JLPT_level": "N3",
+    "grammar_point": "もしかしたら",
+    "meaning": "perhaps; maybe; perchance; by any chance"
+  },
+  {
+    "grammar_id": 263,
+    "JLPT_level": "N3",
+    "grammar_point": "もしも〜たら",
+    "meaning": "if; in the case; supposing~ もしも Verb (た form) + ら"
+  },
+  {
+    "grammar_id": 264,
+    "JLPT_level": "N3",
+    "grammar_point": "向け",
+    "meaning": "intended for; aimed at~"
+  },
+  {
+    "grammar_id": 265,
+    "JLPT_level": "N3",
+    "grammar_point": "向き",
+    "meaning": "suitable for~"
+  },
+  {
+    "grammar_id": 266,
+    "JLPT_level": "N3",
+    "grammar_point": "むしろ",
+    "meaning": "rather; instead; better むしろ phrase"
+  },
+  {
+    "grammar_id": 267,
+    "JLPT_level": "N3",
+    "grammar_point": "ながらも",
+    "meaning": "but; although; despite Verb ます (stem form)"
+  },
+  {
+    "grammar_id": 268,
+    "JLPT_level": "N3",
+    "grammar_point": "ないことはない",
+    "meaning": "can do~; is not impossible to~ Verb (ない form)"
+  },
+  {
+    "grammar_id": 269,
+    "JLPT_level": "N3",
+    "grammar_point": "ないと",
+    "meaning": "must do; unless/if you don't~ Verb (ない form)"
+  },
+  {
+    "grammar_id": 270,
+    "JLPT_level": "N3",
+    "grammar_point": "なかなか",
+    "meaning": "quite~; pretty~; rather~; just not ~ Noun"
+  },
+  {
+    "grammar_id": 271,
+    "JLPT_level": "N3",
+    "grammar_point": "なんか・なんて・など",
+    "meaning": "give examples; show modesty; make light"
+  },
+  {
+    "grammar_id": 272,
+    "JLPT_level": "N3",
+    "grammar_point": "直す",
+    "meaning": "to do something again; to do over"
+  },
+  {
+    "grammar_id": 273,
+    "JLPT_level": "N3",
+    "grammar_point": "なるべく",
+    "meaning": "as much as possible なるべく action"
+  },
+  {
+    "grammar_id": 274,
+    "JLPT_level": "N3",
+    "grammar_point": "なぜなら",
+    "meaning": "because; the reason is; if you want to know Result なぜなら（ば） reason"
+  },
+  {
+    "grammar_id": 275,
+    "JLPT_level": "N3",
+    "grammar_point": "んだって",
+    "meaning": "I hear that; heard that~ Verb (casual)"
+  },
+  {
+    "grammar_id": 276,
+    "JLPT_level": "N3",
+    "grammar_point": "に違いない",
+    "meaning": "I’m sure/ certain; no doubt that Verb (casual form)"
+  },
+  {
+    "grammar_id": 277,
+    "JLPT_level": "N3",
+    "grammar_point": "に反して",
+    "meaning": "against; contrary to; in contrast to"
+  },
+  {
+    "grammar_id": 278,
+    "JLPT_level": "N3",
+    "grammar_point": "にかけて",
+    "meaning": "over (a period); through~; concerning~;"
+  },
+  {
+    "grammar_id": 279,
+    "JLPT_level": "N3",
+    "grammar_point": "にかわって にかわり",
+    "meaning": "instead of~; replacing~; on behalf of~"
+  },
+  {
+    "grammar_id": 280,
+    "JLPT_level": "N3",
+    "grammar_point": "にくらべて",
+    "meaning": "compared to~; in comparison to~"
+  },
+  {
+    "grammar_id": 281,
+    "JLPT_level": "N3",
+    "grammar_point": "に慣れる",
+    "meaning": "to be used to something"
+  },
+  {
+    "grammar_id": 282,
+    "JLPT_level": "N3",
+    "grammar_point": "において における",
+    "meaning": "in; at (place); regarding~; as for~; in"
+  },
+  {
+    "grammar_id": 283,
+    "JLPT_level": "N3",
+    "grammar_point": "にしたがって",
+    "meaning": "as; therefore; in accordance with; according"
+  },
+  {
+    "grammar_id": 284,
+    "JLPT_level": "N3",
+    "grammar_point": "にしても",
+    "meaning": "even if; even though; regardless of Verb (casual)"
+  },
+  {
+    "grammar_id": 285,
+    "JLPT_level": "N3",
+    "grammar_point": "にしては",
+    "meaning": "for; considering it’s (something or someone) Verb (casual)"
+  },
+  {
+    "grammar_id": 286,
+    "JLPT_level": "N3",
+    "grammar_point": "に対して",
+    "meaning": "towards; against; regarding; in contrast with Noun に対して"
+  },
+  {
+    "grammar_id": 287,
+    "JLPT_level": "N3",
+    "grammar_point": "にとって",
+    "meaning": "to; for; concerning; as far as ... is concerned; Noun にとって（は/も）"
+  },
+  {
+    "grammar_id": 288,
+    "JLPT_level": "N3",
+    "grammar_point": "について",
+    "meaning": "concerning; regarding; about; on Noun について"
+  },
+  {
+    "grammar_id": 289,
+    "JLPT_level": "N3",
+    "grammar_point": "につれて",
+    "meaning": "as; in proportion to; with; as… then… Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 290,
+    "JLPT_level": "N3",
+    "grammar_point": "には",
+    "meaning": "for the purpose of; in order to~ Verb (dictionary form) には"
+  },
+  {
+    "grammar_id": 291,
+    "JLPT_level": "N3",
+    "grammar_point": "によると によれば",
+    "meaning": "according to~"
+  },
+  {
+    "grammar_id": 292,
+    "JLPT_level": "N3",
+    "grammar_point": "によって による",
+    "meaning": "by means of; due to; owing to; because of~"
+  },
+  {
+    "grammar_id": 293,
+    "JLPT_level": "N3",
+    "grammar_point": "のでしょうか",
+    "meaning": "ask a question in a polite way Verb (casual)"
+  },
+  {
+    "grammar_id": 294,
+    "JLPT_level": "N3",
+    "grammar_point": "をちゅうしんに",
+    "meaning": "focused on; centered on"
+  },
+  {
+    "grammar_id": 295,
+    "JLPT_level": "N3",
+    "grammar_point": "をはじめ",
+    "meaning": "for example; starting with"
+  },
+  {
+    "grammar_id": 296,
+    "JLPT_level": "N3",
+    "grammar_point": "を込めて",
+    "meaning": "filled with; full of"
+  },
+  {
+    "grammar_id": 297,
+    "JLPT_level": "N3",
+    "grammar_point": "おかげで",
+    "meaning": "thanks to ...; owing to ...; because of ... Verb (casual)"
+  },
+  {
+    "grammar_id": 298,
+    "JLPT_level": "N3",
+    "grammar_point": "っぱなし",
+    "meaning": "leaving (something) on; leaving (something) Verb ます (stem form) っぱなし"
+  },
+  {
+    "grammar_id": 299,
+    "JLPT_level": "N3",
+    "grammar_point": "っぽい",
+    "meaning": "seems like; somewhat~; -ish; easily does~; Verb ます (stem form)"
+  },
+  {
+    "grammar_id": 300,
+    "JLPT_level": "N3",
+    "grammar_point": "さえ",
+    "meaning": "even; so much as; not even Noun （で）さえ（も）"
+  },
+  {
+    "grammar_id": 301,
+    "JLPT_level": "N3",
+    "grammar_point": "さえ〜ば",
+    "meaning": "if only; as long as Verb ます (stem form) さえすれば"
+  },
+  {
+    "grammar_id": 302,
+    "JLPT_level": "N3",
+    "grammar_point": "際に",
+    "meaning": "when; at the time of; in the case of Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 303,
+    "JLPT_level": "N3",
+    "grammar_point": "最中に",
+    "meaning": "while; during; in the middle of Verb (ている form)"
+  },
+  {
+    "grammar_id": 304,
+    "JLPT_level": "N3",
+    "grammar_point": "さらに",
+    "meaning": "furthermore; again; more and more さらに phrase"
+  },
+  {
+    "grammar_id": 305,
+    "JLPT_level": "N3",
+    "grammar_point": "さて",
+    "meaning": "conjunction: well; now; then さて clause"
+  },
+  {
+    "grammar_id": 306,
+    "JLPT_level": "N3",
+    "grammar_point": "せいで",
+    "meaning": "because of; due to; as a result of~ Verb (casual)"
+  },
+  {
+    "grammar_id": 307,
+    "JLPT_level": "N3",
+    "grammar_point": "せいぜい",
+    "meaning": "at the most; at best; to the utmost Noun (period of time)"
+  },
+  {
+    "grammar_id": 308,
+    "JLPT_level": "N3",
+    "grammar_point": "しばらく",
+    "meaning": "for a moment; for a while; for the time being しばらく clause"
+  },
+  {
+    "grammar_id": 309,
+    "JLPT_level": "N3",
+    "grammar_point": "しかない",
+    "meaning": "have no choice but~"
+  },
+  {
+    "grammar_id": 310,
+    "JLPT_level": "N3",
+    "grammar_point": "そのために",
+    "meaning": "hence; for that reason; because of~ Goal そのため（に） action"
+  },
+  {
+    "grammar_id": 311,
+    "JLPT_level": "N3",
+    "grammar_point": "それとも",
+    "meaning": "or; or else それとも phrase"
+  },
+  {
+    "grammar_id": 312,
+    "JLPT_level": "N3",
+    "grammar_point": "そうもない そうにない",
+    "meaning": "very unlikely to~; showing no signs of~"
+  },
+  {
+    "grammar_id": 313,
+    "JLPT_level": "N3",
+    "grammar_point": "すでに",
+    "meaning": "something has already been done/taken すでに clause"
+  },
+  {
+    "grammar_id": 314,
+    "JLPT_level": "N3",
+    "grammar_point": "すなわち",
+    "meaning": "in other words; namely すなわち phrase"
+  },
+  {
+    "grammar_id": 315,
+    "JLPT_level": "N3",
+    "grammar_point": "たものだ",
+    "meaning": "used to do; would often do Verb (た form) ものだ"
+  },
+  {
+    "grammar_id": 316,
+    "JLPT_level": "N3",
+    "grammar_point": "たとたん",
+    "meaning": "as soon as; just as Verb (た form) とたん"
+  },
+  {
+    "grammar_id": 317,
+    "JLPT_level": "N3",
+    "grammar_point": "たびに",
+    "meaning": "whenever; every time Noun + の"
+  },
+  {
+    "grammar_id": 318,
+    "JLPT_level": "N3",
+    "grammar_point": "ために",
+    "meaning": "for; in order to; for the benefit of; because Verb"
+  },
+  {
+    "grammar_id": 319,
+    "JLPT_level": "N3",
+    "grammar_point": "確かに",
+    "meaning": "surely, certainly 確かに phrase"
+  },
+  {
+    "grammar_id": 320,
+    "JLPT_level": "N3",
+    "grammar_point": "たて",
+    "meaning": "just done; freshly done; newly done Verb ます (stem form) たて"
+  },
+  {
+    "grammar_id": 321,
+    "JLPT_level": "N3",
+    "grammar_point": "たとえ〜ても",
+    "meaning": "even if… is the case Verb (て form) + も"
+  },
+  {
+    "grammar_id": 322,
+    "JLPT_level": "N3",
+    "grammar_point": "例えば",
+    "meaning": "for example"
+  },
+  {
+    "grammar_id": 323,
+    "JLPT_level": "N3",
+    "grammar_point": "たって",
+    "meaning": "even if; even though; no matter how Verb (casual, past)"
+  },
+  {
+    "grammar_id": 324,
+    "JLPT_level": "N3",
+    "grammar_point": "てばかりいる",
+    "meaning": "only; nothing but~ Verb (て form) ばかりいる"
+  },
+  {
+    "grammar_id": 325,
+    "JLPT_level": "N3",
+    "grammar_point": "てごらん",
+    "meaning": "(please) try to; (please) look Verb (て form) ごらん(なさい)"
+  },
+  {
+    "grammar_id": 326,
+    "JLPT_level": "N3",
+    "grammar_point": "てはじめて",
+    "meaning": "not until; only after [x] did I Verb (てform) はじめて"
+  },
+  {
+    "grammar_id": 327,
+    "JLPT_level": "N3",
+    "grammar_point": "てからでないと",
+    "meaning": "must first do; cannot do without first doing"
+  },
+  {
+    "grammar_id": 328,
+    "JLPT_level": "N3",
+    "grammar_point": "てしょうがない・てしかたがない",
+    "meaning": "can't help but~; very; extremely Verb (て form)"
+  },
+  {
+    "grammar_id": 329,
+    "JLPT_level": "N3",
+    "grammar_point": "て済む",
+    "meaning": "sufficient by; no problem to; resolve by~ Verb (て form)"
+  },
+  {
+    "grammar_id": 330,
+    "JLPT_level": "N3",
+    "grammar_point": "てはいけないから",
+    "meaning": "in order to not~; to prevent a negative Verb (て form) + は"
+  },
+  {
+    "grammar_id": 331,
+    "JLPT_level": "N3",
+    "grammar_point": "ている場合じゃない",
+    "meaning": "this is no time to be doing~"
+  },
+  {
+    "grammar_id": 332,
+    "JLPT_level": "N3",
+    "grammar_point": "的",
+    "meaning": "change noun into na-adjective -ish; -like; -"
+  },
+  {
+    "grammar_id": 333,
+    "JLPT_level": "N3",
+    "grammar_point": "ても始まらない",
+    "meaning": "even if you... it’s no use; there is no point Verb (て form) + も 始まらない"
+  },
+  {
+    "grammar_id": 334,
+    "JLPT_level": "N3",
+    "grammar_point": "てもかまわない",
+    "meaning": "it doesn't matter if ~ Verb (て form)"
+  },
+  {
+    "grammar_id": 335,
+    "JLPT_level": "N3",
+    "grammar_point": "てもしょうがない てもしかたがない",
+    "meaning": "there's no point to~; it's no use to~; it Verb (て form) + も"
+  },
+  {
+    "grammar_id": 336,
+    "JLPT_level": "N3",
+    "grammar_point": "といえば",
+    "meaning": "speaking of; when you talk of; when you say;"
+  },
+  {
+    "grammar_id": 337,
+    "JLPT_level": "N3",
+    "grammar_point": "といい たらいい",
+    "meaning": "it would be nice if; should; I hope~ Verb (casual) + と"
+  },
+  {
+    "grammar_id": 338,
+    "JLPT_level": "N3",
+    "grammar_point": "といっても",
+    "meaning": "although I say; although one might say~ Verb (casual form)"
+  },
+  {
+    "grammar_id": 339,
+    "JLPT_level": "N3",
+    "grammar_point": "ということだ",
+    "meaning": "I heard~; it means that~; in other words~ Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 340,
+    "JLPT_level": "N3",
+    "grammar_point": "というのは",
+    "meaning": "this means~; the meaning of … is~; reason"
+  },
+  {
+    "grammar_id": 341,
+    "JLPT_level": "N3",
+    "grammar_point": "というと",
+    "meaning": "speaking of; when you talk of; when you"
+  },
+  {
+    "grammar_id": 342,
+    "JLPT_level": "N3",
+    "grammar_point": "というより",
+    "meaning": "rather than~ Verb (casual)"
+  },
+  {
+    "grammar_id": 343,
+    "JLPT_level": "N3",
+    "grammar_point": "とみえる とみえて",
+    "meaning": "it seems that~ Verb (casual)"
+  },
+  {
+    "grammar_id": 344,
+    "JLPT_level": "N3",
+    "grammar_point": "とすれば・としたら・とすると",
+    "meaning": "in the case of~; assuming~; if A then B Verb (casual)"
+  },
+  {
+    "grammar_id": 345,
+    "JLPT_level": "N3",
+    "grammar_point": "と共に",
+    "meaning": "together with; at the same time as; as well Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 346,
+    "JLPT_level": "N3",
+    "grammar_point": "ところで",
+    "meaning": "by the way~ ところで new topic"
+  },
+  {
+    "grammar_id": 347,
+    "JLPT_level": "N3",
+    "grammar_point": "ところが",
+    "meaning": "even so; however; even though~ Expectation ところが result"
+  },
+  {
+    "grammar_id": 348,
+    "JLPT_level": "N3",
+    "grammar_point": "とおりに",
+    "meaning": "in the same way as; in the way; as~ Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 349,
+    "JLPT_level": "N3",
+    "grammar_point": "通す",
+    "meaning": "to do until the end; to continually do;"
+  },
+  {
+    "grammar_id": 350,
+    "JLPT_level": "N3",
+    "grammar_point": "として",
+    "meaning": "as~; in the role of~ Noun として"
+  },
+  {
+    "grammar_id": 351,
+    "JLPT_level": "N3",
+    "grammar_point": "とても〜ない",
+    "meaning": "cannot possibly be; hardly~ とても Verb (ない form)"
+  },
+  {
+    "grammar_id": 352,
+    "JLPT_level": "N3",
+    "grammar_point": "とは限らない",
+    "meaning": "not necessarily so; is not always true Verb (casual)"
+  },
+  {
+    "grammar_id": 353,
+    "JLPT_level": "N3",
+    "grammar_point": "つい",
+    "meaning": "accidentally; unintentionally; by mistake つい clause (often てしまう form)"
+  },
+  {
+    "grammar_id": 354,
+    "JLPT_level": "N3",
+    "grammar_point": "ついに",
+    "meaning": "finally ~; at last ~; in the end ついに phrase"
+  },
+  {
+    "grammar_id": 355,
+    "JLPT_level": "N3",
+    "grammar_point": "ついでに",
+    "meaning": "while, incidentally, at the same time, on the Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 356,
+    "JLPT_level": "N3",
+    "grammar_point": "つまり",
+    "meaning": "in other words; in summary; in short Clause つまり alternative explanation"
+  },
+  {
+    "grammar_id": 357,
+    "JLPT_level": "N3",
+    "grammar_point": "つもりだった",
+    "meaning": "I thought I~; I believe I~; was planning to~; Verb (ている form)"
+  },
+  {
+    "grammar_id": 358,
+    "JLPT_level": "N3",
+    "grammar_point": "つもりで",
+    "meaning": "with the intention of doing~ Verb (た form)"
+  },
+  {
+    "grammar_id": 359,
+    "JLPT_level": "N3",
+    "grammar_point": "うちに",
+    "meaning": "while; before~ Verb (casual form)"
+  },
+  {
+    "grammar_id": 360,
+    "JLPT_level": "N3",
+    "grammar_point": "上で",
+    "meaning": "upon; after; when; for; in order to Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 361,
+    "JLPT_level": "N3",
+    "grammar_point": "上に",
+    "meaning": "as well; besides; in addition to; not only… Verb (casual)"
+  },
+  {
+    "grammar_id": 362,
+    "JLPT_level": "N3",
+    "grammar_point": "は別として",
+    "meaning": "aside from; apart from; except for; whether Noun"
+  },
+  {
+    "grammar_id": 363,
+    "JLPT_level": "N3",
+    "grammar_point": "はもちろん",
+    "meaning": "not to mention; not only; but also~ Noun はもちろん 2nd clause + も"
+  },
+  {
+    "grammar_id": 364,
+    "JLPT_level": "N3",
+    "grammar_point": "は〜で有名",
+    "meaning": "famous for~ Verb (dictionary) + こと"
+  },
+  {
+    "grammar_id": 365,
+    "JLPT_level": "N3",
+    "grammar_point": "わけだ",
+    "meaning": "for that reason; no wonder; as you’d expect; Verb (casual)"
+  },
+  {
+    "grammar_id": 366,
+    "JLPT_level": "N3",
+    "grammar_point": "わけではない",
+    "meaning": "it doesn’t mean that; it is not the case that; I Verb (casual)"
+  },
+  {
+    "grammar_id": 367,
+    "JLPT_level": "N3",
+    "grammar_point": "わけがない",
+    "meaning": "there is no way that~; it is impossible to~ Verb (casual, non-past )"
+  },
+  {
+    "grammar_id": 368,
+    "JLPT_level": "N3",
+    "grammar_point": "わけにはいかない",
+    "meaning": "must not; cannot afford to; must, have no Verb (casual, non-past)"
+  },
+  {
+    "grammar_id": 369,
+    "JLPT_level": "N3",
+    "grammar_point": "割に",
+    "meaning": "considering; comparatively; relatively; Verb (casual form)"
+  },
+  {
+    "grammar_id": 370,
+    "JLPT_level": "N3",
+    "grammar_point": "わざと",
+    "meaning": "on purpose; intentionally~ わざと action"
+  },
+  {
+    "grammar_id": 371,
+    "JLPT_level": "N3",
+    "grammar_point": "わざわざ",
+    "meaning": "to go to the trouble of; to go out of one's way わざわざ action"
+  },
+  {
+    "grammar_id": 372,
+    "JLPT_level": "N3",
+    "grammar_point": "よりも",
+    "meaning": "in comparison to; rather than~; more than~ Verb (casual)"
+  },
+  {
+    "grammar_id": 373,
+    "JLPT_level": "N3",
+    "grammar_point": "ようがない",
+    "meaning": "there is no way to; it’s impossible to~"
+  },
+  {
+    "grammar_id": 374,
+    "JLPT_level": "N3",
+    "grammar_point": "ような気がする",
+    "meaning": "have a feeling that; feels like; seems like; Verb (casual) + ような"
+  },
+  {
+    "grammar_id": 375,
+    "JLPT_level": "N3",
+    "grammar_point": "ように",
+    "meaning": "in order to, so that~ Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 376,
+    "JLPT_level": "N3",
+    "grammar_point": "ようにみえる",
+    "meaning": "to look; to seem; to appear~ Verb (casual form)"
+  },
+  {
+    "grammar_id": 377,
+    "JLPT_level": "N3",
+    "grammar_point": "ようとしない",
+    "meaning": "not try to; not make an effort to~ Verb (volitional form) としない"
+  },
+  {
+    "grammar_id": 378,
+    "JLPT_level": "N3",
+    "grammar_point": "ようとする",
+    "meaning": "try to; attempt to; be about to~"
+  },
+  {
+    "grammar_id": 379,
+    "JLPT_level": "N3",
+    "grammar_point": "ずに",
+    "meaning": "without doing~ Verb ない ず（に）"
+  },
+  {
+    "grammar_id": 380,
+    "JLPT_level": "N3",
+    "grammar_point": "ずにはいられない",
+    "meaning": "can’t help but feel; can’t help but do; must Verb ない ずにはいられない"
+  },
+  {
+    "grammar_id": 381,
+    "JLPT_level": "N3",
+    "grammar_point": "ずつ",
+    "meaning": "apiece; each; at a time Noun (measurable) ずつ"
+  },
+  {
+    "grammar_id": 382,
+    "JLPT_level": "N2",
+    "grammar_point": "あげく",
+    "meaning": "to end up; in the end; finally; after all~ Verb (た form)"
+  },
+  {
+    "grammar_id": 383,
+    "JLPT_level": "N2",
+    "grammar_point": "あるいは",
+    "meaning": "or; either; maybe; perhaps; possibly~ あるいは other option"
+  },
+  {
+    "grammar_id": 384,
+    "JLPT_level": "N2",
+    "grammar_point": "ばかり",
+    "meaning": "about, approximately~ Noun (indicates time or distance) ばかり"
+  },
+  {
+    "grammar_id": 385,
+    "JLPT_level": "N2",
+    "grammar_point": "ばかりだ",
+    "meaning": "continue to (go in negative direction)"
+  },
+  {
+    "grammar_id": 386,
+    "JLPT_level": "N2",
+    "grammar_point": "ばかりか",
+    "meaning": "not only.. but also; as well as~ Verb (casual)"
+  },
+  {
+    "grammar_id": 387,
+    "JLPT_level": "N2",
+    "grammar_point": "ばかりに",
+    "meaning": "simply because; on account of~ negative Verb (casual)"
+  },
+  {
+    "grammar_id": 388,
+    "JLPT_level": "N2",
+    "grammar_point": "ちなみに",
+    "meaning": "by the way; in this connection; incidentally; ちなみに phrase"
+  },
+  {
+    "grammar_id": 389,
+    "JLPT_level": "N2",
+    "grammar_point": "ちっとも〜ない",
+    "meaning": "(not) at all; (not) in the least~ ちっとも Verb (ない form)"
+  },
+  {
+    "grammar_id": 390,
+    "JLPT_level": "N2",
+    "grammar_point": "だけあって",
+    "meaning": "being the case; precisely because; as Verb (casual)"
+  },
+  {
+    "grammar_id": 391,
+    "JLPT_level": "N2",
+    "grammar_point": "だけましだ",
+    "meaning": "it’s better than; one should feel grateful for~ Verb (casual)"
+  },
+  {
+    "grammar_id": 392,
+    "JLPT_level": "N2",
+    "grammar_point": "だけに",
+    "meaning": "being the case; precisely because; as one Verb (casual)"
+  },
+  {
+    "grammar_id": 393,
+    "JLPT_level": "N2",
+    "grammar_point": "だけのことはある",
+    "meaning": "no wonder; as expected of; not ... for Verb (casual)"
+  },
+  {
+    "grammar_id": 394,
+    "JLPT_level": "N2",
+    "grammar_point": "だけは",
+    "meaning": "to do all that one can Verb Same verb"
+  },
+  {
+    "grammar_id": 395,
+    "JLPT_level": "N2",
+    "grammar_point": "だって",
+    "meaning": "because; but; after all; even; too Noun + だって even, too"
+  },
+  {
+    "grammar_id": 396,
+    "JLPT_level": "N2",
+    "grammar_point": "でしかない",
+    "meaning": "merely; nothing but; no more than; there is Noun でしかない"
+  },
+  {
+    "grammar_id": 397,
+    "JLPT_level": "N2",
+    "grammar_point": "どころではない",
+    "meaning": "not the time for; not the place for; far from; Verb (casual)"
+  },
+  {
+    "grammar_id": 398,
+    "JLPT_level": "N2",
+    "grammar_point": "どころか",
+    "meaning": "far from; anything but; let alone; not to Verb (casual, non-past)"
+  },
+  {
+    "grammar_id": 399,
+    "JLPT_level": "N2",
+    "grammar_point": "どうやら",
+    "meaning": "possibly; apparently; seems like; somehow; どうやら phrase"
+  },
+  {
+    "grammar_id": 400,
+    "JLPT_level": "N2",
+    "grammar_point": "どうせ",
+    "meaning": "anyhow; in any case; at any rate; after all; no どうせ phrase"
+  },
+  {
+    "grammar_id": 401,
+    "JLPT_level": "N2",
+    "grammar_point": "得ない",
+    "meaning": "unable to; cannot; it is not possible to~ Verb ます (stem form) 得ない"
+  },
+  {
+    "grammar_id": 402,
+    "JLPT_level": "N2",
+    "grammar_point": "再び",
+    "meaning": "again; once more"
+  },
+  {
+    "grammar_id": 403,
+    "JLPT_level": "N2",
+    "grammar_point": "ふうに",
+    "meaning": "this way; that way; in such a way; how"
+  },
+  {
+    "grammar_id": 404,
+    "JLPT_level": "N2",
+    "grammar_point": "がきっかけで をきっかけに",
+    "meaning": "with… as a start; as a result of; taking Verb (た form) + の/こと"
+  },
+  {
+    "grammar_id": 405,
+    "JLPT_level": "N2",
+    "grammar_point": "げ",
+    "meaning": "looks like; seems like; appears to~ な-adjective な"
+  },
+  {
+    "grammar_id": 406,
+    "JLPT_level": "N2",
+    "grammar_point": "逆に",
+    "meaning": "conversely; on the contrary~ 逆に phrase"
+  },
+  {
+    "grammar_id": 407,
+    "JLPT_level": "N2",
+    "grammar_point": "はんめん",
+    "meaning": "while, although; on the other hand~ Verb (casual, non-past)"
+  },
+  {
+    "grammar_id": 408,
+    "JLPT_level": "N2",
+    "grammar_point": "果たして",
+    "meaning": "as was expected; sure enough; really; 果たして phrase"
+  },
+  {
+    "grammar_id": 409,
+    "JLPT_level": "N2",
+    "grammar_point": "いちおう",
+    "meaning": "more or less; pretty much; roughly; ⼀応 phrase"
+  },
+  {
+    "grammar_id": 410,
+    "JLPT_level": "N2",
+    "grammar_point": "以外",
+    "meaning": "with the exception of; excepting~ Noun 以外 + の、は、に）"
+  },
+  {
+    "grammar_id": 411,
+    "JLPT_level": "N2",
+    "grammar_point": "以上に",
+    "meaning": "more than; not less than; beyond~ Verb (casual)"
+  },
+  {
+    "grammar_id": 412,
+    "JLPT_level": "N2",
+    "grammar_point": "以上は",
+    "meaning": "because; since; seeing that~ Verb (casual)"
+  },
+  {
+    "grammar_id": 413,
+    "JLPT_level": "N2",
+    "grammar_point": "いきなり",
+    "meaning": "abruptly; suddenly; all of a sudden; without いきなり action"
+  },
+  {
+    "grammar_id": 414,
+    "JLPT_level": "N2",
+    "grammar_point": "いっきに",
+    "meaning": "in one go; without stopping; all at once; ⼀気に phrase"
+  },
+  {
+    "grammar_id": 415,
+    "JLPT_level": "N2",
+    "grammar_point": "いっぽうで",
+    "meaning": "on one hand, on the other hand; although~ Verb (casual)"
+  },
+  {
+    "grammar_id": 416,
+    "JLPT_level": "N2",
+    "grammar_point": "いわゆる",
+    "meaning": "what is called; as it is called; the so-called; so いわゆる Noun"
+  },
+  {
+    "grammar_id": 417,
+    "JLPT_level": "N2",
+    "grammar_point": "いよいよ",
+    "meaning": "at last; finally; beyond doubt いよいよ phrase"
+  },
+  {
+    "grammar_id": 418,
+    "JLPT_level": "N2",
+    "grammar_point": "上",
+    "meaning": "for the sake of; from the standpoint of; as a Noun 上"
+  },
+  {
+    "grammar_id": 419,
+    "JLPT_level": "N2",
+    "grammar_point": "かのように",
+    "meaning": "as if; just like~ Noun"
+  },
+  {
+    "grammar_id": 420,
+    "JLPT_level": "N2",
+    "grammar_point": "かと思ったら",
+    "meaning": "just when; no sooner than~"
+  },
+  {
+    "grammar_id": 421,
+    "JLPT_level": "N2",
+    "grammar_point": "か〜ないかのうちに",
+    "meaning": "just as; right after; as soon as~ Verb + か"
+  },
+  {
+    "grammar_id": 422,
+    "JLPT_level": "N2",
+    "grammar_point": "かえって",
+    "meaning": "on the contrary; rather; all the more; Phrase 1 かえって phrase 2"
+  },
+  {
+    "grammar_id": 423,
+    "JLPT_level": "N2",
+    "grammar_point": "限り",
+    "meaning": "as long as; while… is the case; as far as; Verb (casual, non-past)"
+  },
+  {
+    "grammar_id": 424,
+    "JLPT_level": "N2",
+    "grammar_point": "甲斐がある",
+    "meaning": "it’s worth one’s efforts to do something Verb (casual, past)"
+  },
+  {
+    "grammar_id": 425,
+    "JLPT_level": "N2",
+    "grammar_point": "かねない",
+    "meaning": "(someone) might do something; something Verb ます (stem form) かねない"
+  },
+  {
+    "grammar_id": 426,
+    "JLPT_level": "N2",
+    "grammar_point": "かねる",
+    "meaning": "unable to do something; can’t do something"
+  },
+  {
+    "grammar_id": 427,
+    "JLPT_level": "N2",
+    "grammar_point": "からいうと",
+    "meaning": "in terms of; from the point of view of~"
+  },
+  {
+    "grammar_id": 428,
+    "JLPT_level": "N2",
+    "grammar_point": "からこそ",
+    "meaning": "precisely because~ Verb (casual)"
+  },
+  {
+    "grammar_id": 429,
+    "JLPT_level": "N2",
+    "grammar_point": "からみると",
+    "meaning": "from the point of view of; by the look of;"
+  },
+  {
+    "grammar_id": 430,
+    "JLPT_level": "N2",
+    "grammar_point": "からには",
+    "meaning": "now that; since; so long as; because~ Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 431,
+    "JLPT_level": "N2",
+    "grammar_point": "からして",
+    "meaning": "judging from; based on; since; from; even~ Noun からして"
+  },
+  {
+    "grammar_id": 432,
+    "JLPT_level": "N2",
+    "grammar_point": "からすると からすれば",
+    "meaning": "judging from; considering; by the look of~"
+  },
+  {
+    "grammar_id": 433,
+    "JLPT_level": "N2",
+    "grammar_point": "からといって",
+    "meaning": "just because; even if; even though~ Verb (casual)"
+  },
+  {
+    "grammar_id": 434,
+    "JLPT_level": "N2",
+    "grammar_point": "っこない",
+    "meaning": "no chance of; …is definitely not possible Verb ます (stem form)"
+  },
+  {
+    "grammar_id": 435,
+    "JLPT_level": "N2",
+    "grammar_point": "ことだ",
+    "meaning": "should do~ used for suggestions or giving Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 436,
+    "JLPT_level": "N2",
+    "grammar_point": "ことだから",
+    "meaning": "because; since~ Usage style #1"
+  },
+  {
+    "grammar_id": 437,
+    "JLPT_level": "N2",
+    "grammar_point": "ことか",
+    "meaning": "how…!; what…! Verb (casual)"
+  },
+  {
+    "grammar_id": 438,
+    "JLPT_level": "N2",
+    "grammar_point": "ことなく",
+    "meaning": "without doing something even once Verb (dictionary form) ことなく"
+  },
+  {
+    "grammar_id": 439,
+    "JLPT_level": "N2",
+    "grammar_point": "ことに",
+    "meaning": "emphasize speaker's feelings; to my Verb (た form)"
+  },
+  {
+    "grammar_id": 440,
+    "JLPT_level": "N2",
+    "grammar_point": "ことにはならない",
+    "meaning": "just because… doesn’t mean~ Verb (casual, past) + とい"
+  },
+  {
+    "grammar_id": 441,
+    "JLPT_level": "N2",
+    "grammar_point": "くせして",
+    "meaning": "although~; despite the fact that~; even Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 442,
+    "JLPT_level": "N2",
+    "grammar_point": "まだしも",
+    "meaning": "rather; better ~ Noun + なら"
+  },
+  {
+    "grammar_id": 443,
+    "JLPT_level": "N2",
+    "grammar_point": "まい",
+    "meaning": "will not; will probably not; intend not to; U-verb (dictionary form)"
+  },
+  {
+    "grammar_id": 444,
+    "JLPT_level": "N2",
+    "grammar_point": "ままに",
+    "meaning": "as, to do as~ Verb (dictionary form) +（が）"
+  },
+  {
+    "grammar_id": 445,
+    "JLPT_level": "N2",
+    "grammar_point": "全く〜ない",
+    "meaning": "not at all~ まったく Verb (ない form)"
+  },
+  {
+    "grammar_id": 446,
+    "JLPT_level": "N2",
+    "grammar_point": "もかまわず",
+    "meaning": "without caring; without worrying about~ Verb (casual) + (の)"
+  },
+  {
+    "grammar_id": 447,
+    "JLPT_level": "N2",
+    "grammar_point": "も当然だ",
+    "meaning": "it’s only natural; no wonder; might as well~ Verb (casual) + の"
+  },
+  {
+    "grammar_id": 448,
+    "JLPT_level": "N2",
+    "grammar_point": "もの もん",
+    "meaning": "because; indicates reason/ excuse/ Verb (casual) +（んだ）"
+  },
+  {
+    "grammar_id": 449,
+    "JLPT_level": "N2",
+    "grammar_point": "ものだ",
+    "meaning": "describe feeling; express memories; state fact Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 450,
+    "JLPT_level": "N2",
+    "grammar_point": "ものだから",
+    "meaning": "so; therefore; the reason for something Verb (casual)"
+  },
+  {
+    "grammar_id": 451,
+    "JLPT_level": "N2",
+    "grammar_point": "ものではない",
+    "meaning": "shouldn’t do something; it’s impossible to~ Verb (casual, past) ものではない"
+  },
+  {
+    "grammar_id": 452,
+    "JLPT_level": "N2",
+    "grammar_point": "ものがある",
+    "meaning": "there is such a thing; to be the case that ; feels Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 453,
+    "JLPT_level": "N2",
+    "grammar_point": "ものか もんか",
+    "meaning": "as if (something untrue were actually true); Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 454,
+    "JLPT_level": "N2",
+    "grammar_point": "ものなら",
+    "meaning": "if I/we could; if [A] is possible, then [B]; if"
+  },
+  {
+    "grammar_id": 455,
+    "JLPT_level": "N2",
+    "grammar_point": "ものの",
+    "meaning": "but; although; even though~ Verb (casual)"
+  },
+  {
+    "grammar_id": 456,
+    "JLPT_level": "N2",
+    "grammar_point": "もっとも",
+    "meaning": "but then; although; though~ もっとも phrase"
+  },
+  {
+    "grammar_id": 457,
+    "JLPT_level": "N2",
+    "grammar_point": "もう少しで",
+    "meaning": "almost; nearly, close to~ Verb (ます stem) +"
+  },
+  {
+    "grammar_id": 458,
+    "JLPT_level": "N2",
+    "grammar_point": "ないではいられない",
+    "meaning": "can’t help but feel; can’t help but do~ Verb (ない form) ではいられない"
+  },
+  {
+    "grammar_id": 459,
+    "JLPT_level": "N2",
+    "grammar_point": "ないことには〜ない",
+    "meaning": "unless you~ Verb (ない form)"
+  },
+  {
+    "grammar_id": 460,
+    "JLPT_level": "N2",
+    "grammar_point": "なくはない",
+    "meaning": "it’s not that; I may (double negative) Verb ない"
+  },
+  {
+    "grammar_id": 461,
+    "JLPT_level": "N2",
+    "grammar_point": "なくて済む",
+    "meaning": "get by without doing~"
+  },
+  {
+    "grammar_id": 462,
+    "JLPT_level": "N2",
+    "grammar_point": "何も〜ない",
+    "meaning": "nothing; (not) ~ at all; there’s no need to~ なにも Verb/Noun/Adj (ない form)"
+  },
+  {
+    "grammar_id": 463,
+    "JLPT_level": "N2",
+    "grammar_point": "なお",
+    "meaning": "still; yet; furthermore; in addition~ なお phrase"
+  },
+  {
+    "grammar_id": 464,
+    "JLPT_level": "N2",
+    "grammar_point": "ねばならない",
+    "meaning": "have to do; must; should~ Verb ない ねばならない"
+  },
+  {
+    "grammar_id": 465,
+    "JLPT_level": "N2",
+    "grammar_point": "にあたって",
+    "meaning": "at the time; on the occasion of~ Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 466,
+    "JLPT_level": "N2",
+    "grammar_point": "にほかならない",
+    "meaning": "nothing but; none other than~ Noun にほかならない"
+  },
+  {
+    "grammar_id": 467,
+    "JLPT_level": "N2",
+    "grammar_point": "に限らず",
+    "meaning": "not just; not only.. but also~ Noun に限らず"
+  },
+  {
+    "grammar_id": 468,
+    "JLPT_level": "N2",
+    "grammar_point": "に限る",
+    "meaning": "is best; nothing is better than~ Verb (casual, non-past)"
+  },
+  {
+    "grammar_id": 469,
+    "JLPT_level": "N2",
+    "grammar_point": "に限って",
+    "meaning": "only; in particular~ Noun に限って"
+  },
+  {
+    "grammar_id": 470,
+    "JLPT_level": "N2",
+    "grammar_point": "に関わらず",
+    "meaning": "in spite of; regardless of~ Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 471,
+    "JLPT_level": "N2",
+    "grammar_point": "に関わる",
+    "meaning": "to relate to; to have to do with; relating to~"
+  },
+  {
+    "grammar_id": 472,
+    "JLPT_level": "N2",
+    "grammar_point": "に決まっている",
+    "meaning": "certainly; I’m sure/certain that; it must be Verb (casual)"
+  },
+  {
+    "grammar_id": 473,
+    "JLPT_level": "N2",
+    "grammar_point": "に越したことはない",
+    "meaning": "it’s best that, there’s nothing better than~ Verb (casual, non-past)"
+  },
+  {
+    "grammar_id": 474,
+    "JLPT_level": "N2",
+    "grammar_point": "に応えて",
+    "meaning": "in response to~"
+  },
+  {
+    "grammar_id": 475,
+    "JLPT_level": "N2",
+    "grammar_point": "に加えて",
+    "meaning": "in addition~ Noun に加えて"
+  },
+  {
+    "grammar_id": 476,
+    "JLPT_level": "N2",
+    "grammar_point": "に基づいて",
+    "meaning": "based on; on the basis of~"
+  },
+  {
+    "grammar_id": 477,
+    "JLPT_level": "N2",
+    "grammar_point": "に向かって",
+    "meaning": "to face; to go towards; to head to~"
+  },
+  {
+    "grammar_id": 478,
+    "JLPT_level": "N2",
+    "grammar_point": "に応じて",
+    "meaning": "depending on; in accordance with~"
+  },
+  {
+    "grammar_id": 479,
+    "JLPT_level": "N2",
+    "grammar_point": "に際して",
+    "meaning": "on the occasion of; at the time of~ Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 480,
+    "JLPT_level": "N2",
+    "grammar_point": "にさきだち",
+    "meaning": "before; prior to~"
+  },
+  {
+    "grammar_id": 481,
+    "JLPT_level": "N2",
+    "grammar_point": "にせよ にしろ",
+    "meaning": "even if; regardless; whether... or Verb (casual)"
+  },
+  {
+    "grammar_id": 482,
+    "JLPT_level": "N2",
+    "grammar_point": "にしろ〜にしろ",
+    "meaning": "whether… or~ Verb Verb"
+  },
+  {
+    "grammar_id": 483,
+    "JLPT_level": "N2",
+    "grammar_point": "にしたら にすれば",
+    "meaning": "from one’s perspective; from the point of"
+  },
+  {
+    "grammar_id": 484,
+    "JLPT_level": "N2",
+    "grammar_point": "にしても〜にしても",
+    "meaning": "regardless of whether~ Verb Verb"
+  },
+  {
+    "grammar_id": 485,
+    "JLPT_level": "N2",
+    "grammar_point": "に沿って",
+    "meaning": "along with; in accordance with"
+  },
+  {
+    "grammar_id": 486,
+    "JLPT_level": "N2",
+    "grammar_point": "に相違ない",
+    "meaning": "without a doubt; certain; sure Verb (casual)"
+  },
+  {
+    "grammar_id": 487,
+    "JLPT_level": "N2",
+    "grammar_point": "に過ぎない",
+    "meaning": "no more than; just; merely; only~ Verb (casual)"
+  },
+  {
+    "grammar_id": 488,
+    "JLPT_level": "N2",
+    "grammar_point": "に伴って",
+    "meaning": "as; due to; with; along with; following;"
+  },
+  {
+    "grammar_id": 489,
+    "JLPT_level": "N2",
+    "grammar_point": "につけ",
+    "meaning": "every time; whenever; as; whether; in (either Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 490,
+    "JLPT_level": "N2",
+    "grammar_point": "につき",
+    "meaning": "due to; because of; per; each Noun + につき"
+  },
+  {
+    "grammar_id": 491,
+    "JLPT_level": "N2",
+    "grammar_point": "にわたって",
+    "meaning": "throughout; over a period of~ Noun にわたって"
+  },
+  {
+    "grammar_id": 492,
+    "JLPT_level": "N2",
+    "grammar_point": "にも関わらず",
+    "meaning": "despite; in spite of; nevertheless; although~ Verb (casual)"
+  },
+  {
+    "grammar_id": 493,
+    "JLPT_level": "N2",
+    "grammar_point": "にて",
+    "meaning": "in, at, with, by (formal particle) Noun にて"
+  },
+  {
+    "grammar_id": 494,
+    "JLPT_level": "N2",
+    "grammar_point": "のももっともだ",
+    "meaning": "no wonder; …is only natural Verb (casual) + のも"
+  },
+  {
+    "grammar_id": 495,
+    "JLPT_level": "N2",
+    "grammar_point": "の下で",
+    "meaning": "under; with~"
+  },
+  {
+    "grammar_id": 496,
+    "JLPT_level": "N2",
+    "grammar_point": "の上では",
+    "meaning": "according to; from the viewpoint of~"
+  },
+  {
+    "grammar_id": 497,
+    "JLPT_level": "N2",
+    "grammar_point": "のみならず",
+    "meaning": "not only; besides; as well as~ Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 498,
+    "JLPT_level": "N2",
+    "grammar_point": "ぬ",
+    "meaning": "negative verb conjugation; traditional Verb ない ぬ"
+  },
+  {
+    "grammar_id": 499,
+    "JLPT_level": "N2",
+    "grammar_point": "抜く",
+    "meaning": "to do something from beginning to end; Verb ます (stem form) 抜く"
+  },
+  {
+    "grammar_id": 500,
+    "JLPT_level": "N2",
+    "grammar_point": "を契機に",
+    "meaning": "as a good opportunity/chance to; as a result"
+  },
+  {
+    "grammar_id": 501,
+    "JLPT_level": "N2",
+    "grammar_point": "をめぐって",
+    "meaning": "concerning; in regard to~"
+  },
+  {
+    "grammar_id": 502,
+    "JLPT_level": "N2",
+    "grammar_point": "をもとに",
+    "meaning": "based on; derived from; building on;"
+  },
+  {
+    "grammar_id": 503,
+    "JLPT_level": "N2",
+    "grammar_point": "を除いて",
+    "meaning": "except; with the exception of; excluding~ を除いて(は)"
+  },
+  {
+    "grammar_id": 504,
+    "JLPT_level": "N2",
+    "grammar_point": "を問わず",
+    "meaning": "regardless of; irrespective of; no matter Noun を問わず"
+  },
+  {
+    "grammar_id": 505,
+    "JLPT_level": "N2",
+    "grammar_point": "お〜願う",
+    "meaning": "please do; could you please…; I ask of you お + Verb ます (stem form)"
+  },
+  {
+    "grammar_id": 506,
+    "JLPT_level": "N2",
+    "grammar_point": "おまけに",
+    "meaning": "to make matters worse; besides; what's Phrase おまけに"
+  },
+  {
+    "grammar_id": 507,
+    "JLPT_level": "N2",
+    "grammar_point": "恐らく",
+    "meaning": "perhaps; likely; probably; I dare say~ おそらく phrase"
+  },
+  {
+    "grammar_id": 508,
+    "JLPT_level": "N2",
+    "grammar_point": "恐れがある",
+    "meaning": "it is feared that; to be in danger of; to be Verb (casual)"
+  },
+  {
+    "grammar_id": 509,
+    "JLPT_level": "N2",
+    "grammar_point": "及び",
+    "meaning": "and; as well as~ Noun および Noun"
+  },
+  {
+    "grammar_id": 510,
+    "JLPT_level": "N2",
+    "grammar_point": "ろくに〜ない",
+    "meaning": "not well; not enough; improperly; ろくに Verb (ない form)"
+  },
+  {
+    "grammar_id": 511,
+    "JLPT_level": "N2",
+    "grammar_point": "幸いなことに",
+    "meaning": "fortunately; luckily; thankfully~"
+  },
+  {
+    "grammar_id": 512,
+    "JLPT_level": "N2",
+    "grammar_point": "せいか",
+    "meaning": "perhaps because~ Verb (casual)"
+  },
+  {
+    "grammar_id": 513,
+    "JLPT_level": "N2",
+    "grammar_point": "せっかく",
+    "meaning": "especially; (thank you for) troubling to, going せっかく clause (+ conjunction)"
+  },
+  {
+    "grammar_id": 514,
+    "JLPT_level": "N2",
+    "grammar_point": "せめて",
+    "meaning": "at least; at most~ せめて phrase"
+  },
+  {
+    "grammar_id": 515,
+    "JLPT_level": "N2",
+    "grammar_point": "次第",
+    "meaning": "as soon as, dependent upon Verb ます (stem form) 次第"
+  },
+  {
+    "grammar_id": 516,
+    "JLPT_level": "N2",
+    "grammar_point": "次第で",
+    "meaning": "depending on; so~"
+  },
+  {
+    "grammar_id": 517,
+    "JLPT_level": "N2",
+    "grammar_point": "次第に",
+    "meaning": "gradually (progress into a state); in 次第に phrase"
+  },
+  {
+    "grammar_id": 518,
+    "JLPT_level": "N2",
+    "grammar_point": "しかも",
+    "meaning": "moreover; furthermore; and yet; what’s しかも phrase"
+  },
+  {
+    "grammar_id": 519,
+    "JLPT_level": "N2",
+    "grammar_point": "その上",
+    "meaning": "besides; in addition; furthermore~ その上 phrase"
+  },
+  {
+    "grammar_id": 520,
+    "JLPT_level": "N2",
+    "grammar_point": "それなのに",
+    "meaning": "and yet; despite this; but even so~ それなのに phrase"
+  },
+  {
+    "grammar_id": 521,
+    "JLPT_level": "N2",
+    "grammar_point": "それにしても",
+    "meaning": "nevertheless; at any rate; even so; be that as それにしても phrase"
+  },
+  {
+    "grammar_id": 522,
+    "JLPT_level": "N2",
+    "grammar_point": "そういえば",
+    "meaning": "come to think of it…; now that you mention そういえば phrase"
+  },
+  {
+    "grammar_id": 523,
+    "JLPT_level": "N2",
+    "grammar_point": "そうすると",
+    "meaning": "having done that; if that is done; if it is done そうすると phrase"
+  },
+  {
+    "grammar_id": 524,
+    "JLPT_level": "N2",
+    "grammar_point": "末に",
+    "meaning": "finally; after; following; at the end/ Verb (た form)"
+  },
+  {
+    "grammar_id": 525,
+    "JLPT_level": "N2",
+    "grammar_point": "少しも〜ない",
+    "meaning": "not one bit; not even a little~ Verb (ない form)"
+  },
+  {
+    "grammar_id": 526,
+    "JLPT_level": "N2",
+    "grammar_point": "少なくとも",
+    "meaning": "at least~ 少なくとも phrase"
+  },
+  {
+    "grammar_id": 527,
+    "JLPT_level": "N2",
+    "grammar_point": "直ちに",
+    "meaning": "at once; immediately; directly; in person; 直ちに phrase"
+  },
+  {
+    "grammar_id": 528,
+    "JLPT_level": "N2",
+    "grammar_point": "たまえ",
+    "meaning": "do~; order somebody to do something Verb ます (stem form) たまえ"
+  },
+  {
+    "grammar_id": 529,
+    "JLPT_level": "N2",
+    "grammar_point": "てばかりはいられない",
+    "meaning": "can’t keep doing~"
+  },
+  {
+    "grammar_id": 530,
+    "JLPT_level": "N2",
+    "grammar_point": "てでも",
+    "meaning": "even if I have to; by all means~ Verb (て form) でも"
+  },
+  {
+    "grammar_id": 531,
+    "JLPT_level": "N2",
+    "grammar_point": "て以来",
+    "meaning": "since; henceforth~ Verb (てform)"
+  },
+  {
+    "grammar_id": 532,
+    "JLPT_level": "N2",
+    "grammar_point": "ていては",
+    "meaning": "if one keeps doing~ Verb (て form) いては"
+  },
+  {
+    "grammar_id": 533,
+    "JLPT_level": "N2",
+    "grammar_point": "てこそ",
+    "meaning": "now that; since (something happened) Verb (て form) こそ"
+  },
+  {
+    "grammar_id": 534,
+    "JLPT_level": "N2",
+    "grammar_point": "てまで",
+    "meaning": "even; will go far so as to~ Verb（て form) まで"
+  },
+  {
+    "grammar_id": 535,
+    "JLPT_level": "N2",
+    "grammar_point": "てならない",
+    "meaning": "can't help but; dying to; extremely~ Verb (て form)"
+  },
+  {
+    "grammar_id": 536,
+    "JLPT_level": "N2",
+    "grammar_point": "てたまらない",
+    "meaning": "can't help but; dying to; extremely~ Verb (たくて form)"
+  },
+  {
+    "grammar_id": 537,
+    "JLPT_level": "N2",
+    "grammar_point": "て当然だ",
+    "meaning": "natural; as a matter of course Verb (て form)"
+  },
+  {
+    "grammar_id": 538,
+    "JLPT_level": "N2",
+    "grammar_point": "ては では",
+    "meaning": "whenever; if; when~; repetitive action Verb (て form)"
+  },
+  {
+    "grammar_id": 539,
+    "JLPT_level": "N2",
+    "grammar_point": "てはいられない",
+    "meaning": "can’t afford to; unable to~ Verb (て form)"
+  },
+  {
+    "grammar_id": 540,
+    "JLPT_level": "N2",
+    "grammar_point": "てはならない",
+    "meaning": "must not; cannot; should not~ Verb (て form) はならない"
+  },
+  {
+    "grammar_id": 541,
+    "JLPT_level": "N2",
+    "grammar_point": "ては〜ては",
+    "meaning": "repetitive situations/actions V 2て V 2て"
+  },
+  {
+    "grammar_id": 542,
+    "JLPT_level": "N2",
+    "grammar_point": "と同時に",
+    "meaning": "at the same time as; while; simultaneously~ Verb (casual, non-past)"
+  },
+  {
+    "grammar_id": 543,
+    "JLPT_level": "N2",
+    "grammar_point": "といった",
+    "meaning": "like; such as~ Noun といった"
+  },
+  {
+    "grammar_id": 544,
+    "JLPT_level": "N2",
+    "grammar_point": "というふうに",
+    "meaning": "in such a way that~"
+  },
+  {
+    "grammar_id": 545,
+    "JLPT_level": "N2",
+    "grammar_point": "ということは",
+    "meaning": "that is to say; so that means; in other words~ Clause 1 ということは clause 2"
+  },
+  {
+    "grammar_id": 546,
+    "JLPT_level": "N2",
+    "grammar_point": "というものだ",
+    "meaning": "something like; something called~ Verb (casual form)"
+  },
+  {
+    "grammar_id": 547,
+    "JLPT_level": "N2",
+    "grammar_point": "というものではない",
+    "meaning": "there is no guarantee that…; not necessarily~ Verb (casual form)"
+  },
+  {
+    "grammar_id": 548,
+    "JLPT_level": "N2",
+    "grammar_point": "と考えられる",
+    "meaning": "one can think that; it is conceivable that; Phrase と考えられる"
+  },
+  {
+    "grammar_id": 549,
+    "JLPT_level": "N2",
+    "grammar_point": "とか（で）",
+    "meaning": "I heard that~ Verb (casual form)"
+  },
+  {
+    "grammar_id": 550,
+    "JLPT_level": "N2",
+    "grammar_point": "とっくに",
+    "meaning": "long ago; already; a long time ago とっくに Verb"
+  },
+  {
+    "grammar_id": 551,
+    "JLPT_level": "N2",
+    "grammar_point": "ところだった",
+    "meaning": "was just about to do something; something Verb (dictionary form) ところだった"
+  },
+  {
+    "grammar_id": 552,
+    "JLPT_level": "N2",
+    "grammar_point": "ところに",
+    "meaning": "at the time; just as I was~ Verb (た / ている / ていた)"
+  },
+  {
+    "grammar_id": 553,
+    "JLPT_level": "N2",
+    "grammar_point": "ところをみると",
+    "meaning": "judging from; seeing that~ Verb (casual) ところを⾒ると"
+  },
+  {
+    "grammar_id": 554,
+    "JLPT_level": "N2",
+    "grammar_point": "とも",
+    "meaning": "even if; no matter who, what, when, where, Verb ないく"
+  },
+  {
+    "grammar_id": 555,
+    "JLPT_level": "N2",
+    "grammar_point": "としても",
+    "meaning": "assuming; even if~ Verb (casual form)"
+  },
+  {
+    "grammar_id": 556,
+    "JLPT_level": "N2",
+    "grammar_point": "つつ",
+    "meaning": "while; even though; despite~ Verb ます (stem form) つつ (も)"
+  },
+  {
+    "grammar_id": 557,
+    "JLPT_level": "N2",
+    "grammar_point": "つつある",
+    "meaning": "to be doing; to be in the process of doing~ Verb ます (stem form) つつある"
+  },
+  {
+    "grammar_id": 558,
+    "JLPT_level": "N2",
+    "grammar_point": "上は",
+    "meaning": "now that; since; as long as~ Verb (dictionary form)"
+  },
+  {
+    "grammar_id": 559,
+    "JLPT_level": "N2",
+    "grammar_point": "はもとより",
+    "meaning": "also; let alone; from the beginning Noun + は もとより ~も"
+  },
+  {
+    "grammar_id": 560,
+    "JLPT_level": "N2",
+    "grammar_point": "はともかく",
+    "meaning": "anyhow; anyway; regardless; in any case; Noun はともかく（として）"
+  },
+  {
+    "grammar_id": 561,
+    "JLPT_level": "N2",
+    "grammar_point": "わずかに",
+    "meaning": "slightly; only; barely; narrowly~ わずかに Phrase"
+  },
+  {
+    "grammar_id": 562,
+    "JLPT_level": "N2",
+    "grammar_point": "やがて",
+    "meaning": "before long; soon; almost; eventually~ やがて phrase"
+  },
+  {
+    "grammar_id": 563,
+    "JLPT_level": "N2",
+    "grammar_point": "やら〜やら",
+    "meaning": "such things as A and B; A and B and so on~ Verb (dictionary)"
+  },
+  {
+    "grammar_id": 564,
+    "JLPT_level": "N2",
+    "grammar_point": "よほど よっぽど",
+    "meaning": "very; greatly; much; to a large extent"
+  },
+  {
+    "grammar_id": 565,
+    "JLPT_level": "N2",
+    "grammar_point": "より",
+    "meaning": "from~ (a time, place, or person) time, place or person より"
+  },
+  {
+    "grammar_id": 566,
+    "JLPT_level": "N2",
+    "grammar_point": "よりほかない",
+    "meaning": "to have no choice but~"
+  },
+  {
+    "grammar_id": 567,
+    "JLPT_level": "N2",
+    "grammar_point": "ようでは",
+    "meaning": "if~ (bad result) Verb (casual form) ようでは bad result"
+  },
+  {
+    "grammar_id": 568,
+    "JLPT_level": "N2",
+    "grammar_point": "ようではないか",
+    "meaning": "let’s do (something); why don’t we~"
+  },
+  {
+    "grammar_id": 569,
+    "JLPT_level": "N2",
+    "grammar_point": "ようか〜まいか",
+    "meaning": "whether or not; considering options V (volational) + か V + まいか"
+  },
+  {
+    "grammar_id": 570,
+    "JLPT_level": "N2",
+    "grammar_point": "要するに",
+    "meaning": "in short; in a word; to sum up; to put it 要するに phrase"
+  },
+  {
+    "grammar_id": 571,
+    "JLPT_level": "N2",
+    "grammar_point": "ざるを得ない",
+    "meaning": "cannot help (doing); have no choice but to~ Verb (ない root)"
+  },
+  {
+    "grammar_id": 572,
+    "JLPT_level": "N2",
+    "grammar_point": "ずに済む",
+    "meaning": "get by without doing~ Verb ない ずに済む"
+  }
+]

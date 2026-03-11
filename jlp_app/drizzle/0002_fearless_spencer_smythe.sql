@@ -1,0 +1,1 @@
+ALTER TABLE `j_content` ADD `video` text;
