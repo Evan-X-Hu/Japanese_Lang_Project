@@ -33,6 +33,13 @@ contextBridge.exposeInMainWorld('content', {
     update: (contentId: number, data: Record<string, unknown>) => ipcRenderer.invoke('content:update', contentId, data),
     delete: (contentId: number) => ipcRenderer.invoke('content:delete', contentId),
     import: (url: string, userId: number) => ipcRenderer.invoke('content:import', url, userId),
+    getGrammars: (contentId: number) => ipcRenderer.invoke('content:getGrammars', contentId),
+})
+
+// Expose grammar API
+contextBridge.exposeInMainWorld('grammar', {
+    getAll: (userId: number) => ipcRenderer.invoke('grammar:getAll', userId),
+    update: (masterGrammarId: number, data: Record<string, unknown>) => ipcRenderer.invoke('grammar:update', masterGrammarId, data),
 })
 
 // Expose media server port

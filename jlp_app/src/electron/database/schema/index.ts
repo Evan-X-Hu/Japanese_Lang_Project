@@ -75,7 +75,8 @@ export const masterGrammar = sqliteTable("master_grammar", {
   jlptLevel: text("jlpt_level"),
   grammarPoint: text("grammar_point"),
   meaning: text("meaning"),
-  level: integer("level"),
+  level: integer("level"),  // 1=easy, 2=medium, 3=hard (user-set difficulty)
+  notes: text("notes"),
 });
 
 // ============================================================

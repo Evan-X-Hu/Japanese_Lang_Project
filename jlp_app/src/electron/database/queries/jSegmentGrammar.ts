@@ -1,6 +1,26 @@
-import { and, eq, inArray } from 'drizzle-orm';
+import { and, eq, inArray, sql, desc } from 'drizzle-orm';
 import { getDatabase } from '../connection';
-import { masterGrammar, jSegmentGrammar } from '../schema/index';
+import { masterGrammar, jSegmentGrammar, jSegment } from '../schema/index';
+
+export function getGrammarFrequencyByContentId(contentId: number) {
+  const db = getDatabase();
+  return db
+    .select({
+      masterGrammarId: masterGrammar.masterGrammarId,
+      grammarPoint: masterGrammar.grammarPoint,
+      meaning: masterGrammar.meaning,
+      level: masterGrammar.level,
+      jlptLevel: masterGrammar.jlptLevel,
+      frequency: sql<number>`count(*)`.as('frequency'),
+    })
+    .from(jSegment)
+    .innerJoin(jSegmentGrammar, eq(jSegment.segmentId, jSegmentGrammar.segmentId))
+    .innerJoin(masterGrammar, eq(jSegmentGrammar.masterGrammarId, masterGrammar.masterGrammarId))
+    .where(eq(jSegment.contentId, contentId))
+    .groupBy(masterGrammar.masterGrammarId)
+    .orderBy(desc(sql`frequency`))
+    .all();
+}
 
 // j_segment_grammar has 2 columns; SQLite limit is 999 variables → max 499 rows per batch
 const BATCH_SIZE = 499;

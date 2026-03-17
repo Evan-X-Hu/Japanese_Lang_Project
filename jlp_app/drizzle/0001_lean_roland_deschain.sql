@@ -1,1 +1,0 @@
-DROP INDEX `j_content_link_unique`;

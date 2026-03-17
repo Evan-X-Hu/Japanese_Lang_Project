@@ -1,7 +1,7 @@
 {
   "version": "6",
   "dialect": "sqlite",
-  "id": "ebd193e4-9654-46d9-bb22-6a46762c4663",
+  "id": "e5e884a4-8cf7-4b1f-a6a4-dbb4bed8465b",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "tables": {
     "deck": {
@@ -270,17 +270,23 @@
           "primaryKey": false,
           "notNull": false,
           "autoincrement": false
+        },
+        "video": {
+          "name": "video",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "vtt": {
+          "name": "vtt",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
         }
       },
-      "indexes": {
-        "j_content_link_unique": {
-          "name": "j_content_link_unique",
-          "columns": [
-            "link"
-          ],
-          "isUnique": true
-        }
-      },
+      "indexes": {},
       "foreignKeys": {},
       "compositePrimaryKeys": {},
       "uniqueConstraints": {},
@@ -584,6 +590,13 @@
         "level": {
           "name": "level",
           "type": "integer",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "notes": {
+          "name": "notes",
+          "type": "text",
           "primaryKey": false,
           "notNull": false,
           "autoincrement": false

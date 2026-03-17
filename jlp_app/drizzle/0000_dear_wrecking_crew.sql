@@ -35,10 +35,11 @@ CREATE TABLE `j_content` (
 	`author` text,
 	`upload_date` integer,
 	`link` text,
-	`audio` text
+	`audio` text,
+	`video` text,
+	`vtt` text
 );
 --> statement-breakpoint
-CREATE UNIQUE INDEX `j_content_link_unique` ON `j_content` (`link`);--> statement-breakpoint
 CREATE TABLE `j_content_user` (
 	`content_id` integer NOT NULL,
 	`user_id` integer NOT NULL,
@@ -82,6 +83,7 @@ CREATE TABLE `master_grammar` (
 	`grammar_point` text,
 	`meaning` text,
 	`level` integer,
+	`notes` text,
 	FOREIGN KEY (`user_id`) REFERENCES `user`(`user_id`) ON UPDATE no action ON DELETE cascade
 );
 --> statement-breakpoint

@@ -1,4 +1,4 @@
-import type { ContentAPI, UserAPI } from './index';
+import type { ContentAPI, UserAPI, GrammarAPI } from './index';
 
 // Electron API exposed via preload script
 interface ElectronAPI {
@@ -17,5 +17,6 @@ declare global {
     content?: ContentAPI;
     user?: UserAPI;
     media?: MediaServerAPI;
+    grammar?: GrammarAPI;
   }
 }

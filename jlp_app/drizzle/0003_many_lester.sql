@@ -1,1 +1,0 @@
-ALTER TABLE `j_content` ADD `vtt` text;

@@ -78,7 +78,7 @@ export function Content() {
 
   if (view === 'detail') {
     return (
-      <div className={styles.page}>
+      <div className={styles.detailPage}>
         <button className={styles.backButton} onClick={handleBack}>
           <ArrowLeft className={styles.backIcon} />
           <span>Back to Library</span>

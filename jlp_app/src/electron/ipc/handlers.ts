@@ -10,7 +10,7 @@ import {
   linkContentToUser,
 } from '../database/queries/jContent';
 import { createSegments } from '../database/queries/jSegment';
-import { linkGrammarToSegments } from '../database/queries/jSegmentGrammar';
+import { linkGrammarToSegments, getGrammarFrequencyByContentId } from '../database/queries/jSegmentGrammar';
 import { downloadContent } from '../services/downloader';
 import { detect } from '../services/grammarParser';
 
@@ -35,6 +35,10 @@ export function registerContentHandlers(): void {
 
   ipcMain.handle('content:delete', (_event, contentId: number) => {
     return deleteContent(contentId);
+  });
+
+  ipcMain.handle('content:getGrammars', (_event, contentId: number) => {
+    return getGrammarFrequencyByContentId(contentId);
   });
 
   ipcMain.handle('content:import', async (_event, url: string, userId: number) => {

@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom'
-import { Home, Layers, BookOpen, Settings } from "lucide-react"
+import { Home, Layers, BookOpen, GraduationCap, Settings } from "lucide-react"
 import styles from './navbar.module.css'
 
 const navItems = [
   { label: "Home", to: "/", icon: Home },
   { label: "Decks", to: "/decks", icon: Layers },
   { label: "Content", to: "/content", icon: BookOpen },
+  { label: "Grammar", to: "/grammar", icon: GraduationCap },
   { label: "Settings", to: "/settings", icon: Settings },
 ]
 

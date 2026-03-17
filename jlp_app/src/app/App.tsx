@@ -5,6 +5,7 @@ import { Footer } from "../components/footer"
 import { Home } from "../pages/Home"
 import { Decks } from "../pages/Decks"
 import { Content } from "../pages/Content"
+import { Grammars } from "../pages/Grammars"
 import { Settings } from "../pages/Settings"
 import { useUserStore } from "../store/userStore"
 
@@ -37,6 +38,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/decks" element={<Decks />} />
           <Route path="/content" element={<Content />} />
+          <Route path="/grammar" element={<Grammars />} />
           <Route path="/settings" element={<Settings />} />
         </Routes>
         <Footer

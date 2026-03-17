@@ -1,5 +1,9 @@
-# Large Media Files
+# Large Media Files and Data
 japanese_media/
+bert-japanese-multilabel/
+bert-japanese-singlelabel/
+__pycache__/
+parsed_sentences/
 
 # Logs
 logs
