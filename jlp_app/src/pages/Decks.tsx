@@ -1,6 +1,8 @@
+import styles from './Decks.module.css'
+
 export function Decks() {
   return (
-    <main className="flex flex-1 py-16 sm:py-24">
+    <main className={styles.page}>
       <h1>Decks</h1>
     </main>
   );

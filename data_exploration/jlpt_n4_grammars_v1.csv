@@ -1,0 +1,131 @@
+,id,grammar_point,meaning,jlpt_level
+0,1,間,while; during; between Verb (dictionary form),N4
+1,2,間に,"while/during~ something happened Verb (casual, non-past)",N4
+2,3,あまり〜ない,"not very, not much い-adjective + いくない",N4
+3,4,後で,after ~; later Verb (た form),N4
+4,5,ば,conditional form; If [A] then [B] special formatting rules (see below),N4
+5,6,場合は,in the event of; in the case that Verb (casual),N4
+6,7,ばかり,only; nothing but Noun,N4
+7,8,だけで,just by; just by doing Verb (casual),N4
+8,9,出す,to suddenly begin; to suddenly appear,N4
+9,10,でございます,to be (honorific) です -> でございます,N4
+10,11,でも,... or something Noun でも,N4
+11,12,ではないか,right?; isn't it?,N4
+12,13,が必要,need; necessary,N4
+13,14,がする,to smell; hear; taste,N4
+14,15,がり,personality; tend to~; sensitivity towards~ い-adjective い,N4
+15,16,がる・がっている,"to show signs of; to appear; to feel, to think",N4
+16,17,ございます,"to be, to exist (the polite form of いる/ある) あります changes to ございます",N4
+17,18,始める,to start; to begin to ~,N4
+18,19,はずだ,it must be; it should be (expectation) Verb (dictionary form),N4
+19,20,はずがない,cannot be (impossible) Verb (dictionary form),N4
+20,21,必要がある,need to; it is necessary to,N4
+21,22,意向形,volitional form ; let's do ~. see conjugation rules below...,N4
+22,23,いらっしゃる,to be; to come; to go (polite version) いる (changes to),N4
+23,24,いたします,to do (polite form of する) する (changes to) いたす,N4
+24,25,じゃないか,right? isn't it? let's~; confirmation phrase じゃないか,N4
+25,26,かどうか,whether or not Verb (casual form),N4
+26,27,かしら,I wonder phrase かしら,N4
+27,28,かい,turns a sentence into a yes/no question Sentence かい,N4
+28,29,かもしれない,might; perhaps; indicates possibility Verb (casual form),N4
+29,30,かな,I wonder; should I? Verb (dictionary form),N4
+30,31,から作る,made from; made with,N4
+31,32,きっと,surely; undoubtedly; almost certainly; most event,N4
+32,33,こと,"Verb nominalizer Verb (casual, non-past) こと",N4
+33,34,ことがある,there are times when,N4
+34,35,ことができる,can; able to,N4
+35,36,ことになる,It has been decided that..; it turns out that.. Verb (dictionary form),N4
+36,37,ことにする,to decide on,N4
+37,38,くする,to make something ~,N4
+38,39,急に,suddenly Can be used mid-sentence and also to start a,N4
+39,40,までに,by; by the time; indicates time limit Verb (dictionary form),N4
+40,41,まま,as it is; current state; without changing Noun + の,N4
+41,42,または,both; or; otherwise; choice between [A] or Noun 1 + または + Noun 2,N4
+42,43,みたいだ,"like, similar to, resembling Verb (casual)",N4
+43,44,みたいな,"like, similar to Noun",N4
+44,45,みたいに,"like, similar to Verb (casual)",N4
+45,46,も,as many as; as much as; up to; nearly number,N4
+46,47,な,don’t ~ (order somebody to not do Verb (dictionary form) な,N4
+47,48,など,"such as, things like Noun など",N4
+48,49,ながら,while; during; as; simultaneously Verb ます (stem form) ながら + [B],N4
+49,50,なかなか〜ない,not easy to; struggling to; not able to~ なかなか Verb (negative form),N4
+50,51,なければいけない,must do something; have to do something,N4
+51,52,なければならない,must do something; have to do something,N4
+52,53,なら,if; in the case that ~ Noun,N4
+53,54,なさい,do this (soft/firm command),N4
+54,55,なさる,to do (honorific) する (changes to) なさる,N4
+55,56,に気がつく,to notice; to realize Verb (casual) + こと に気がつく,N4
+56,57,にみえる,to look; to seem; to appear Verb (て form),N4
+57,58,にする,to make something ~,N4
+58,59,にくい,difficult to do Verb ます (stem form) にくい,N4
+59,60,の中で,"in, among Noun の中で",N4
+60,61,のに,"although, in spite of, even though Verb (casual form)",N4
+61,62,のに,to (do something); in order to Verb (dictionary form) のに,N4
+62,63,のは〜だ,[A] is [B]; the reason for [A] is [B] Verb (casual),N4
+63,64,お〜ください,please do (honorific) お Verb (ます stem) ください,N4
+64,65,お〜になる,to do (honorific),N4
+65,66,おきに,"repeated at intervals, every Noun (measurable) おきに",N4
+66,67,終わる,to finish; to end,N4
+67,68,られる,potential form; ability or inability to do Ru-verb る -> られる,N4
+68,69,らしい,it seems like; I heard; apparently~ Verb (casual form),N4
+69,70,さ,-ness ; nominalizer for adjective い-adjective + い,N4
+70,71,さっき,some time ago; just now さっき Sentence,N4
+71,72,させられる,causative-passive; to be made to do Verb (causative form させる) られる,N4
+72,73,させる,causative form; to make/let somebody do Ru-verb る -> させる,N4
+73,74,させてください,please let me do Verb,N4
+74,75,さすが,as one would expect; as is to be expected; の + Noun,N4
+75,76,し,and; and what’s more; emphasis Verb (casual),N4
+76,77,そんなに,so much; so; like that Verb,N4
+77,78,それでも,but still; and yet; even so Phrase 1 それでも Phrase 2,N4
+78,79,そうだ,I heard that; it is said that Verb (casual form),N4
+79,80,そうだ,looks like; appears like Verb ます (stem form),N4
+80,81,そうに・そうな,seems like; looks like Verb ます (stem form),N4
+81,82,たばかり,just finished; something just occurred Verb (た form) ばかり,N4
+82,83,たところ,"just finished doing, was just doing Verb (た form) ところ",N4
+83,84,たどうし & じどうし,Transitive & Intransitive Verbs see rules below,N4
+84,85,たがる,wants to do~ (third person),N4
+85,86,たら,"if, after, when Verb (た form)",N4
+86,87,たらどう,why don't you Verb (た form) らどう,N4
+87,88,たらいいですか,what should I do?; speaker seeking Verb (た form) らいいですか,N4
+88,89,て で,"conjunctive particle; so; because of [A], [B]... Verb (て form)",N4
+89,90,てあげる,to do for; to do a favor,N4
+90,91,てほしい,I want you to; need you to~ Verb (て form),N4
+91,92,ていく,to start; to continue; to go on,N4
+92,93,ていた,was doing something (past continuous),N4
+93,94,ていただけませんか,could you please Verb (て form) いただけませんか,N4
+94,95,てくれる,to do a favor; do something for someone,N4
+95,96,てくる,to do… and come back; to become; to,N4
+96,97,てみる,try doing,N4
+97,98,てもらう,to get somebody to do something,N4
+98,99,ておく,to do something in advance,N4
+99,100,てしまう ちゃう,"to do something by accident, to finish",N4
+100,101,てすみません,I’m sorry for Verb (て form) すみません,N4
+101,102,てやる,to do for; to do a favor (casual),N4
+102,103,てよかった,I’m glad that.. Verb (て form) よかった,N4
+103,104,ているところ,in the process of doing Verb (て form) いるところ,N4
+104,105,ても,even; even if; even though Verb (て form),N4
+105,106,と,"whenever [A] happens, [B] also happens Verb (dictionary / ない form)",N4
+106,107,といってもいい,you could say; one might say; I'd say,N4
+107,108,という,called; named; that,N4
+108,109,ということ,convert phrase into noun Verb (casual),N4
+109,110,といわれている,"it is said that... Verb (casual, past)",N4
+110,111,と聞いた,I heard...,N4
+111,112,と思う,to think…; I think…; you think… Verb,N4
+112,113,とか〜とか,among other things; such as; like Verb (dictionary form) Verb (dictionary form),N4
+113,114,ところ,"just about to; on the verge of doing Verb (casual, non-past) ところ",N4
+114,115,続ける,continue to; keen on,N4
+115,116,って,named; called Noun って,N4
+116,117,うけみけい,passive form; passive voice Ru-verb る -> られる,N4
+117,118,は〜が は,[A] but [B]; however; comparison Noun-1 + は 〜が Noun-2 + は…,N4
+118,119,やすい,easy to; likely to; prone to; have a tendency Verb ます (stem form) やすい,N4
+119,120,やっと,at last; finally; barely; narrowly Used as an adverb in a sentence.,N4
+120,121,より,than; rather than; more than [A]より[B],N4
+121,122,予定だ,"plan to, intend to Verb (dictionary form)",N4
+122,123,ようだ,appears; seems; looks as if Verb (casual),N4
+123,124,ように ような,like; as; similar to Verb (casual),N4
+124,125,ようになる,to reach the point that; to come to be that; to Verb (dictionary form),N4
+125,126,ようにする,to try to; to make sure that,N4
+126,127,ようと思う,thinking of doing; planning to,N4
+127,128,ぜひ,by all means; certainly; definitely Can be used either in beginning or mid-,N4
+128,129,全然〜ない,(not) at all,N4
+129,130,づらい,difficult to do Verb ます (stem form) づらい,N4

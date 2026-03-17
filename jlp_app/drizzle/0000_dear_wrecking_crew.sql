@@ -6,10 +6,10 @@ CREATE TABLE `deck` (
 --> statement-breakpoint
 CREATE TABLE `deck_grammar` (
 	`deck_id` integer NOT NULL,
-	`grammar_id` integer NOT NULL,
-	PRIMARY KEY(`deck_id`, `grammar_id`),
+	`master_grammar_id` integer NOT NULL,
+	PRIMARY KEY(`deck_id`, `master_grammar_id`),
 	FOREIGN KEY (`deck_id`) REFERENCES `deck`(`deck_id`) ON UPDATE no action ON DELETE cascade,
-	FOREIGN KEY (`grammar_id`) REFERENCES `saved_grammar`(`grammar_id`) ON UPDATE no action ON DELETE cascade
+	FOREIGN KEY (`master_grammar_id`) REFERENCES `master_grammar`(`master_grammar_id`) ON UPDATE no action ON DELETE cascade
 );
 --> statement-breakpoint
 CREATE TABLE `deck_segment` (
@@ -35,10 +35,11 @@ CREATE TABLE `j_content` (
 	`author` text,
 	`upload_date` integer,
 	`link` text,
-	`audio` text
+	`audio` text,
+	`video` text,
+	`vtt` text
 );
 --> statement-breakpoint
-CREATE UNIQUE INDEX `j_content_link_unique` ON `j_content` (`link`);--> statement-breakpoint
 CREATE TABLE `j_content_user` (
 	`content_id` integer NOT NULL,
 	`user_id` integer NOT NULL,
@@ -59,10 +60,10 @@ CREATE TABLE `j_segment` (
 );
 --> statement-breakpoint
 CREATE TABLE `j_segment_grammar` (
-	`grammar_id` integer NOT NULL,
+	`master_grammar_id` integer NOT NULL,
 	`segment_id` integer NOT NULL,
-	PRIMARY KEY(`grammar_id`, `segment_id`),
-	FOREIGN KEY (`grammar_id`) REFERENCES `saved_grammar`(`grammar_id`) ON UPDATE no action ON DELETE cascade,
+	PRIMARY KEY(`master_grammar_id`, `segment_id`),
+	FOREIGN KEY (`master_grammar_id`) REFERENCES `master_grammar`(`master_grammar_id`) ON UPDATE no action ON DELETE cascade,
 	FOREIGN KEY (`segment_id`) REFERENCES `j_segment`(`segment_id`) ON UPDATE no action ON DELETE cascade
 );
 --> statement-breakpoint
@@ -74,11 +75,14 @@ CREATE TABLE `j_segment_word` (
 	FOREIGN KEY (`word_id`) REFERENCES `saved_word`(`word_id`) ON UPDATE no action ON DELETE cascade
 );
 --> statement-breakpoint
-CREATE TABLE `saved_grammar` (
-	`grammar_id` integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+CREATE TABLE `master_grammar` (
+	`master_grammar_id` integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+	`grammar_id` integer,
 	`user_id` integer,
-	`jlpt_level` integer,
-	`examples` text,
+	`jlpt_level` text,
+	`grammar_point` text,
+	`meaning` text,
+	`level` integer,
 	`notes` text,
 	FOREIGN KEY (`user_id`) REFERENCES `user`(`user_id`) ON UPDATE no action ON DELETE cascade
 );

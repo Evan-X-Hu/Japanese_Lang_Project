@@ -1,6 +1,6 @@
 export function WelcomeSection() {
   return (
-    <section className="flex flex-1 flex-col items-start justify-center px-6">
+    <section className="flex flex-1 flex-col items-center justify-center px-6">
       <div className="mx-auto w-full max-w-3xl">
         <p className="mb-4 text-sm font-medium tracking-wider text-primary">
           JAPANESE LANGUAGE LEARNING

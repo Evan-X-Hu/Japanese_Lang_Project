@@ -1,16 +1,27 @@
 import { useState, useMemo } from "react"
-import { Download, Search, Loader } from "lucide-react"
+import { Download, Search, Loader, ArrowLeft } from "lucide-react"
 import { ContentList } from "../components/content_list"
 import { ContentDetail } from "../components/content_detail"
 import { useContent } from "../hooks/useContent"
+import { useUserStore } from "../store/userStore"
 import styles from './Content.module.css'
 
 export function Content() {
+  const currentUser = useUserStore((s) => s.currentUser)
   const [url, setUrl] = useState("")
   const [selectedId, setSelectedId] = useState<number | null>(null)
   const [searchQuery, setSearchQuery] = useState("")
-  const [importing, setImporting] = useState(false)
+  const [importStep, setImportStep] = useState<string | null>(null)
+  const importing = importStep !== null
+
+  const IMPORT_LABELS: Record<string, string> = {
+    importing:        'Importing content...',
+    generating_vtt:   'Generating vtt...',
+    parsing_vtt:      'Parsing vtt...',
+    parsing_grammar:  'Parsing grammar...',
+  }
   const [localError, setLocalError] = useState<string | null>(null)
+  const [view, setView] = useState<'list' | 'detail'>('list')
 
   const { items, error: hookError, importUrl } = useContent()
 
@@ -32,18 +43,36 @@ export function Content() {
       return
     }
 
-    setImporting(true)
+    if (items.some((item) => item.link === trimmed)) {
+      setLocalError("Content already imported.")
+      return
+    }
+
+    setImportStep('importing')
+    window.content?.onImportProgress((step) => setImportStep(step))
     try {
       const result = await importUrl(trimmed)
       if (result) {
         setSelectedId(result.contentId)
+        setView('detail')
       }
       setUrl("")
     } catch {
       setLocalError("Import failed. Check the URL and try again.")
     } finally {
-      setImporting(false)
+      window.content?.offImportProgress()
+      setImportStep(null)
     }
+  }
+
+  function handleSelect(id: number) {
+    setSelectedId(id)
+    setView('detail')
+  }
+
+  function handleBack() {
+    setView('list')
+    setSelectedId(null)
   }
 
   const filteredItems = useMemo(() => {
@@ -62,6 +91,18 @@ export function Content() {
     return items.find((item) => item.contentId === selectedId) ?? null
   }, [items, selectedId])
 
+  if (view === 'detail') {
+    return (
+      <div className={styles.detailPage}>
+        <button className={styles.backButton} onClick={handleBack}>
+          <ArrowLeft className={styles.backIcon} />
+          <span>Back to Library</span>
+        </button>
+        <ContentDetail item={selectedItem} />
+      </div>
+    )
+  }
+
   return (
     <div className={styles.page}>
       <section aria-label="Import content">
@@ -69,26 +110,32 @@ export function Content() {
         <p className={styles.description}>
           Import audio and video content by URL to build your library.
         </p>
-        <div className={styles.importRow}>
-          <input
-            value={url}
-            onChange={(e) => { setUrl(e.target.value); setLocalError(null) }}
-            onKeyDown={(e) => { if (e.key === "Enter" && !importing) handleImport() }}
-            placeholder="https://www.youtube.com/watch?v=..."
-            className={styles.importInput}
-            aria-label="Content URL"
-            disabled={importing}
-          />
-          <button onClick={handleImport} className={styles.importButton} disabled={importing}>
-            {importing ? (
-              <Loader className={styles.buttonIcon} />
-            ) : (
-              <Download className={styles.buttonIcon} />
-            )}
-            <span>{importing ? "Importing..." : "Import"}</span>
-          </button>
-        </div>
-        {error && <p className={styles.error} role="alert">{error}</p>}
+        {currentUser ? (
+          <>
+            <div className={styles.importRow}>
+              <input
+                value={url}
+                onChange={(e) => { setUrl(e.target.value); setLocalError(null) }}
+                onKeyDown={(e) => { if (e.key === "Enter" && !importing) handleImport() }}
+                placeholder="https://www.youtube.com/watch?v=..."
+                className={styles.importInput}
+                aria-label="Content URL"
+                disabled={importing}
+              />
+              <button onClick={handleImport} className={styles.importButton} disabled={importing}>
+                {importing ? (
+                  <Loader className={styles.buttonIcon} />
+                ) : (
+                  <Download className={styles.buttonIcon} />
+                )}
+                <span>{importStep ? (IMPORT_LABELS[importStep] ?? 'Importing...') : 'Import'}</span>
+              </button>
+            </div>
+            {error && <p className={styles.error} role="alert">{error}</p>}
+          </>
+        ) : (
+          <p className={styles.signInNotice}>Sign in from Settings to import content.</p>
+        )}
       </section>
 
       <section className={styles.toolbar} aria-label="Search and filter">
@@ -104,14 +151,7 @@ export function Content() {
         </div>
       </section>
 
-      <section className={styles.library} aria-label="Content library">
-        <div className={styles.listPane}>
-          <ContentList items={filteredItems} selectedId={selectedId} onSelect={setSelectedId} />
-        </div>
-        <div className={styles.detailPane}>
-          <ContentDetail item={selectedItem} />
-        </div>
-      </section>
+      <ContentList items={filteredItems} selectedId={selectedId} onSelect={handleSelect} />
     </div>
   )
 }

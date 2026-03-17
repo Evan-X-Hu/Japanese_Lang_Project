@@ -1,0 +1,168 @@
+grammar_id,grammar_point,meaning
+1,あげく,to end up; in the end; finally; after all~
+2,あるいは,or; either; maybe; perhaps; possibly~
+4,ばかりだ,continue to (go in negative direction)
+5,ばかりか,not only.. but also; as well as~
+6,ばかりに,simply because; on account of~
+7,ちなみに,by the way; in this connection; incidentally
+8,ちっとも〜ない,(not) at all; (not) in the least~
+9,だけあって,being the case; precisely because; as
+10,だけましだ,it's better than; one should feel grateful for~
+11,だけに,being the case; precisely because; as one
+12,だけのことはある,no wonder; as expected of; not ... for
+15,でしかない,merely; nothing but; no more than
+16,どころではない,not the time for; not the place for; far from
+17,どころか,far from; anything but; let alone
+18,どうやら,possibly; apparently; seems like; somehow
+19,どうせ,anyhow; in any case; at any rate; after all
+20,得ない,unable to; cannot; it is not possible to~
+21,再び,again; once more
+23,がきっかけで をきっかけに,with… as a start; as a result of; taking
+25,逆に,conversely; on the contrary~
+26,はんめん,while; although; on the other hand~
+27,果たして,as was expected; sure enough; really
+28,いちおう,more or less; pretty much; roughly
+29,以外,with the exception of; excepting~
+30,以上に,more than; not less than; beyond~
+31,以上は,because; since; seeing that~
+32,いきなり,abruptly; suddenly; all of a sudden
+33,いっきに,in one go; without stopping; all at once
+34,いっぽうで,on one hand; on the other hand; although~
+35,いわゆる,what is called; as it is called; the so-called
+36,いよいよ,at last; finally; beyond doubt
+38,かのように,as if; just like~
+39,かと思ったら,just when; no sooner than~
+40,か〜ないかのうちに,just as; right after; as soon as~
+41,かえって,on the contrary; rather; all the more
+43,甲斐がある,it's worth one's efforts to do something
+44,かねない,(someone) might do something
+45,かねる,unable to do something; can't do something
+46,からいうと,in terms of; from the point of view of~
+47,からこそ,precisely because~
+48,からみると,from the point of view of; by the look of
+49,からには,now that; since; so long as; because~
+50,からして,judging from; based on; since; from; even~
+51,からすると からすれば,judging from; considering; by the look of~
+52,からといって,just because; even if; even though~
+53,っこない,no chance of; …is definitely not possible
+55,ことだから,because; since~
+57,ことなく,without doing something even once
+59,ことにはならない,just because… doesn't mean~
+60,くせして,although~; despite the fact that~
+61,まだしも,rather; better ~
+63,ままに,as; to do as~
+64,全く〜ない,not at all~
+65,もかまわず,without caring; without worrying about~
+66,も当然だ,it's only natural; no wonder; might as well~
+68,ものだ,describe feeling; express memories; state fact
+69,ものだから,so; therefore; the reason for something
+70,ものではない,shouldn't do something; it's impossible to~
+71,ものがある,there is such a thing; to be the case that
+72,ものか もんか,as if (something untrue were actually true)
+73,ものなら,if I/we could; if [A] is possible then [B]
+74,ものの,but; although; even though~
+75,もっとも,but then; although; though~
+76,もう少しで,almost; nearly; close to~
+77,ないではいられない,can't help but feel; can't help but do~
+78,ないことには〜ない,unless you~
+79,なくはない,it's not that; I may (double negative)
+80,なくて済む,get by without doing~
+81,何も〜ない,nothing; (not) ~ at all; there's no need to~
+83,ねばならない,have to do; must; should~
+84,にあたって,at the time; on the occasion of~
+85,にほかならない,nothing but; none other than~
+86,に限らず,not just; not only.. but also~
+87,に限る,is best; nothing is better than~
+88,に限って,only; in particular~
+89,に関わらず,in spite of; regardless of~
+90,に関わる,to relate to; to have to do with; relating to~
+91,に決まっている,certainly; I'm sure/certain that; it must be
+92,に越したことはない,it's best that; there's nothing better than~
+93,に応えて,in response to~
+94,に加えて,in addition~
+95,に基づいて,based on; on the basis of~
+96,に向かって,to face; to go towards; to head to~
+97,に応じて,depending on; in accordance with~
+98,に際して,on the occasion of; at the time of~
+99,にさきだち,before; prior to~
+100,にせよ にしろ,even if; regardless; whether... or
+101,にしろ〜にしろ,whether… or~
+102,にしたら にすれば,from one's perspective; from the point of
+103,にしても〜にしても,regardless of whether~
+104,に沿って,along with; in accordance with
+105,に相違ない,without a doubt; certain; sure
+106,に過ぎない,no more than; just; merely; only~
+107,に伴って,as; due to; with; along with; following
+108,につけ,every time; whenever; as; whether
+109,につき,due to; because of; per; each
+110,にわたって,throughout; over a period of~
+111,にも関わらず,despite; in spite of; nevertheless; although~
+113,のももっともだ,no wonder; …is only natural
+114,の下で,under; with~
+115,の上では,according to; from the viewpoint of~
+116,のみならず,not only; besides; as well as~
+119,を契機に,as a good opportunity/chance to; as a result
+120,をめぐって,concerning; in regard to~
+121,をもとに,based on; derived from; building on
+122,を除いて,except; with the exception of; excluding~
+123,を問わず,regardless of; irrespective of; no matter
+124,お〜願う,please do; could you please…; I ask of you
+125,おまけに,to make matters worse; besides; what's
+126,恐らく,perhaps; likely; probably; I dare say~
+127,恐れがある,it is feared that; to be in danger of; to be
+128,及び,and; as well as~
+129,ろくに〜ない,not well; not enough; improperly
+130,幸いなことに,fortunately; luckily; thankfully~
+131,せいか,perhaps because~
+132,せっかく,especially; (thank you for) troubling to
+133,せめて,at least; at most~
+135,次第で,depending on; so~
+136,次第に,gradually (progress into a state)
+137,しかも,moreover; furthermore; and yet; what's
+138,その上,besides; in addition; furthermore~
+139,それなのに,and yet; despite this; but even so~
+141,それにしても,nevertheless; at any rate; even so
+142,そういえば,come to think of it…; now that you mention
+143,そうすると,having done that; if that is done
+144,末に,finally; after; following; at the end
+145,少しも〜ない,not one bit; not even a little~
+146,少なくとも,at least~
+147,直ちに,at once; immediately; directly; in person
+148,たまえ,do~; order somebody to do something
+149,てばかりはいられない,can't keep doing~
+150,てでも,even if I have to; by all means~
+151,て以来,since; henceforth~
+152,ていては,if one keeps doing~
+153,てこそ,now that; since (something happened)
+154,てまで,even; will go far so as to~
+155,てならない,can't help but; dying to; extremely~
+156,てたまらない,can't help but; dying to; extremely~
+157,て当然だ,natural; as a matter of course
+159,てはいられない,can't afford to; unable to~
+160,てはならない,must not; cannot; should not~
+161,ては〜ては,repetitive situations/actions
+162,と同時に,at the same time as; while; simultaneously~
+163,といった,like; such as~
+164,というふうに,in such a way that~
+165,ということは,that is to say; so that means; in other words~
+166,というものだ,something like; something called~
+167,というものではない,there is no guarantee that…; not necessarily~
+168,と考えられる,one can think that; it is conceivable that
+170,とっくに,long ago; already; a long time ago
+171,ところだった,was just about to do something
+173,ところをみると,judging from; seeing that~
+175,としても,assuming; even if~
+177,つつある,to be doing; to be in the process of doing~
+179,はもとより,also; let alone; from the beginning
+180,はともかく,anyhow; anyway; regardless; in any case
+181,わずかに,slightly; only; barely; narrowly~
+182,やがて,before long; soon; almost; eventually~
+183,やら〜やら,such things as A and B; A and B and so on~
+184,よほど よっぽど,very; greatly; much; to a large extent
+186,よりほかない,to have no choice but~
+187,ようでは,if~ (bad result)
+188,ようではないか,let's do (something); why don't we~
+189,ようか〜まいか,whether or not; considering options
+190,要するに,in short; in a word; to sum up
+191,ざるを得ない,cannot help (doing); have no choice but to~
+192,ずに済む,get by without doing~

@@ -28,7 +28,7 @@ People who want to learn Japanese. People who are interested in programming.
 - **Framework**: [e.g., React, Electron]
 - **Language**: [e.g., TypeScript]
 - **UI Library**: [e.g., lucide-react]
-- **State Management**: [e.g., Zustand]
+- **State Management**: Zustand 5.0.11
 
 ### Backend
 - **Framework**: [e.g., Express, FastAPI, Django, Spring Boot]
@@ -36,12 +36,26 @@ People who want to learn Japanese. People who are interested in programming.
 - **Authentication**: [e.g., JWT, OAuth, Passport]
 
 ### Database
-- **Cloud Database**: [e.g., PostgreSQL]
-- **User Facing Database**: [e.g., better-sqlite3]  
-- **Migrations**: [e.g., drizzle-orm & drizzle-kit]  
-```drizzle-kit generate``` to produce migration files
-- **Caching**: [e.g., Redis]
-- **ORM/ODM**: [e.g., Prisma, TypeORM, Mongoose]
+- **User Facing Database**: better-sqlite3 (SQLite, stored at `~/.config/jlp_app/jlp_app.db`)
+- **ORM**: drizzle-orm
+- **Migrations**: drizzle-kit
+
+#### Database Commands
+All commands run from `jlp_app/`:
+
+```bash
+# Generate a new migration after editing the schema
+npm run db:generate
+
+# Apply pending migrations to the database
+npm run db:push
+
+# Recreate the database from scratch (wipe + re-migrate)
+rm -rf drizzle
+rm ~/.config/jlp_app/jlp_app.db && npm run db:push
+```
+
+> **Note:** `db:push` is also run automatically on app startup via `connection.ts`. Migrations live in `jlp_app/drizzle/`.
 
 ### DevOps & Tools
 - **Version Control**: Git

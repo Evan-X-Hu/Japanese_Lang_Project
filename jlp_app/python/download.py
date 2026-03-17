@@ -78,6 +78,29 @@ def download_media_with_subtitles(url, output_dir):
         return None
 
 
+def download_video(url, output_dir):
+    """
+    Download best MP4 video from a URL.
+    Audio is already downloaded as MP3; this pass only fetches the video track.
+    """
+    ydl_opts = {
+        'format': 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best',
+        'merge_output_format': 'mp4',
+        'outtmpl': f'{output_dir}/%(title)s.%(ext)s',
+        'quiet': True,
+        'no_warnings': True,
+        'logger': StderrLogger(),
+        'sleep_interval_requests': 2,
+        'sleep_interval': 1,
+    }
+    try:
+        with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+            log("Downloading video (MP4)...")
+            ydl.download([url])
+    except Exception as e:
+        log(f"Video download error: {e}")
+
+
 # ── VTT parsing ──────────────────────────────────────────────────
 
 def parse_timeframe(timeframe):
@@ -211,6 +234,11 @@ def log(msg):
     print(msg, file=sys.stderr)
 
 
+def progress(step):
+    """Emit a machine-readable progress event to stderr for the Node.js parent process."""
+    print(json.dumps({"progress": step}), file=sys.stderr, flush=True)
+
+
 def find_file(output_dir, title, extension):
     """Find a downloaded file by title and extension using glob."""
     pattern = f"{output_dir}/{title}.{extension}"
@@ -236,7 +264,8 @@ def main():
     url = sys.argv[1]
     output_dir = sys.argv[2]
 
-    # Step 1: Download media, subtitles, metadata
+    # Step 1: Download audio, subtitles, metadata
+    progress("importing")
     result = download_media_with_subtitles(url, output_dir)
     if result is None:
         print("Download failed", file=sys.stderr)
@@ -249,7 +278,15 @@ def main():
     if not audio_path:
         log("Warning: MP3 file not found")
 
-    # Step 3: Find and parse VTT subtitle file
+    # Step 3: Download MP4 video
+    progress("generating_vtt")
+    download_video(url, output_dir)
+    video_path = find_file(output_dir, title, "mp4")
+    if not video_path:
+        log("Warning: MP4 file not found")
+
+    # Step 4: Find and parse VTT subtitle file
+    progress("parsing_vtt")
     vtt_path = find_file(output_dir, f"{title}.ja", "vtt")
     segments = []
     if vtt_path:
@@ -260,7 +297,7 @@ def main():
     else:
         log("Warning: VTT subtitle file not found, no segments will be created")
 
-    # Step 4: Output JSON to stdout
+    # Step 5: Output JSON to stdout
     output = {
         'title': result['title'],
         'duration': result['duration'],
@@ -268,6 +305,8 @@ def main():
         'upload_date': result['upload_date'],
         'link': result['link'],
         'audio_path': audio_path,
+        'video_path': video_path,
+        'vtt_path': vtt_path,
         'segments': segments,
     }
 

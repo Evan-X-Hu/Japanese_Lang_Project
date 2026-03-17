@@ -45,6 +45,7 @@ const config: ForgeConfig = {
     new AutoUnpackNativesPlugin({}),
     new WebpackPlugin({
       mainConfig,
+      devContentSecurityPolicy: "default-src 'self' 'unsafe-eval' 'unsafe-inline' data: http://127.0.0.1:*; media-src http://127.0.0.1:*; connect-src http://127.0.0.1:* ws://localhost:*",
       port: 3456,
       loggerPort: 9100,
       renderer: {

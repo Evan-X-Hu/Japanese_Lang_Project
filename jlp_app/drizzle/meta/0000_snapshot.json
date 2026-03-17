@@ -1,7 +1,7 @@
 {
   "version": "6",
   "dialect": "sqlite",
-  "id": "b6d1eb1a-e19c-46a6-be73-7a04d7bf37b3",
+  "id": "e5e884a4-8cf7-4b1f-a6a4-dbb4bed8465b",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "tables": {
     "deck": {
@@ -52,8 +52,8 @@
           "notNull": true,
           "autoincrement": false
         },
-        "grammar_id": {
-          "name": "grammar_id",
+        "master_grammar_id": {
+          "name": "master_grammar_id",
           "type": "integer",
           "primaryKey": false,
           "notNull": true,
@@ -75,27 +75,27 @@
           "onDelete": "cascade",
           "onUpdate": "no action"
         },
-        "deck_grammar_grammar_id_saved_grammar_grammar_id_fk": {
-          "name": "deck_grammar_grammar_id_saved_grammar_grammar_id_fk",
+        "deck_grammar_master_grammar_id_master_grammar_master_grammar_id_fk": {
+          "name": "deck_grammar_master_grammar_id_master_grammar_master_grammar_id_fk",
           "tableFrom": "deck_grammar",
-          "tableTo": "saved_grammar",
+          "tableTo": "master_grammar",
           "columnsFrom": [
-            "grammar_id"
+            "master_grammar_id"
           ],
           "columnsTo": [
-            "grammar_id"
+            "master_grammar_id"
           ],
           "onDelete": "cascade",
           "onUpdate": "no action"
         }
       },
       "compositePrimaryKeys": {
-        "deck_grammar_deck_id_grammar_id_pk": {
+        "deck_grammar_deck_id_master_grammar_id_pk": {
           "columns": [
             "deck_id",
-            "grammar_id"
+            "master_grammar_id"
           ],
-          "name": "deck_grammar_deck_id_grammar_id_pk"
+          "name": "deck_grammar_deck_id_master_grammar_id_pk"
         }
       },
       "uniqueConstraints": {},
@@ -270,17 +270,23 @@
           "primaryKey": false,
           "notNull": false,
           "autoincrement": false
+        },
+        "video": {
+          "name": "video",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "vtt": {
+          "name": "vtt",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
         }
       },
-      "indexes": {
-        "j_content_link_unique": {
-          "name": "j_content_link_unique",
-          "columns": [
-            "link"
-          ],
-          "isUnique": true
-        }
-      },
+      "indexes": {},
       "foreignKeys": {},
       "compositePrimaryKeys": {},
       "uniqueConstraints": {},
@@ -421,8 +427,8 @@
     "j_segment_grammar": {
       "name": "j_segment_grammar",
       "columns": {
-        "grammar_id": {
-          "name": "grammar_id",
+        "master_grammar_id": {
+          "name": "master_grammar_id",
           "type": "integer",
           "primaryKey": false,
           "notNull": true,
@@ -438,15 +444,15 @@
       },
       "indexes": {},
       "foreignKeys": {
-        "j_segment_grammar_grammar_id_saved_grammar_grammar_id_fk": {
-          "name": "j_segment_grammar_grammar_id_saved_grammar_grammar_id_fk",
+        "j_segment_grammar_master_grammar_id_master_grammar_master_grammar_id_fk": {
+          "name": "j_segment_grammar_master_grammar_id_master_grammar_master_grammar_id_fk",
           "tableFrom": "j_segment_grammar",
-          "tableTo": "saved_grammar",
+          "tableTo": "master_grammar",
           "columnsFrom": [
-            "grammar_id"
+            "master_grammar_id"
           ],
           "columnsTo": [
-            "grammar_id"
+            "master_grammar_id"
           ],
           "onDelete": "cascade",
           "onUpdate": "no action"
@@ -466,12 +472,12 @@
         }
       },
       "compositePrimaryKeys": {
-        "j_segment_grammar_grammar_id_segment_id_pk": {
+        "j_segment_grammar_master_grammar_id_segment_id_pk": {
           "columns": [
-            "grammar_id",
+            "master_grammar_id",
             "segment_id"
           ],
-          "name": "j_segment_grammar_grammar_id_segment_id_pk"
+          "name": "j_segment_grammar_master_grammar_id_segment_id_pk"
         }
       },
       "uniqueConstraints": {},
@@ -536,15 +542,22 @@
       "uniqueConstraints": {},
       "checkConstraints": {}
     },
-    "saved_grammar": {
-      "name": "saved_grammar",
+    "master_grammar": {
+      "name": "master_grammar",
       "columns": {
-        "grammar_id": {
-          "name": "grammar_id",
+        "master_grammar_id": {
+          "name": "master_grammar_id",
           "type": "integer",
           "primaryKey": true,
           "notNull": true,
           "autoincrement": true
+        },
+        "grammar_id": {
+          "name": "grammar_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
         },
         "user_id": {
           "name": "user_id",
@@ -555,14 +568,28 @@
         },
         "jlpt_level": {
           "name": "jlpt_level",
-          "type": "integer",
+          "type": "text",
           "primaryKey": false,
           "notNull": false,
           "autoincrement": false
         },
-        "examples": {
-          "name": "examples",
+        "grammar_point": {
+          "name": "grammar_point",
           "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "meaning": {
+          "name": "meaning",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "level": {
+          "name": "level",
+          "type": "integer",
           "primaryKey": false,
           "notNull": false,
           "autoincrement": false
@@ -577,9 +604,9 @@
       },
       "indexes": {},
       "foreignKeys": {
-        "saved_grammar_user_id_user_user_id_fk": {
-          "name": "saved_grammar_user_id_user_user_id_fk",
-          "tableFrom": "saved_grammar",
+        "master_grammar_user_id_user_user_id_fk": {
+          "name": "master_grammar_user_id_user_user_id_fk",
+          "tableFrom": "master_grammar",
           "tableTo": "user",
           "columnsFrom": [
             "user_id"
