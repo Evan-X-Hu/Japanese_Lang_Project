@@ -234,6 +234,11 @@ def log(msg):
     print(msg, file=sys.stderr)
 
 
+def progress(step):
+    """Emit a machine-readable progress event to stderr for the Node.js parent process."""
+    print(json.dumps({"progress": step}), file=sys.stderr, flush=True)
+
+
 def find_file(output_dir, title, extension):
     """Find a downloaded file by title and extension using glob."""
     pattern = f"{output_dir}/{title}.{extension}"
@@ -259,7 +264,8 @@ def main():
     url = sys.argv[1]
     output_dir = sys.argv[2]
 
-    # Step 1: Download media, subtitles, metadata
+    # Step 1: Download audio, subtitles, metadata
+    progress("importing")
     result = download_media_with_subtitles(url, output_dir)
     if result is None:
         print("Download failed", file=sys.stderr)
@@ -273,12 +279,14 @@ def main():
         log("Warning: MP3 file not found")
 
     # Step 3: Download MP4 video
+    progress("generating_vtt")
     download_video(url, output_dir)
     video_path = find_file(output_dir, title, "mp4")
     if not video_path:
         log("Warning: MP4 file not found")
 
     # Step 4: Find and parse VTT subtitle file
+    progress("parsing_vtt")
     vtt_path = find_file(output_dir, f"{title}.ja", "vtt")
     segments = []
     if vtt_path:

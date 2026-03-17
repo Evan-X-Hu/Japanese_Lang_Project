@@ -11,7 +11,15 @@ export function Content() {
   const [url, setUrl] = useState("")
   const [selectedId, setSelectedId] = useState<number | null>(null)
   const [searchQuery, setSearchQuery] = useState("")
-  const [importing, setImporting] = useState(false)
+  const [importStep, setImportStep] = useState<string | null>(null)
+  const importing = importStep !== null
+
+  const IMPORT_LABELS: Record<string, string> = {
+    importing:        'Importing content...',
+    generating_vtt:   'Generating vtt...',
+    parsing_vtt:      'Parsing vtt...',
+    parsing_grammar:  'Parsing grammar...',
+  }
   const [localError, setLocalError] = useState<string | null>(null)
   const [view, setView] = useState<'list' | 'detail'>('list')
 
@@ -35,7 +43,13 @@ export function Content() {
       return
     }
 
-    setImporting(true)
+    if (items.some((item) => item.link === trimmed)) {
+      setLocalError("Content already imported.")
+      return
+    }
+
+    setImportStep('importing')
+    window.content?.onImportProgress((step) => setImportStep(step))
     try {
       const result = await importUrl(trimmed)
       if (result) {
@@ -46,7 +60,8 @@ export function Content() {
     } catch {
       setLocalError("Import failed. Check the URL and try again.")
     } finally {
-      setImporting(false)
+      window.content?.offImportProgress()
+      setImportStep(null)
     }
   }
 
@@ -113,7 +128,7 @@ export function Content() {
                 ) : (
                   <Download className={styles.buttonIcon} />
                 )}
-                <span>{importing ? "Importing..." : "Import"}</span>
+                <span>{importStep ? (IMPORT_LABELS[importStep] ?? 'Importing...') : 'Import'}</span>
               </button>
             </div>
             {error && <p className={styles.error} role="alert">{error}</p>}

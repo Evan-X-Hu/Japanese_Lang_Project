@@ -48,6 +48,8 @@ export interface ContentAPI {
   delete: (contentId: number) => Promise<ContentRecord | undefined>;
   import: (url: string, userId: number) => Promise<ContentRecord>;
   getGrammars: (contentId: number) => Promise<GrammarFrequency[]>;
+  onImportProgress: (callback: (step: string) => void) => void;
+  offImportProgress: () => void;
 }
 
 export interface MasterGrammarRecord {

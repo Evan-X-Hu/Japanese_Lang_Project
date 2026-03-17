@@ -1,8 +1,9 @@
 import { WelcomeSection } from "../components/welcome_section"
+import styles from './Home.module.css'
 
 export function Home() {
   return (
-    <main className="flex flex-1 py-16 sm:py-24">
+    <main className={styles.page}>
       <WelcomeSection />
     </main>
   );

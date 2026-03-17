@@ -41,14 +41,16 @@ export function registerContentHandlers(): void {
     return getGrammarFrequencyByContentId(contentId);
   });
 
-  ipcMain.handle('content:import', async (_event, url: string, userId: number) => {
+  ipcMain.handle('content:import', async (event, url: string, userId: number) => {
     if (!userId || userId < 1) throw new Error('You must be signed in to import content.');
     const outputDir = path.join(app.getPath('userData'), 'media');
     console.log('[import] Starting import for:', url);
     console.log('[import] Output dir:', outputDir);
     console.log('[import] App path:', app.getAppPath());
 
-    const result = await downloadContent(url, outputDir);
+    const result = await downloadContent(url, outputDir, (step) => {
+      event.sender.send('content:importProgress', step);
+    });
     console.log('[import] Download complete:', result.title);
 
     // Parse upload_date string (YYYYMMDD) into a Date
@@ -88,6 +90,7 @@ export function registerContentHandlers(): void {
       );
 
       // Run grammar detection on segments that meet the minimum length threshold
+      event.sender.send('content:importProgress', 'parsing_grammar');
       console.log(`[import] userId=${userId}, total segments=${segments.length}`);
       const pairs: Array<{ segmentId: number; grammarId: number }> = [];
       let skipped = 0;

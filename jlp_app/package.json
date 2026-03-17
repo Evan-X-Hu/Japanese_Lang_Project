@@ -1,7 +1,7 @@
 {
   "name": "jlp_app",
   "productName": "jlp_app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Japanese Language Desktop App",
   "main": ".webpack/main",
   "private": true,

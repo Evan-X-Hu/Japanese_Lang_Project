@@ -8,14 +8,12 @@ export interface VersionsAPI {
     node: () => string,
     chrome: () => string,
     electron: () => string,
-    ping: () => Promise<string>
 }
 
 contextBridge.exposeInMainWorld('versions', {
     node: () => process.versions.node,
     chrome: () => process.versions.chrome,
     electron: () => process.versions.electron,
-    ping: () => ipcRenderer.invoke('ping')
 } as VersionsAPI)
 
 // Expose shell API for opening external links
@@ -34,6 +32,12 @@ contextBridge.exposeInMainWorld('content', {
     delete: (contentId: number) => ipcRenderer.invoke('content:delete', contentId),
     import: (url: string, userId: number) => ipcRenderer.invoke('content:import', url, userId),
     getGrammars: (contentId: number) => ipcRenderer.invoke('content:getGrammars', contentId),
+    onImportProgress: (callback: (step: string) => void) => {
+        ipcRenderer.on('content:importProgress', (_event, step: string) => callback(step));
+    },
+    offImportProgress: () => {
+        ipcRenderer.removeAllListeners('content:importProgress');
+    },
 })
 
 // Expose grammar API
