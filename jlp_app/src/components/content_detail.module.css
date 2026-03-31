@@ -14,18 +14,22 @@
 }
 
 .container {
+  flex: 1;
+  min-height: 0;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
   border: 1px solid #e5e7eb;
   border-radius: 0.5rem;
   padding: 1.25rem;
+  overflow: hidden;
 }
 
 .header {
   display: flex;
   align-items: flex-start;
   gap: 0.75rem;
+  flex-shrink: 0;
 }
 
 .iconBox {
@@ -73,6 +77,7 @@
   border: none;
   border-top: 1px solid #e5e7eb;
   margin: 0;
+  flex-shrink: 0;
 }
 
 .metaList {
@@ -80,6 +85,7 @@
   flex-direction: column;
   gap: 0.75rem;
   font-size: 0.875rem;
+  flex-shrink: 0;
 }
 
 .metaRow {
@@ -124,6 +130,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  min-height: 0;
 }
 
 .playbackLabel {
@@ -135,36 +142,49 @@
 
 .audio {
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .video {
   width: 100%;
+  max-width: 100%;
+  min-height: 0;
+  object-fit: contain;
   border-radius: 0.375rem;
+  box-sizing: border-box;
 }
 
 /* ── Content body layout ────────────────────────────────────── */
 
 .contentBody {
+  flex: 1;
+  min-height: 0;
   display: flex;
   gap: 1.25rem;
-  align-items: flex-start;
+  align-items: stretch;
+  overflow: hidden;
 }
 
 .mediaColumn {
   flex: 1;
   min-width: 0;
+  min-height: 0;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  overflow: hidden;
 }
 
 .grammarColumn {
   width: 22rem;
-  flex-shrink: 0;
+  min-width: 14rem;
+  flex-shrink: 1;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
   overflow-y: auto;
+  min-height: 0;
 }
 
 /* ── Grammar panel ─────────────────────────────────────────── */
@@ -180,6 +200,12 @@
   align-items: center;
   justify-content: space-between;
   gap: 0.5rem;
+  flex-shrink: 0;
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  z-index: 1;
+  padding-bottom: 0.25rem;
 }
 
 .levelFilters {
@@ -224,6 +250,16 @@
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+}
+
+.grammarItemClickable {
+  cursor: pointer;
+  transition: background-color 0.1s, border-color 0.1s;
+}
+
+.grammarItemClickable:hover {
+  background-color: #f9fafb;
+  border-color: #d1d5db;
 }
 
 .grammarTop {

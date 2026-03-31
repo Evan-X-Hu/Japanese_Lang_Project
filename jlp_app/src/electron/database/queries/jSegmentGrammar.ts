@@ -1,6 +1,6 @@
 import { and, eq, inArray, sql, desc } from 'drizzle-orm';
 import { getDatabase } from '../connection';
-import { masterGrammar, jSegmentGrammar, jSegment } from '../schema/index';
+import { masterGrammar, jSegmentGrammar, jSegment, jContent, jContentUser } from '../schema/index';
 
 export function getGrammarFrequencyByContentId(contentId: number) {
   const db = getDatabase();
@@ -9,6 +9,7 @@ export function getGrammarFrequencyByContentId(contentId: number) {
       masterGrammarId: masterGrammar.masterGrammarId,
       grammarPoint: masterGrammar.grammarPoint,
       meaning: masterGrammar.meaning,
+      notes: masterGrammar.notes,
       level: masterGrammar.level,
       jlptLevel: masterGrammar.jlptLevel,
       frequency: sql<number>`count(*)`.as('frequency'),
@@ -19,6 +20,49 @@ export function getGrammarFrequencyByContentId(contentId: number) {
     .where(eq(jSegment.contentId, contentId))
     .groupBy(masterGrammar.masterGrammarId)
     .orderBy(desc(sql`frequency`))
+    .all();
+}
+
+export function getSegmentsByGrammarAndContent(masterGrammarId: number, contentId: number) {
+  const db = getDatabase();
+  return db
+    .select({
+      segmentId: jSegment.segmentId,
+      text: jSegment.text,
+      startTime: jSegment.startTime,
+      endTime: jSegment.endTime,
+      seqIndex: jSegment.seqIndex,
+    })
+    .from(jSegmentGrammar)
+    .innerJoin(jSegment, eq(jSegmentGrammar.segmentId, jSegment.segmentId))
+    .where(and(
+      eq(jSegmentGrammar.masterGrammarId, masterGrammarId),
+      eq(jSegment.contentId, contentId),
+    ))
+    .orderBy(jSegment.seqIndex)
+    .all();
+}
+
+export function getSegmentsByGrammarForUser(masterGrammarId: number, userId: number) {
+  const db = getDatabase();
+  return db
+    .select({
+      segmentId: jSegment.segmentId,
+      text: jSegment.text,
+      startTime: jSegment.startTime,
+      endTime: jSegment.endTime,
+      contentId: jContent.contentId,
+      title: jContent.title,
+    })
+    .from(jSegmentGrammar)
+    .innerJoin(jSegment, eq(jSegmentGrammar.segmentId, jSegment.segmentId))
+    .innerJoin(jContent, eq(jSegment.contentId, jContent.contentId))
+    .innerJoin(jContentUser, and(
+      eq(jContentUser.contentId, jContent.contentId),
+      eq(jContentUser.userId, userId),
+    ))
+    .where(eq(jSegmentGrammar.masterGrammarId, masterGrammarId))
+    .orderBy(jContent.contentId, jSegment.seqIndex)
     .all();
 }
 

@@ -44,6 +44,8 @@ contextBridge.exposeInMainWorld('content', {
 contextBridge.exposeInMainWorld('grammar', {
     getAll: (userId: number) => ipcRenderer.invoke('grammar:getAll', userId),
     update: (masterGrammarId: number, data: Record<string, unknown>) => ipcRenderer.invoke('grammar:update', masterGrammarId, data),
+    getSegmentsByContent: (masterGrammarId: number, contentId: number) => ipcRenderer.invoke('grammar:getSegmentsByContent', masterGrammarId, contentId),
+    getSegments: (masterGrammarId: number, userId: number) => ipcRenderer.invoke('grammar:getSegments', masterGrammarId, userId),
 })
 
 // Expose media server port

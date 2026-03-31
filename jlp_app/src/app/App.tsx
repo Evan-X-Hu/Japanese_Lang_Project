@@ -8,6 +8,7 @@ import { Content } from "../pages/Content"
 import { Grammars } from "../pages/Grammars"
 import { Settings } from "../pages/Settings"
 import { useUserStore } from "../store/userStore"
+import styles from './App.module.css'
 
 interface VersionsAPI {
   node: () => string;
@@ -32,15 +33,17 @@ function App() {
 
   return (
     <HashRouter>
-      <div className="flex min-h-screen flex-col">
+      <div className={styles.shell}>
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/decks" element={<Decks />} />
-          <Route path="/content" element={<Content />} />
-          <Route path="/grammar" element={<Grammars />} />
-          <Route path="/settings" element={<Settings />} />
-        </Routes>
+        <div className={styles.main}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/decks" element={<Decks />} />
+            <Route path="/content" element={<Content />} />
+            <Route path="/grammar" element={<Grammars />} />
+            <Route path="/settings" element={<Settings />} />
+          </Routes>
+        </div>
         <Footer
           githubUrl="https://github.com/your-username/your-repo"
           discordUrl="https://discord.gg/your-invite"

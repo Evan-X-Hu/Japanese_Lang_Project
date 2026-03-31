@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import type { ContentRecord, GrammarFrequency } from "../types/index"
 import { Music, Link as LinkIcon, User } from "lucide-react"
+import { GrammarDetail } from './grammar_detail'
 import styles from './content_detail.module.css'
 
 interface ContentDetailProps {
@@ -47,6 +48,7 @@ export function ContentDetail({ item }: ContentDetailProps) {
   const port = useMediaPort()
   const grammars = useGrammars(item?.contentId)
   const [difficultyFilter, setDifficultyFilter] = useState<number | null>(null)
+  const [selectedGrammar, setSelectedGrammar] = useState<GrammarFrequency | null>(null)
 
   if (!item) {
     return (
@@ -152,44 +154,58 @@ export function ContentDetail({ item }: ContentDetailProps) {
         {/* Right: grammar panel */}
         {grammars.length > 0 && (
           <div className={styles.grammarColumn}>
-            <div className={styles.grammarHeader}>
-              <h3 className={styles.playbackLabel}>Grammar Points</h3>
-              <div className={styles.levelFilters}>
-                <button
-                  className={`${styles.levelBtn} ${difficultyFilter === null ? styles.levelBtnActive : ''}`}
-                  onClick={() => setDifficultyFilter(null)}
-                >
-                  All
-                </button>
-                {DIFFICULTY_LEVELS.map((d) => (
-                  <button
-                    key={d.value}
-                    className={`${styles.levelBtn} ${difficultyFilter === d.value ? styles.levelBtnActive : ''}`}
-                    onClick={() => setDifficultyFilter(difficultyFilter === d.value ? null : d.value)}
-                  >
-                    {d.label}
-                  </button>
-                ))}
-              </div>
-            </div>
-            <ul className={styles.grammarList}>
-              {filteredGrammars.map((g) => (
-                <li key={g.masterGrammarId} className={styles.grammarItem}>
-                  <div className={styles.grammarTop}>
-                    <span className={styles.grammarPoint}>{g.grammarPoint}</span>
-                    <div className={styles.grammarMeta}>
-                      {g.jlptLevel && (
-                        <span className={`${styles.levelBadge} ${JLPT_COLORS[g.jlptLevel] ?? ''}`}>
-                          {g.jlptLevel}
-                        </span>
-                      )}
-                      <span className={styles.grammarFreq}>×{g.frequency}</span>
-                    </div>
+            {selectedGrammar ? (
+              <GrammarDetail
+                grammar={selectedGrammar}
+                contentId={item.contentId}
+                onBack={() => setSelectedGrammar(null)}
+              />
+            ) : (
+              <>
+                <div className={styles.grammarHeader}>
+                  <h3 className={styles.playbackLabel}>Grammar Points</h3>
+                  <div className={styles.levelFilters}>
+                    <button
+                      className={`${styles.levelBtn} ${difficultyFilter === null ? styles.levelBtnActive : ''}`}
+                      onClick={() => setDifficultyFilter(null)}
+                    >
+                      All
+                    </button>
+                    {DIFFICULTY_LEVELS.map((d) => (
+                      <button
+                        key={d.value}
+                        className={`${styles.levelBtn} ${difficultyFilter === d.value ? styles.levelBtnActive : ''}`}
+                        onClick={() => setDifficultyFilter(difficultyFilter === d.value ? null : d.value)}
+                      >
+                        {d.label}
+                      </button>
+                    ))}
                   </div>
-                  {g.meaning && <p className={styles.grammarMeaning}>{g.meaning}</p>}
-                </li>
-              ))}
-            </ul>
+                </div>
+                <ul className={styles.grammarList}>
+                  {filteredGrammars.map((g) => (
+                    <li
+                      key={g.masterGrammarId}
+                      className={`${styles.grammarItem} ${styles.grammarItemClickable}`}
+                      onClick={() => setSelectedGrammar(g)}
+                    >
+                      <div className={styles.grammarTop}>
+                        <span className={styles.grammarPoint}>{g.grammarPoint}</span>
+                        <div className={styles.grammarMeta}>
+                          {g.jlptLevel && (
+                            <span className={`${styles.levelBadge} ${JLPT_COLORS[g.jlptLevel] ?? ''}`}>
+                              {g.jlptLevel}
+                            </span>
+                          )}
+                          <span className={styles.grammarFreq}>×{g.frequency}</span>
+                        </div>
+                      </div>
+                      {g.meaning && <p className={styles.grammarMeaning}>{g.meaning}</p>}
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
           </div>
         )}
       </div>

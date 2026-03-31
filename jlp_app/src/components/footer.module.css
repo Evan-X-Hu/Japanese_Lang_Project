@@ -1,12 +1,14 @@
 .footer {
+  flex-shrink: 0;
   border-top: 1px solid #e5e7eb;
   background-color: #ffffff;
+  z-index: 10;
 }
 
 .container {
   max-width: 768px;
   margin: 0 auto;
-  padding: 2rem 1.5rem;
+  padding: 0.75rem 1.5rem;
 }
 
 .content {

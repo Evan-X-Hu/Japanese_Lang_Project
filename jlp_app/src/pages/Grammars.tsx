@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import type { MasterGrammarRecord } from '../types/index'
 import { useUserStore } from '../store/userStore'
+import { GrammarDetail } from '../components/grammar_detail'
 import styles from './Grammars.module.css'
 
 const JLPT_LEVELS = ['N5', 'N4', 'N3', 'N2', 'N1'] as const
@@ -99,6 +100,7 @@ export function Grammars() {
   const [grammars, setGrammars] = useState<MasterGrammarRecord[]>([])
   const [jlptFilter, setJlptFilter] = useState<string | null>(null)
   const [difficultyFilter, setDifficultyFilter] = useState<number | null>(null)
+  const [selectedGrammar, setSelectedGrammar] = useState<MasterGrammarRecord | null>(null)
 
   useEffect(() => {
     if (!currentUser) return
@@ -119,6 +121,17 @@ export function Grammars() {
     return (
       <div className={styles.page}>
         <p className={styles.emptyText}>Sign in from Settings to view grammar.</p>
+      </div>
+    )
+  }
+
+  if (selectedGrammar) {
+    return (
+      <div className={styles.page}>
+        <GrammarDetail
+          grammar={selectedGrammar}
+          onBack={() => setSelectedGrammar(null)}
+        />
       </div>
     )
   }
@@ -166,11 +179,13 @@ export function Grammars() {
       {filtered.length === 0 ? (
         <p className={styles.emptyText}>No grammar points found.</p>
       ) : (
-        <ul className={styles.list}>
+        <div className={styles.list}>
           {filtered.map((g) => (
-            <GrammarCard key={g.masterGrammarId} g={g} onSaved={handleSaved} />
+            <div key={g.masterGrammarId} className={styles.cardWrapper} onClick={() => setSelectedGrammar(g)}>
+              <GrammarCard g={g} onSaved={handleSaved} />
+            </div>
           ))}
-        </ul>
+        </div>
       )}
     </div>
   )

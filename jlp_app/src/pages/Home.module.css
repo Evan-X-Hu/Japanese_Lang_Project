@@ -1,8 +1,12 @@
 .page {
-  max-width: 64rem;
-  margin: 0 auto;
+  position: absolute;
+  inset: 0;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  max-width: 64rem;
+  margin: 0 auto;
   padding: 2rem 1.5rem;
+  box-sizing: border-box;
 }

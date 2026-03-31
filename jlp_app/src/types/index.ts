@@ -35,9 +35,20 @@ export interface GrammarFrequency {
   masterGrammarId: number;
   grammarPoint: string | null;
   meaning: string | null;
+  notes: string | null;
   level: number | null;
   jlptLevel: string | null;
   frequency: number;
+}
+
+export interface SegmentWithContent {
+  segmentId: number;
+  text: string | null;
+  startTime: number | null;
+  endTime: number | null;
+  seqIndex?: number | null;
+  contentId?: number;
+  title?: string | null;
 }
 
 export interface ContentAPI {
@@ -66,6 +77,8 @@ export interface MasterGrammarRecord {
 export interface GrammarAPI {
   getAll: (userId: number) => Promise<MasterGrammarRecord[]>;
   update: (masterGrammarId: number, data: { level?: number | null; notes?: string | null }) => Promise<MasterGrammarRecord | undefined>;
+  getSegmentsByContent: (masterGrammarId: number, contentId: number) => Promise<SegmentWithContent[]>;
+  getSegments: (masterGrammarId: number, userId: number) => Promise<SegmentWithContent[]>;
 }
 
 export interface UserRecord {
